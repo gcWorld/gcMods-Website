@@ -1,4 +1,6 @@
 ---
+pages:
+- _posts/2017-09-21-test.md
 hide_body: false
 fields:
 - name: date
