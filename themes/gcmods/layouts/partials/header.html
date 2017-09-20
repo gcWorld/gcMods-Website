@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>
+
+        </title>
+
+        <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | relURL }}">
+        <link rel="stylesheet" href="{{ "css/css/jquery.bxslider.css" | relURL }}">
+        <link rel="stylesheet" href="{{ "css/font-awesome.min.css" | relURL }}">
+        <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+
+        {{ .Hugo.Generator }}
+
+        <meta name="theme-color" content="#75bf34">
+
+        <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+        <script type="text/javascript">
+            window.cookieconsent_options = {"message":"Wir verwenden Cookies, um Inhalte und Anzeigen zu personalisieren und die Zugriffe auf unsere Website zu analysieren. Außerdem geben wir Informationen zu Ihrer Nutzung unserer Website an unsere Partner für Werbung weiter.","dismiss":"OK","learnMore":"Details ansehen","link":"http://http://www.gcmods.de/impressum#datenschutz","theme":"dark-bottom"};
+        </script>
+
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+        <!-- End Cookie Consent plugin -->
+    </head>
+    <body>
+
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="{{ paths.root }}"><img src="https://www.gcmods.de/static/img/gcworld_modifications.png" height="44" width="306" title="{{ app.config.get('general/sitename') }}" alt="{{ app.config.get('general/sitename') }}"></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                    {# Include the menu, as defined in config/menu.yml. Note that this theme comes with it's
+                       own _sub_menu.twig. If this file wasn't included in the current theme, the default menu
+                       template in app/theme_defaults/_sub_menu.twig would be used. #}
+                    {{ menu('main', '_sub_menu.twig') }}
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- End header -->
