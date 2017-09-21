@@ -12,6 +12,10 @@ homepage: true
 image_big: euro_1.jpg
 version: 1.7
 
+beta: asd
+beta-format: zip
+beta-version: 1.8
+
 image_list:
   - filename: euro_2.jpg
     title:  
@@ -22,6 +26,7 @@ image_list:
 
 video_list:
   - yt: jFt6KglYgek
+
 ---
 
 <p></p>

@@ -33,8 +33,105 @@ layout: main
         {% endfor %}
       {% endif %}
 
-      {% if site.disqus.shortname %}
+    </article>
+
+    <aside class="col-md-4">
+        <h4><i class="fa fa-download"></i> Download</h4>
+        <div class="pull-center">
+            {% if page.wip %}
+                Noch nicht verfügbar!
+            {% else %}
+                {% if page.exe %}
+                    <a class="btn btn-default btn-lg btn-success btn-block" role="button" href="{{ page.exe }}">Download<br><small>.exe {{page.version}}</small></a>
+                {% endif %}
+                {% if page.zip %}
+                    <a class="btn btn-default btn-lg btn-primary btn-block" role="button" href="{{ page.zip }}">Download<br><small>.zip {{page.version}}</small></a>
+                {% endif %}
+                {% if page.ams %}
+                    <a class="btn btn-default btn-lg btn-danger btn-block" role="button" href="{{ page.ams }}">Download<br><small>.ams {{page.version}}</small></a>
+                {% endif %}
+
+                {% if page.beta %}
+                    <a id="tooltip" data-toggle="tooltip" title="Beta-Versionen wurden in der Regel auf ihre Funktion getestet. Es wird aber trotzdem dringend empfohlen ein Backup anzulegen!" class="btn btn-default btn-lg btn-warning btn-block" role="button" href="{{ page.beta }}">Beta Download<br><small class="white">{{ page.beta-format }} {{page.beta-version}}</small></a>
+                {% endif %}
+            {% endif %}
+        </div>
+        <h4><i class="fa fa-info-circle"></i> Informationen</h4>
+        <table class="table table-condensed">
+        <tr>
+            <td>Version</td>
+            <td>{{ page.version }}
+                {% if page.updated %}
+                    <small>({{ page.updated | date_to_long_string }})</small>
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <td>Lizenz</td>
+            {% if record.license == 'copy-2013' %}
+                <td>&copy; 2013</td>
+            {% else if record.license == 'copy-2014' %}
+                <td>&copy; 2014</td>
+            {% else if record.license == 'copy-2015' %}
+                <td>&copy; 2015</td>
+            {% else if record.license == 'cc-by-nc' %}
+                <td><a href="http://creativecommons.org/licenses/by-nc/3.0/deed.de"><img src="http://s3.gcmods.de/img/by-nc.png" alt="Creative Commons by-nc" height="15" width="80"></a></td>
+            {% else if record.license == 'cc-by' %}
+                <td><a href="http://creativecommons.org/licenses/by/3.0/deed.de"><img src="http://s3.gcmods.de/img/by.png" alt="Creative Commons by" height="15" width="80"></a></td>
+            {% endif %}
+        </tr>
+        <tr>
+            <td>OMSI Version</td>
+            <td>{{ record.omsi_version }}</td>
+        </tr>
+        <tr>
+            <td>Veröffentlicht am</td>
+            <td>{{ page.released | date_to_long_string }}</td>
+        </tr>
+        <tr>
+            <td>Author</td>
+            <td>{{ page.author }}</td>
+        </tr>
+        {% if page.link_forum %}
+        <tr>
+            <td colspan="2"><a href="{{ record.link_forum }}">Beitrag im off. OMSI Forum</a></td>
+        </tr>
+        {% endif %}
+        {% if page.link_bugtracker %}
+        <tr>
+            <td colspan="2"><a href="http://github.com/{{ record.link_bugtracker }}/issues">Bugtracker</a></td>
+        </tr>
+        {% endif %}
+
+        {% if record.donate %}
+        <tr>
+            <td>Projekt unterstützen</td>
+            <td colspan="2">{{ record.donate }}</td>
+        </tr>
+        {% endif %}
+        </table>
+        <small>{{ recdate }}</small>
+    </aside>
+
+    <aside class="col-md-4">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- download details -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-1971845371325330"
+             data-ad-slot="6402089008"
+             data-ad-format="auto"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </aside>
+</div>
+
+      {% if site.disqus %}
+      <hr>
+      <h3>Kommentare</h3>
         {% include disqus_comments.html %}
       {% endif %}
     </article>
+
 </div>
