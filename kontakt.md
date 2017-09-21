@@ -3,7 +3,6 @@ title: Kontakt
 layout: page
 ---
 
-
 * {% if site.author %}
   {{ site.author | escape }}
 {% else %}
