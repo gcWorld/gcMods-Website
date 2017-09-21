@@ -1,49 +1,114 @@
-<footer class="site-footer">
+<hr class="featurette-divider">
 
-  <div class="wrapper">
+</div>
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+<footer>
+    <div class="container">
+        <div class="row" id="footer-nav">
+            <div class="col-sm-3">
+                <h4>Navigation</h4>
+                <ul class="nav nav-pills nav-stacked">
+                    <li {% if page.url == "/" %} class="active" {% endif %} >
+                        <a class="" href="/">Home</a>
+                    </li>
+                    <li{% if page.url == my_page.url %}class="active"{% endif %}>
+                        <a class="" href="/blog">Blog</a>
+                    </li>
+                    <li{% if page.url == my_page.url %}class="active"{% endif %}>
+                        <a class="" href="/downloads/">Downloads</a>
+                    </li>
+                    <li{% if page.url == my_page.url %}class="active"{% endif %}>
+                        <a class="" href="/kontakt">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
-        </ul>
-      </div>
+            <div class="col-sm-3">
+                <h4>Downloads</h4>
+                <ul class="nav nav-pills nav-stacked">
+                    {% if site.downloads %}
+                        {% for post in site.downloads %}
+                            {% if post.layout == "download" %}
+                                {% if post.website!="true" %}
+                                    <li><a href="{{ post.url }}">&raquo; {{ post.title }}</a></li>
+                                {% else %}
+                                    <li><a href="{{ post.link }}">&raquo; {{ post.title }}</a></li>
+                                {% endif %}
 
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    {% else %}
+                        <li>Keine Downloads</li>
+                    {% endif %}
+                </ul>
+            </div>
 
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
+            <div class="col-sm-3">
+                <h4>Downloads</h4>
+                <ul class="nav nav-pills nav-stacked">
+                    {% if site.downloads %}
+                        {% for post in site.downloads %}
+                            {% if post.layout == "download" %}
+                                {% if post.website!="true" %}
+                                    <li><a href="{{ post.url }}">&raquo; {{ post.title }}</a></li>
+                                {% else %}
+                                    <li><a href="{{ post.link }}">&raquo; {{ post.title }}</a></li>
+                                {% endif %}
 
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
-      </div>
+                            {% endif %}
+                        {% endfor %}
+                    {% else %}
+                        <li>Keine Downloads</li>
+                    {% endif %}
+                </ul>
+            </div>
+            <div class="col-sm-3" id="searchbox-footer">
+                <h4>Suche</h4>
+                <a href="mailto:info@gcmods.de">
+                    <img border="0" class="ccm-image-block" alt="E-Mail" src="{{ paths.theme }}images/email.png" width="24" height="24" />
+                </a>
+                {% if site.twitter_username %}
+                  {% include icon-twitter.html username=site.twitter_username %}
+                {% endif %}
+                {% if site.github_username %}
+                  {% include icon-github.html username=site.github_username %}
+                {% endif %}
+                <a href="http://youtube.com/user/gcWorldMods">
+                    <img border="0" class="ccm-image-block" alt="Youtube" src="{{ paths.theme }}images/youtube.png" width="24" height="24" />
+                </a>
+                <a href="https://plus.google.com/109173837731421213069" rel="publisher">
+                    <img src="//ssl.gstatic.com/images/icons/gplus-32.png" alt="Google+" style="border:0;width:32px;height:32px;"/>
+                </a>
+
+                <br>
+
+                <h4>Unterstützen</h4>
+                <a href='https://pledgie.com/campaigns/23884'>
+                    <img alt='Click here to lend your support to: gcWorld Modifications and make a donation at pledgie.com !' src='https://pledgie.com/campaigns/23884.png?skin_name=chrome' border='0' >
+                </a>
+            </div>
+        </div>
+        <hr>
+        <p class="pull-right"><a class="green" href="#">Back to top</a></p>
+        <p>&copy; {{ today|localdate("%Y") }} gcmods.de &middot; <a class="green" href="/impressum">Impressum</a>
     </div>
-
-  </div>
-
 </footer>
+
+
+
+
+
+
+
+        <!-- Bootstrap core JavaScript
+
+        ================================================== -->
+
+        <!-- Placed at the end of the document so the pages load faster -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
 {% if jekyll.environment == 'production' and site.google_analytics %}
 {% include google-analytics.html %}

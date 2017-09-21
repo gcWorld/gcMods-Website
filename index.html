@@ -1,0 +1,162 @@
+---
+title: Home
+layout: default
+---
+
+<section class="slider">
+    <ul class="bxslider">
+        <li><a href="/downloads/ibiscontrol"><img src="{{ paths.files }}2015-03/ibiscontrol-mainsite.png" alt="IBIScontrol"/></a></li>
+        <li><a href="/downloads/euro-mod"><img src="{{ paths.theme }}images/euro_10_header.jpg" alt="Euro Mod"/></a></li>
+        <li><a href="http://ibis-droid.gcmods.de"><img src="{{ paths.theme }}images/ibis_droid.png" alt="IBISdroid für Android"/></a></li>
+        <li><a href="/downloads/gcw-strassenobjekte"><img src="{{ paths.theme }}images/bagger3.png" alt="img02"/></a></li>
+        <li><a href="/downloads/frankfurter-haltestellen-set"><img src="{{ paths.theme }}images/fra_night.png" alt="img03"/></a></li>
+        <li><a href="/downloads/gcw-strassenobjekte"><img src="{{ paths.theme }}images/slide1.jpg" alt="img02"/></a></li>
+    </ul>
+</section>
+
+<div class="container">
+
+
+
+    <div class="jumbotron">
+
+        {% include jumbotron.md %}
+
+    </div>
+
+    <div class="row">
+
+    {% assign downloads = site.downloads | where:"layout","download" | where:"homepage","true" %}
+    {% for record in downloads limit 3 %}
+        <div class="col-md-4">
+            {% if record.image_home!="" %}
+            {% if record.website!="1" %}
+
+                         <a href="{{ record.link }}">
+                    {% else %}
+
+                        <a href="{{ record.url }}">
+                    {% endif %}
+            <img class="img-responsive" src="{{ record.image_home|image(350,150,'c') }}" alt="{{ record.title }}"></a>
+
+            {% else %}
+
+    <a href="{{ record.link }}">
+
+
+                <img class="img-responsive" data-src="holder.js/350x150/text:Kein Bild" alt="{{ record.title }}">
+
+            </a>
+
+            {% endif %}
+
+            {% if record.wip=="1" %}
+
+                <div class="ribbon-wrapper-green"><div class="ribbon-green">WIP</div></div>
+
+            {% endif %}
+
+
+
+            <h3>{{ record.title }} <small>{{ record.version}}</small></h3>
+
+
+
+            <p>{{ record.teaser_home }}</p>
+
+            {% if record.wip!="1" %}
+
+                {% if record.website!="1" %}
+
+                    <p><a class="btn btn-default" href="{{ record.link }}" role="button">Zum Download &raquo;</a></p>
+
+                {% else %}
+
+                    <p><a class="btn btn-default" href="{{ record.url }}" role="button">Zur Website &raquo;</a></p>
+
+                {% endif %}
+
+            {% else %}
+
+                <p><a class="btn btn-default" href="{{ record.link }}" role="button">Mehr Informationen &raquo;</a></p>
+
+            {% endif %}
+
+
+
+        </div>
+
+        <hr class="visible-xs visible-sm">
+    {% else %}
+        <div class="col-md-4">
+            Keine Downloads
+        </div>
+    {% endfor %}
+
+    </div>
+
+
+
+    <a class="btn btn-default pull-right" href="/downloads" role="button">Weitere Downloads &raquo;</a><br>
+
+
+
+    <hr class="featurette-divider">
+
+    <div class="row">
+
+    <div class="col-md-8">
+
+    {% for record in site.posts %}
+
+        <div class="blog-post">
+
+            <h2 class="blog-post-title">{{ record.title }}</h2>
+
+
+
+            <p class="blog-post-meta">Geschrieben von {{ record.author }} am {{ post.date | date: date_format }}</p>
+
+            {% if record.image!="" %}
+
+                <a href="{{ record.link }}"><img class="img-responsive" src="{{ image(record.image) }}" alt="{{ record.title }}"></a>
+
+            {% endif %}
+
+
+
+            {% if record.body!="" %}
+
+            <p>{{ record.body }}</p>
+
+            {% else %}
+
+            <p>{{ record.teaser }}</p>
+
+            {% endif %}
+
+            <a class="btn btn-default pull-right" href="/blogs/" role="button">Zum Blog &raquo;</a>
+
+        </div>
+
+    {% endfor %}
+
+    </div>
+        <aside class="col-md-4 hidden-sm hidden-xs">
+            <h4>Weitere Einträge</h4>
+            <ul class="nav nav-pills nav-stacked">
+                    {% for record in site.posts %}
+                        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                        <li><a href="{{ record.url }}">&raquo; {{ record.title }}</a></li>
+                    {% else %}
+                        <li>Keine Blogeinträge</li>
+                    {% endfor %}
+                </ul>
+        </aside>
+    </div>
+    <div class="row">
+        <hr class="featurette-divider">
+        {% if jekyll.environment == 'production' and site.google_ads %}
+            {% include google_ad_banner.html %}
+        {% endif %}
+    </div>

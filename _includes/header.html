@@ -16,18 +16,18 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                   {% for path in page_paths %}
-                     {% assign my_page = site.pages | where: "path", path | first %}
-                     {% if my_page.title %}
-                    <li
-                        {% if path == path %}
-                            class="active"
-                        {% endif %}
-                    >
-                        <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                    <li {% if page.url == "/" %} class="active" {% endif %} >
+                        <a href="/">Home</a>
                     </li>
-                     {% endif %}
-                   {% endfor %}
+                    <li {% if page.menu == "blog" %}class="active"{% endif %}>
+                        <a href="/blog">Blog</a>
+                    </li>
+                    <li {% if page.menu == "downloads" %}class="active"{% endif %}>
+                        <a href="/downloads">Downloads</a>
+                    </li>
+                    <li {% if page.url == "/kontakt.html" %}class="active"{% endif %}>
+                        <a href="/kontakt">Kontakt</a>
+                    </li>
                 </ul>
             </div>
         </div>
