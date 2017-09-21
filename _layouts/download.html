@@ -10,14 +10,28 @@ layout: main
       </header>
 
       <a data-fancybox href="{{ "/assets/images/downloads/" }}{{ page.image_big }}">
-        <img src="{{ "/assets/images/downloads/thumbs/" }}{{ page.image_big }}" class="img-thumbnail"/>
+        <img src="{{ "/assets/images/downloads/thumbs/big/" }}{{ page.image_big }}" class="img-thumbnail"/>
       </a>
 
-      <div>
-        {{ content }}
+      {{ content }}
 
-        {{ page.changelog }}
-      </div>
+      {% if page.image_list %}
+      <h3>Bilder</h3>
+        {% for image in page.image_list %}
+            <a href="{{ "/assets/images/downloads/"}}{{ image.filename }}" data-fancybox="group" title="{{ image.title }}">
+                <img src="{{ "/assets/images/downloads/thumbs/"}}{{ image.filename }}" class="img-thumbnail">
+            </a>
+        {% endfor %}
+      {% endif %}
+
+      {% if page.video_list %}
+      <h3>Videos</h3>
+        {% for video in page.video_list %}
+            <a data-fancybox="video" href="https://www.youtube.com/embed/{{ video.yt }}">
+                <img src="https://i1.ytimg.com/vi/{{ video.yt }}/default.jpg" class="img-thumbnail">
+            </a>
+        {% endfor %}
+      {% endif %}
 
       {% if site.disqus.shortname %}
         {% include disqus_comments.html %}

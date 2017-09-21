@@ -36,3 +36,5 @@ plugins:
 exclude:
 - themes
 - content
+disqus:
+  shortname: gcworld
