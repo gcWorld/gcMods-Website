@@ -88,24 +88,7 @@ small {
 #carousel-example-generic {
   border: 5px white solid;
 }
-.bx-wrapper .bx-viewport {
-    background: #75bf34;
-    max-width:970px;
-    margin: 0 auto;
-    left:0;
-}
-.bx-controls {
 
-}
-.bxslider {
-
-}
-.bxslider li {
-
-}
-.bxslider li img {
-    margin: 0 auto;
-}
 .blog-post {
   margin-bottom: 60px;
 }
