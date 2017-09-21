@@ -8,7 +8,7 @@ zip: false
 exe: true
 android: false
 homepage: true
-image_big: {{"assets/images/downloads/euro_1.jpg"}}
+image_big: {}
 ---
 
 Hello
