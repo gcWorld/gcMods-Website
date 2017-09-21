@@ -23,6 +23,7 @@ image_list:
 video_list:
   - yt: jFt6KglYgek
 ---
+
 <p></p>
 
 Diese Mod fügt die Euro-Währung zu OMSI hinzu.
