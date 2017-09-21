@@ -1,5 +1,6 @@
 ---
 title: Euro Mod
+section: Downloads
 released: 2017-09-20 22:30:28 Z
 updated: 2017-09-20 22:30:28 Z
 copyright: 2017
@@ -8,14 +9,24 @@ zip: false
 exe: true
 android: false
 homepage: true
-image_big: {{"assets/images/downloads/euro_1.jpg"}}
+image_big: euro_1.jpg
+version: 1.7
+
 ---
 
-Hello
+Diese Mod fügt die Euro-Währung zu OMSI hinzu.
 
+Enthalten sind:
+- die Scheine 10€ und 5€, sowie die Münzen 2€, 1€, 50, 20, 10 und 5 Cents.
+- Europreise der Tickets
+- angepasste Textur für den SD202 und weitere Busse
+- Neue 5€, 10€ Scheine
+- Chrono-Funktion für OMSI 2
 
-{:.bg .bg-success}
+<div class="bg bg-success" markdown="block">
+
 ### Änderungen in 1.5
+
 **OMSI 1**
 
 - Neuer 5€-Schein
@@ -34,3 +45,5 @@ Hello
 ### Neu in Version 1.7
 
 - Neuer 10€-Schein
+
+</div>

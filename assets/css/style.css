@@ -65,8 +65,9 @@ small {
     background: #75bf34;
     background-image:url(../images/bg.png);
 }
-.toptitle h2 {
+.toptitle h1 {
     text-shadow: 0 0 2px white;
+    font-size: 30px;
 }
 @media (max-width: 750px) {
     .slider {
