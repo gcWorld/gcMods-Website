@@ -11,17 +11,15 @@ android: false
 homepage: true
 image_big: euro_1.jpg
 version: 1.7
-
 image_list:
-  - filename: euro_2.jpg
-    title:  
-  - filename: euro_1.jpg
-    title:
-  - filename: euro_3.jpg
-    title:
-
+- filename: euro_2.jpg
+  title: 
+- filename: euro_1.jpg
+  title: 
+- filename: euro_3.jpg
+  title: 
 video_list:
-  - yt: jFt6KglYgek
+- yt: jFt6KglYgek
 ---
 
 <p></p>
