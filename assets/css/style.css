@@ -83,6 +83,10 @@ small {
         height:180px;
     }
 }
+
+#carousel-example-generic {
+  border: 5px white solid;
+}
 .bx-wrapper .bx-viewport {
     background: #75bf34;
     max-width:970px;
@@ -156,7 +160,14 @@ footer a:hover {
 }
 #searchbox-footer a {
     margin-right: 5px;
+    text-decoration: none;
+    border: none;
 }
+
+#searchbox-footer a:hover {
+  color:#75bf34;
+}
+
 #download-listing hr, #download-listing h2 {
     margin: 5px 0;
 }

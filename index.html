@@ -2,16 +2,10 @@
 title: Home
 layout: default
 ---
-
 <section class="slider">
-    <ul class="bxslider">
-        <li><a href="/downloads/ibiscontrol"><img src="{{ paths.files }}2015-03/ibiscontrol-mainsite.png" alt="IBIScontrol"/></a></li>
-        <li><a href="/downloads/euro-mod"><img src="{{ paths.theme }}images/euro_10_header.jpg" alt="Euro Mod"/></a></li>
-        <li><a href="http://ibis-droid.gcmods.de"><img src="{{ paths.theme }}images/ibis_droid.png" alt="IBISdroid für Android"/></a></li>
-        <li><a href="/downloads/gcw-strassenobjekte"><img src="{{ paths.theme }}images/bagger3.png" alt="img02"/></a></li>
-        <li><a href="/downloads/frankfurter-haltestellen-set"><img src="{{ paths.theme }}images/fra_night.png" alt="img03"/></a></li>
-        <li><a href="/downloads/gcw-strassenobjekte"><img src="{{ paths.theme }}images/slide1.jpg" alt="img02"/></a></li>
-    </ul>
+    <div class="container">
+        {% include slider.html %}
+    </div>
 </section>
 
 <div class="container">
@@ -27,9 +21,9 @@ layout: default
     <div class="row">
 
     {% assign downloads = site.downloads | where:"layout","download" | where:"homepage","true" %}
-    {% for record in downloads limit 3 %}
+    {% for record in downloads limit:3 %}
         <div class="col-md-4">
-            {% if record.image_home!="" %}
+            {% if record.image_home %}
             {% if record.website!="1" %}
 
                          <a href="{{ record.link }}">
@@ -37,7 +31,7 @@ layout: default
 
                         <a href="{{ record.url }}">
                     {% endif %}
-            <img class="img-responsive" src="{{ record.image_home|image(350,150,'c') }}" alt="{{ record.title }}"></a>
+            <img class="img-responsive" src="{{ record.image_home }} image(350,150,'c')" alt="{{ record.title }}"></a>
 
             {% else %}
 
@@ -119,7 +113,7 @@ layout: default
 
             {% if record.image!="" %}
 
-                <a href="{{ record.link }}"><img class="img-responsive" src="{{ image(record.image) }}" alt="{{ record.title }}"></a>
+                <a href="{{ record.link }}"><img class="img-responsive" src="{{ record.image }}" alt="{{ record.title }}"></a>
 
             {% endif %}
 

@@ -24,21 +24,14 @@
             </div>
 
             <div class="col-sm-3">
-                <h4>Downloads</h4>
+                <h4>Blog</h4>
                 <ul class="nav nav-pills nav-stacked">
-                    {% if site.downloads %}
-                        {% for post in site.downloads %}
-                            {% if post.layout == "download" %}
-                                {% if post.website!="true" %}
+                    {% if site.posts %}
+                        {% for post in site.posts %}
                                     <li><a href="{{ post.url }}">&raquo; {{ post.title }}</a></li>
-                                {% else %}
-                                    <li><a href="{{ post.link }}">&raquo; {{ post.title }}</a></li>
-                                {% endif %}
-
-                            {% endif %}
                         {% endfor %}
                     {% else %}
-                        <li>Keine Downloads</li>
+                        <li>Keine Blogeinträge</li>
                     {% endif %}
                 </ul>
             </div>
@@ -47,14 +40,12 @@
                 <h4>Downloads</h4>
                 <ul class="nav nav-pills nav-stacked">
                     {% if site.downloads %}
-                        {% for post in site.downloads %}
-                            {% if post.layout == "download" %}
-                                {% if post.website!="true" %}
-                                    <li><a href="{{ post.url }}">&raquo; {{ post.title }}</a></li>
-                                {% else %}
-                                    <li><a href="{{ post.link }}">&raquo; {{ post.title }}</a></li>
-                                {% endif %}
-
+                        {% assign downloads = site.downloads | where:"layout","download" | sort: 'updated','first' %}
+                        {% for post in downloads reversed limit:4 %}
+                            {% if post.website!="true" %}
+                                <li><a href="{{ post.url }}">&raquo; {{ post.title }}</a></li>
+                            {% else %}
+                                <li><a href="{{ post.link }}">&raquo; {{ post.title }}</a></li>
                             {% endif %}
                         {% endfor %}
                     {% else %}
@@ -63,21 +54,25 @@
                 </ul>
             </div>
             <div class="col-sm-3" id="searchbox-footer">
-                <h4>Suche</h4>
-                <a href="mailto:info@gcmods.de">
-                    <img border="0" class="ccm-image-block" alt="E-Mail" src="{{ paths.theme }}images/email.png" width="24" height="24" />
+                <h4>Weiteres</h4>
+                <a href="mailto:info@gcmods.de" aria-label="Email">
+                    <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
                 </a>
                 {% if site.twitter_username %}
-                  {% include icon-twitter.html username=site.twitter_username %}
+                <a href="http://twitter.com/{{site.twitter_username}}" aria-label="Twitter">
+                    <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+                </a>
                 {% endif %}
                 {% if site.github_username %}
-                  {% include icon-github.html username=site.github_username %}
+                <a href="http://github.com/gcworld" aria-label="Github">
+                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                </a>
                 {% endif %}
                 <a href="http://youtube.com/user/gcWorldMods">
-                    <img border="0" class="ccm-image-block" alt="Youtube" src="{{ paths.theme }}images/youtube.png" width="24" height="24" />
+                    <i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i>
                 </a>
-                <a href="https://plus.google.com/109173837731421213069" rel="publisher">
-                    <img src="//ssl.gstatic.com/images/icons/gplus-32.png" alt="Google+" style="border:0;width:32px;height:32px;"/>
+                <a href="https://plus.google.com/109173837731421213069" rel="publisher" aria-label="Google Plus">
+                    <i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>
                 </a>
 
                 <br>
