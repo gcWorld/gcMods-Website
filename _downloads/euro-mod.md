@@ -11,7 +11,6 @@ android: false
 homepage: true
 image_big: euro_1.jpg
 version: 1.7
-
 ---
 <p></p>
 
