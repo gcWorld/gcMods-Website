@@ -1,28 +1,75 @@
 ---
-layout: default
+layout: main
 ---
+<div class="row">
 
-<div class="home">
+<div class="col-md-8" role="content" id="download-listing">
+    <h1 class="page-heading">Downloads</h1>
 
-  <h1 class="page-heading">Posts</h1>
+    {{ content }}
 
-  {{ content }}
-
-  <ul class="download-list">
-    {% for post in site.downloads %}
-        {% if post.layout == "download" %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
+    {% assign downloads = site.downloads | where:"layout","download" %}
+      {% for post in downloads %}
+      {% if post.website %}
+          <a href="{{ post.website }}" class="dl_a">
+      {% else %}
+          <a href="{{ post.url }}" class="dl_a">
       {% endif %}
-    {% endfor %}
-  </ul>
+              <article class="dl_view">
+                  {% if post.exe %}
+                      <span class="pull-right"><i class="fa fa-file"></i> .exe</span>
+                  {% endif %}
+                  {% if post.ams %}
+                      <img class="pull-right am" src="http://www.gcmods.de/static/img/am.png" height="35">
+                  {% endif %}
+                  {% if post.android %}
+                      <i class="fa fa-android android-c fa-2x pull-right"></i>
+                  {% endif %}
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+
+                  <h2>{{post.title}} <small>{{post.version}}</small></h2>
+
+                  {% if post.image_list.first %}
+                    <div class="pull-left">
+                      <img src="{{ "/assets/images/downloads/thumbs/"}}{{post.image_list.first.filename}}" />
+                    </div>
+                  {% endif %}
+
+                  {{ post.introduction }}
+
+              </article>
+          </a>
+          <hr />
+    {% endfor %}
+</div>
+<!-- Sidebar -->
+
+<aside class="col-md-4">
+    <div class="panel">
+      <h4><img src="http://www.gcmods.de/static/img/am.png" /> OMSI Addon Manager</h4>
+
+      <p>
+        Um eine unkomplizierte Installation der Addons zu ermöglichen, wurde die Verwendung des OMSI Addon Managers empfohlen. Da dieser nicht mehr existiert werden die Downloads Stück für Stück auf Alternativen umgestellt.
+      </p>
+    </div>
+    {% if jekyll.environment == 'production' and site.google_ads %}
+    <div class="panel">
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- gcmods download list -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1971845371325330"
+           data-ad-slot="8168357009"
+           data-ad-format="auto"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+    {% endif %}
+
+
+</aside>
+
+<!-- End Sidebar -->
 
 </div>

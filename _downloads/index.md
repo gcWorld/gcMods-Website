@@ -3,4 +3,4 @@ title: Downloads
 layout: download-list
 ---
 
-Hello
+Hier findest du eine Liste aller bisher veröffentlichte Erweiterungen für OMSI.

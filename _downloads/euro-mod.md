@@ -3,18 +3,25 @@ title: Euro Mod
 section: Downloads
 released: 2017-09-20 22:30:28 Z
 updated: 2017-09-20 22:30:28 Z
-copyright: 2017
-ams: true
+copyright: 'cc-by-nc'
+ams: false
 zip: false
-exe: true
+zip-alt: https://github.com/gcWorld/Euro-Mod/releases/download/1.7/gcW_Euro_1.7.zip
+exe: https://github.com/gcWorld/Euro-Mod/releases/download/1.7/gcW_Euro_1.7.exe
 android: false
 homepage: true
 image_big: euro_1.jpg
 version: 1.7
+omsi_version: 1 & 2
+author: seeadler
+link_forum: http://omnibussimulator.de/forum/index.php?page=Thread&threadID=114
+wip:
 
-beta: asd
+beta:
 beta-format: zip
 beta-version: 1.8
+
+introduction: Diese Mod fügt die Euro-Währung zu OMSI hinzu.
 
 image_list:
 - filename: euro_2.jpg
@@ -26,11 +33,8 @@ image_list:
 video_list:
   - yt: jFt6KglYgek
 
+
 ---
-
-<p></p>
-
-Diese Mod fügt die Euro-Währung zu OMSI hinzu.
 
 Enthalten sind:
 - die Scheine 10€ und 5€, sowie die Münzen 2€, 1€, 50, 20, 10 und 5 Cents.

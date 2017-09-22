@@ -24,63 +24,33 @@ layout: default
     {% assign downloads = site.downloads | where:"layout","download" | where:"homepage","true" %}
     {% for record in downloads limit:3 %}
         <div class="col-md-4">
-            {% if record.image_home %}
+            {% if record.image_big %}
             {% if record.website!="1" %}
-
                          <a href="{{ record.link }}">
                     {% else %}
-
                         <a href="{{ record.url }}">
                     {% endif %}
-            <img class="img-responsive" src="{{ record.image_home }} image(350,150,'c')" alt="{{ record.title }}"></a>
-
+            <img class="img-responsive" src="{{"/assets/images/downloads/thumbs/home/"}}{{ record.image_big }}" alt="{{ record.title }}"></a>
             {% else %}
-
     <a href="{{ record.link }}">
-
-
                 <img class="img-responsive" data-src="holder.js/350x150/text:Kein Bild" alt="{{ record.title }}">
-
             </a>
-
             {% endif %}
-
-            {% if record.wip=="1" %}
-
+            {% if record.wip %}
                 <div class="ribbon-wrapper-green"><div class="ribbon-green">WIP</div></div>
-
             {% endif %}
-
-
-
             <h3>{{ record.title }} <small>{{ record.version}}</small></h3>
-
-
-
-            <p>{{ record.teaser_home }}</p>
-
-            {% if record.wip!="1" %}
-
-                {% if record.website!="1" %}
-
-                    <p><a class="btn btn-default" href="{{ record.link }}" role="button">Zum Download &raquo;</a></p>
-
-                {% else %}
-
-                    <p><a class="btn btn-default" href="{{ record.url }}" role="button">Zur Website &raquo;</a></p>
-
-                {% endif %}
-
-            {% else %}
-
+            <p>{{ record.introduction }}</p>
+            {% if record.wip %}
                 <p><a class="btn btn-default" href="{{ record.link }}" role="button">Mehr Informationen &raquo;</a></p>
-
+            {% else %}
+                {% if record.website %}
+                    <p><a class="btn btn-default" href="{{ record.url }}" role="button">Zur Website &raquo;</a></p>
+                {% else %}
+                    <p><a class="btn btn-default" href="{{ record.url }}" role="button">Zum Download &raquo;</a></p>
+                {% endif %}
             {% endif %}
-
-
-
         </div>
-
         <hr class="visible-xs visible-sm">
     {% else %}
         <div class="col-md-4">
@@ -90,11 +60,7 @@ layout: default
 
     </div>
 
-
-
     <a class="btn btn-default pull-right" href="/downloads" role="button">Weitere Downloads &raquo;</a><br>
-
-
 
     <hr class="featurette-divider">
 
@@ -102,7 +68,7 @@ layout: default
 
     <div class="col-md-8">
 
-    {% for record in site.posts %}
+    {% for record in site.posts limit:1 %}
 
         <div class="blog-post">
 
@@ -130,7 +96,7 @@ layout: default
 
             {% endif %}
 
-            <a class="btn btn-default pull-right" href="/blogs/" role="button">Zum Blog &raquo;</a>
+            <a class="btn btn-default pull-right" href="/blog" role="button">Zum Blog &raquo;</a>
 
         </div>
 

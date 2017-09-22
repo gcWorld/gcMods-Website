@@ -13,6 +13,10 @@ layout: main
         <img src="{{ "/assets/images/downloads/thumbs/big/" }}{{ page.image_big }}" class="img-thumbnail"/>
       </a>
 
+      <p></p>
+
+      {{ page.introduction }}
+      <p></p>
       {{ content }}
 
       {% if page.image_list %}
@@ -44,6 +48,9 @@ layout: main
                 {% if page.exe %}
                     <a class="btn btn-default btn-lg btn-success btn-block" role="button" href="{{ page.exe }}">Download<br><small>.exe {{page.version}}</small></a>
                 {% endif %}
+                    {% if record.url != "" %}
+                        <a href="{{ page.zip-alt }}">Alternativ als .zip</a>
+                    {% endif %}
                 {% if page.zip %}
                     <a class="btn btn-default btn-lg btn-primary btn-block" role="button" href="{{ page.zip }}">Download<br><small>.zip {{page.version}}</small></a>
                 {% endif %}
@@ -68,21 +75,23 @@ layout: main
         </tr>
         <tr>
             <td>Lizenz</td>
-            {% if record.license == 'copy-2013' %}
-                <td>&copy; 2013</td>
-            {% else if record.license == 'copy-2014' %}
+            {% if page.copyright == '2017' %}
+                <td>&copy; 2017</td>
+            {% elsif page.copyright == 'copy-2014' %}
                 <td>&copy; 2014</td>
-            {% else if record.license == 'copy-2015' %}
+            {% elsif page.copyright == 'copy-2015' %}
                 <td>&copy; 2015</td>
-            {% else if record.license == 'cc-by-nc' %}
-                <td><a href="http://creativecommons.org/licenses/by-nc/3.0/deed.de"><img src="http://s3.gcmods.de/img/by-nc.png" alt="Creative Commons by-nc" height="15" width="80"></a></td>
-            {% else if record.license == 'cc-by' %}
-                <td><a href="http://creativecommons.org/licenses/by/3.0/deed.de"><img src="http://s3.gcmods.de/img/by.png" alt="Creative Commons by" height="15" width="80"></a></td>
+            {% elsif page.copyright == 'cc-by-nc' %}
+                <td><a href="http://creativecommons.org/licenses/by-nc/3.0/deed.de"><img src="{{"/assets/images/copyright/by-nc.png"}}" alt="Creative Commons by-nc" height="15" width="80"></a></td>
+            {% elsif page.copyright == 'cc-by' %}
+                <td><a href="http://creativecommons.org/licenses/by/3.0/deed.de"><img src="{{"/assets/images/copyright/by.png"}}" alt="Creative Commons by" height="15" width="80"></a></td>
+            {% else %}
+                <td></td>
             {% endif %}
         </tr>
         <tr>
             <td>OMSI Version</td>
-            <td>{{ record.omsi_version }}</td>
+            <td>{{ page.omsi_version }}</td>
         </tr>
         <tr>
             <td>Veröffentlicht am</td>
@@ -110,20 +119,10 @@ layout: main
         </tr>
         {% endif %}
         </table>
-        <small>{{ recdate }}</small>
     </aside>
 
     <aside class="col-md-4">
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- download details -->
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-1971845371325330"
-             data-ad-slot="6402089008"
-             data-ad-format="auto"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+        {% include google_ad_sidebar.html %}
     </aside>
 </div>
 
