@@ -1,8 +1,8 @@
 ---
 title: Euro Mod
 section: Downloads
-released: 2017-09-20 22:30:28 Z
-updated: 2017-09-20 22:30:28 Z
+released: 2011-12-03 22:30:28 Z
+updated: 2014-11-08 22:30:28 Z
 copyright: 'cc-by-nc'
 ams: false
 zip: false

@@ -21,11 +21,11 @@ layout: default
 
     <div class="row">
 
-    {% assign downloads = site.downloads | where:"layout","download" | where:"homepage","true" %}
-    {% for record in downloads limit:3 %}
+    {% assign downloads = site.downloads | where:"layout","download" | where:"homepage","true" | sort: 'updated','first' %}
+    {% for record in downloads reversed limit:3 %}
         <div class="col-md-4">
             {% if record.image_big %}
-            {% if record.website!="1" %}
+            {% if record.website %}
                          <a href="{{ record.link }}">
                     {% else %}
                         <a href="{{ record.url }}">

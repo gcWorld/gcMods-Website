@@ -48,7 +48,7 @@ layout: main
                 {% if page.exe %}
                     <a class="btn btn-default btn-lg btn-success btn-block" role="button" href="{{ page.exe }}">Download<br><small>.exe {{page.version}}</small></a>
                 {% endif %}
-                    {% if record.url != "" %}
+                    {% if page.zip-alt %}
                         <a href="{{ page.zip-alt }}">Alternativ als .zip</a>
                     {% endif %}
                 {% if page.zip %}
@@ -60,6 +60,10 @@ layout: main
 
                 {% if page.beta %}
                     <a id="tooltip" data-toggle="tooltip" title="Beta-Versionen wurden in der Regel auf ihre Funktion getestet. Es wird aber trotzdem dringend empfohlen ein Backup anzulegen!" class="btn btn-default btn-lg btn-warning btn-block" role="button" href="{{ page.beta }}">Beta Download<br><small class="white">{{ page.beta-format }} {{page.beta-version}}</small></a>
+                {% endif %}
+
+                {% if page.android %}
+                    <a id="tooltip" data-toggle="tooltip" title="Android Apps werden über den Google Play Store zur Verfügung gestellt." class="btn btn-default btn-lg btn-success btn-block" role="button" href="{{page.android}}">Android Download<br><small>.apk {{page.beta-version}}</small></a>
                 {% endif %}
             {% endif %}
         </div>
@@ -77,9 +81,9 @@ layout: main
             <td>Lizenz</td>
             {% if page.copyright == '2017' %}
                 <td>&copy; 2017</td>
-            {% elsif page.copyright == 'copy-2014' %}
-                <td>&copy; 2014</td>
-            {% elsif page.copyright == 'copy-2015' %}
+            {% elsif page.copyright == '2013' %}
+                <td>&copy; 2013</td>
+            {% elsif page.copyright == '2015' %}
                 <td>&copy; 2015</td>
             {% elsif page.copyright == 'cc-by-nc' %}
                 <td><a href="http://creativecommons.org/licenses/by-nc/3.0/deed.de"><img src="{{"/assets/images/copyright/by-nc.png"}}" alt="Creative Commons by-nc" height="15" width="80"></a></td>
@@ -103,7 +107,7 @@ layout: main
         </tr>
         {% if page.link_forum %}
         <tr>
-            <td colspan="2"><a href="{{ record.link_forum }}">Beitrag im off. OMSI Forum</a></td>
+            <td colspan="2"><a href="{{ page.link_forum }}">Beitrag im off. OMSI Forum</a></td>
         </tr>
         {% endif %}
         {% if page.link_bugtracker %}
