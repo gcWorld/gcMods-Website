@@ -69,7 +69,7 @@ layout: main
             <td>Version</td>
             <td>{{ page.version }}
                 {% if page.updated %}
-                    <small>({{ page.updated | date_to_long_string }})</small>
+                    <small>({{ page.updated | date: "%e. %B %Y" }})</small>
                 {% endif %}
             </td>
         </tr>
@@ -95,7 +95,7 @@ layout: main
         </tr>
         <tr>
             <td>Veröffentlicht am</td>
-            <td>{{ page.released | date_to_long_string }}</td>
+            <td>{{ page.released | date: "%e. %B %Y" }}</td>
         </tr>
         <tr>
             <td>Author</td>
