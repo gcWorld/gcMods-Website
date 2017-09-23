@@ -9,7 +9,7 @@ zip: https://github.com/gcWorld/Haltebucht/releases/download/v1.1/haltebucht_1.1
 zip-alt:
 exe:
 android: false
-homepage: true
+homepage: false
 image_big: halte_gross.jpg
 version: 1.1
 omsi_version: 1

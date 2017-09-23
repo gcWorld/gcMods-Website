@@ -8,7 +8,7 @@ layout: main
 
     {{ content }}
 
-    {% assign downloads = site.downloads | where:"layout","download" | sort: 'updated','first' %}
+    {% assign downloads = site.downloads | where:"layout","download" | sort: 'updated','last' %}
       {% for post in downloads reversed %}
       {% if post.website %}
           <a href="{{ post.link }}" class="dl_a">

@@ -25,16 +25,16 @@ layout: default
     {% for record in downloads reversed limit:3 %}
         <div class="col-md-4">
             {% if record.image_big %}
-            {% if record.website %}
-                         <a href="{{ record.link }}">
-                    {% else %}
-                        <a href="{{ record.url }}">
-                    {% endif %}
-            <img class="img-responsive" src="{{"/assets/images/downloads/thumbs/home/"}}{{ record.image_big }}" alt="{{ record.title }}"></a>
+                {% if record.website %}
+                    <a href="{{ record.link }}">
+                {% else %}
+                    <a href="{{ record.url }}">
+                {% endif %}
+                <img class="img-responsive" src="{{"/assets/images/downloads/thumbs/home/"}}{{ record.image_big }}" alt="{{ record.title }}"></a>
             {% else %}
-    <a href="{{ record.link }}">
-                <img class="img-responsive" data-src="holder.js/350x150/text:Kein Bild" alt="{{ record.title }}">
-            </a>
+              <a href="{{ record.link }}">
+                  <img class="img-responsive" data-src="holder.js/350x150/text:Kein Bild" alt="{{ record.title }}">
+              </a>
             {% endif %}
             {% if record.wip %}
                 <div class="ribbon-wrapper-green"><div class="ribbon-green">WIP</div></div>
@@ -80,21 +80,13 @@ layout: default
 
             {% if record.image!="" %}
 
-                <a href="{{ record.link }}"><img class="img-responsive" src="{{ record.image }}" alt="{{ record.title }}"></a>
+                <a href="{{ record.link }}"><img class="img-responsive" src="{{"/assets/images/downloads/thumbs/home/"}}{{ record.image }}" alt="{{ record.title }}"></a>
 
             {% endif %}
 
 
+            <p>{{ record.excerpt }}</p>
 
-            {% if record.body!="" %}
-
-            <p>{{ record.body }}</p>
-
-            {% else %}
-
-            <p>{{ record.teaser }}</p>
-
-            {% endif %}
 
             <a class="btn btn-default pull-right" href="/blog" role="button">Zum Blog &raquo;</a>
 

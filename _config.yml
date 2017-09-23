@@ -5,6 +5,7 @@ collections:
   downloads:
     title: Downloads
     output: true
+    sort: updated
   posts:
     title: Posts
     output: true

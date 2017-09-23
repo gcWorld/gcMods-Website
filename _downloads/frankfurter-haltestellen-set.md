@@ -9,7 +9,7 @@ zip: https://github.com/gcWorld/Frankfurter-Haltestellen-Set/releases/download/v
 zip-alt:
 exe:
 android: false
-homepage: true
+homepage: false
 image_big: haltestelle_1.png
 version: 1.0
 omsi_version: 1

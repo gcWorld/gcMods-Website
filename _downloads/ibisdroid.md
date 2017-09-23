@@ -11,7 +11,7 @@ zip: false
 zip-alt:
 exe:
 android: true
-homepage: true
+homepage: false
 image_big: n5-ibisdroid.png
 version: 1.1
 omsi_version: 1

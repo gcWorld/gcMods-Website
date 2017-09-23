@@ -24,6 +24,8 @@ beta-version: 1.2.0
 introduction: IBIScontrol für Android ermöglicht die Steuerung vom IBIS, der Kasse sowie dem Ticketdrucker in der Omnibussimulation OMSI 2 von Aerosoft mittels Smartphone oder Tablet.
 
 image_list:
+- filename: ibiscontrol-header.png
+  title:
 - filename: ibiscontrol_1.png
   title:
 - filename: ibiscontrol_2.png
