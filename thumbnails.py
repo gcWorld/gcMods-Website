@@ -8,7 +8,7 @@ def thumbnail(image,thumbpath,height,width):
         (height, width),
         Image.ANTIALIAS
     )
-    thumb.save(thumbpath+image)
+    thumb.save(thumbpath+image,optimize=True,quality=85)
 
 import shutil
 shutil.rmtree("assets/images/downloads/thumbs/*.jpg", ignore_errors=True)
