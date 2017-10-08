@@ -36,6 +36,8 @@ section: Kontakt
   {% endif %}
 </ul>
 
+<a class="green" href="/impressum">Impressum</a>
+
 
 </div>
 </div>
