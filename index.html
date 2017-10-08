@@ -74,11 +74,11 @@ layout: default
 
             <h2 class="blog-post-title">{{ record.title }}</h2>
 
+  {% assign date_format = site.minima.date_format | default: "%e. %B %Y" %}
 
+            <p class="blog-post-meta">Geschrieben von {{ record.author }} am {{ record.date | date: date_format }}</p>
 
-            <p class="blog-post-meta">Geschrieben von {{ record.author }} am {{ post.date | date: date_format }}</p>
-
-            {% if record.image!="" %}
+            {% if record.image %}
 
                 <a href="{{ record.link }}"><img class="img-responsive" src="{{"/assets/images/downloads/thumbs/home/"}}{{ record.image }}" alt="{{ record.title }}"></a>
 

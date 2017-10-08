@@ -17,6 +17,8 @@ author: seeadler
 link_forum:
 wip:
 
+comments: true
+
 beta:
 beta-format: zip
 beta-version: 1.3.2

@@ -17,6 +17,8 @@ author: seeadler
 link_forum: http://omnibussimulator.de/forum/index.php?page=Thread&threadID=31324
 wip:
 
+comments: true
+
 beta:
 beta-format: zip
 beta-version: 1.2.0

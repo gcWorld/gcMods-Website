@@ -8,7 +8,7 @@ website: false
 link: http://ibis-droid.gcmods.de/
 ams: false
 zip: false
-zip-alt:
+zip-alt: https://github.com/gcWorld/IBISdroid/releases/download/v1.0/IBISdroid.zip
 exe: https://github.com/gcWorld/IBISdroid/releases/download/v1.0/IBISdroid.1.0.exe
 android: http://play.google.com/store/apps/details?id=de.gcworld.ibisdroid
 homepage: false
@@ -130,10 +130,9 @@ Tickets können auf Knopfdruck in OMSI ausgedruckt werden. Sollte mal ein falsch
 
 <p>Die Anwendung besteht aus zwei Komponenten. Einmal der Anwendung für Android und dem Plugin für Windows.</p>
 <h3>Windows</h3>
-<p>Das Plugin wird über den OMSI Addon Manager installiert. (<a href="http://forum.aerosoft.com/index.php?/files/file/820-omsi-addon-manager/" target="_blank">Download hier</a>). Der Link zur .ams befindet sich rechts.</p>
+<p>Das .zip Archiv entpacken und den Inhalt des Ordners '/plugins' nach PfadzuOMSI/plugins kopieren.</p>
 <p>Eine weitere Konfiguration ist nicht notwendig. Beim nächsten Start von OMSI wird das Plugin automatisch gestartet.</p>
-<img src="https://dl.dropbox.com/s/28nsq1ojye50cxy/ibis_plugin.png" alt="" width="448" height="172" />
-<p>Bitte notiert euch hier die IP (im Beispiel 192.168.178.40). Diese wird später bei der Einrichtung der Android App benötigt.</p>
+<p>Bitte notiert euch hier die IP (zum) Beispiel 192.168.178.40). Diese wird später bei der Einrichtung der Android App benötigt.</p>
 <h3>Android</h3>
 <p>Der Download für die Android App befindet sich im Google Play Store (erreichbar über den grünen Button oben rechts).</p>
 <p>Anschließend kann die Anwendung installiert und gestartet werden. Nach dem ersten Start müssen zunächst einige Einstellungen vorgenommen werden.</p>
