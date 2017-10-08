@@ -20,9 +20,7 @@ defaults:
     layout: download
     menu: downloads
 email: info@gcmods.de
-description: 'Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for Google search
-  results) and in your feed.xml site description.
+description: 'gcWorld Modifications bietet kostenlose Erweiterungen für den Omnibussimulator OMSI 1 und OMSI 2.
 
 '
 baseurl: ''
