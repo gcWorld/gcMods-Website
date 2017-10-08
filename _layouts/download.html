@@ -22,7 +22,7 @@ layout: main
       {% if page.image_list %}
       <h3>Bilder</h3>
         {% for image in page.image_list %}
-            <a href="{{ "/assets/images/downloads/"}}{{ image.filename }}" data-fancybox="group" title="{{ image.title }}">
+            <a href="{{ "/assets/images/downloads/"}}{{ image.filename }}" data-fancybox="group" data-caption="{{ image.title }}">
                 <img src="{{ "/assets/images/downloads/thumbs/"}}{{ image.filename }}" class="img-thumbnail">
             </a>
         {% endfor %}
