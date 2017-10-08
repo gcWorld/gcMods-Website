@@ -82,6 +82,6 @@ Das Set enthält die folgenden Objekte:
 - Fehler in der Wintertextur der Wegweiser behoben
 - Texturen basierend auf 100% eigenen Bildern
 - Keine Fehlermeldung mehr wegen fehlender Textur
-- Ortschild für lange Namen
+- Ortsschild für lange Namen
 
 </div>
