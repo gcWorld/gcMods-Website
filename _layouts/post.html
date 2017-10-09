@@ -18,6 +18,9 @@ layout: main
   </header>
 
   <div class="post-content" itemprop="articleBody">
+    {% if page.image %}
+      <img class="img-responsive" src="{{"/assets/images/blog/"}}{{page.image}}" />
+    {% endif %}
     {{ content }}
   </div>
 
