@@ -31,7 +31,7 @@ github_username: gcWorld
 google_analytics: true
 google_ads: true
 markdown: kramdown
-plugins:4
+plugins:
 - jekyll-feed
 exclude:
 - themes
