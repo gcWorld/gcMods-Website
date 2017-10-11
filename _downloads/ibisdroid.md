@@ -8,9 +8,9 @@ copyright: '2013'
 website: false
 link: http://ibis-droid.gcmods.de/
 ams: false
-zip: false
-zip-alt: https://github.com/gcWorld/IBISdroid/releases/download/v1.0/IBISdroid.zip
-exe: https://github.com/gcWorld/IBISdroid/releases/download/v1.0/IBISdroid.1.0.exe
+zip: https://github.com/gcWorld/IBISdroid/releases/download/v1.0/IBISdroid.zip
+zip-alt:
+exe: 
 android: http://play.google.com/store/apps/details?id=de.gcworld.ibisdroid
 homepage: false
 image_big: ibis.png
