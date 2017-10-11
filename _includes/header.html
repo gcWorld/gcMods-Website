@@ -1,4 +1,5 @@
 <header>
+
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
 
@@ -16,18 +17,33 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li {% if page.url == "/" %} class="active" {% endif %} >
-                        <a href="/">Home</a>
-                    </li>
-                    <li {% if page.menu == "blog" %}class="active"{% endif %}>
-                        <a href="/blog">Blog</a>
-                    </li>
-                    <li {% if page.menu == "downloads" %}class="active"{% endif %}>
-                        <a href="/downloads">Downloads</a>
-                    </li>
-                    <li {% if page.url == "/kontakt.html" %}class="active"{% endif %}>
-                        <a href="/kontakt">Kontakt</a>
-                    </li>
+                  {% for menu in site.data.[page.lang].menu %}
+                    <li {% if page.url == menu[1].url %} class="active" {% endif %}><a href="{{ menu[1].url }}">{{ menu[1].name }}</a></li>
+                  {% endfor %}
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img id="imgNavSel" src="/assets/images/{{ page.lang }}.png" alt="..." class="icon-small"> <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                      {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+                      {% for post in posts %}
+                        <li>
+                          <a href="{{ post.url }}" class="{{ post.lang }} language"><img src="/assets/images/{{ post.lang }}.png" /> {{ post.lang }}</a>
+                        </li>
+                      {% endfor %}
+
+                      {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+                      {% for page in pages %}
+                        <li>
+                          <a href="{{ page.url }}" class="{{ page.lang }} language"><img src="/assets/images/{{ page.lang }}.png" /> {{ page.lang }}</a>
+                        </li>
+                      {% endfor %}
+                      {% assign dls=site.downloads | where:"ref", page.ref | sort: 'lang' %}
+                      {% for page in dls %}
+                        <li>
+                          <a href="{{ page.url }}" class="{{ page.lang }} language"><img src="/assets/images/{{ page.lang }}.png" /> {{ page.lang }}</a>
+                        </li>
+                      {% endfor %}
+        	          </ul>
+                </li>
                 </ul>
             </div>
         </div>

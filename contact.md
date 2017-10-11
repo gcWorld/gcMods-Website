@@ -1,14 +1,14 @@
 ---
-title: Kontakt
+title: Contact
 layout: main
-section: Kontakt
-lang: de
+section: Contact
+lang: en
 ref: contact
 ---
 <div class="row">
 <div class="col-md-8">
 
-<h2>Kontaktformular</h2>
+<h2>Get in touch</h2>
 
 <form name="contact" action="/thanks" netlify>
 <div class="form-group">
@@ -18,15 +18,15 @@ ref: contact
     <label>Email: <input class="form-control" type="email" name="email"></label>
     </div>
     <div class="form-group">
-    <label for="message">Nachricht:</label><textarea rows="8" class="form-control" name="message"></textarea>
+    <label for="message">Message:</label><textarea rows="8" class="form-control" name="message"></textarea>
     </div>
-    <button class="btn btn-primary" type="submit">Senden</button>
+    <button class="btn btn-primary" type="submit">Send</button>
 </form>
 
 </div>
 <div class="col-md-4">
 
-<h3>Kontaktmöglichkeiten</h3>
+<h3>Further contact options</h3>
 
 <ul>
 {% if site.github_username %}
@@ -38,7 +38,7 @@ ref: contact
   {% endif %}
 </ul>
 
-<a class="green" href="/impressum">Impressum</a>
+<a class="green" href="/impressum">Imprint</a>
 
 
 </div>

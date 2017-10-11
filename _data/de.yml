@@ -1,0 +1,28 @@
+string:
+  weiteres: "Weiteres"
+  more: "Mehr"
+  more_entries: "Weitere Einträge"
+  support: "Unterstützen"
+  home: "Home"
+  blog: "Blog"
+  downloads: "Downloads"
+  contact: "Kontakt"
+  writtenby: "Geschrieben von"
+  writtenon: "am"
+  installer: "Installationsprogramm"
+  installer_desc: "Mit diesem Symbol gekennzeichnete Downloads stehen auch als automatisches Installationsprogramm zur Verfügung. Dieses erleichtert die Installation sowie die Deinstallation."
+  oam_desc: "Um eine unkomplizierte Installation der Addons zu ermöglichen, wurde die Verwendung des OMSI Addon Managers empfohlen. Da dieser nicht mehr existiert werden die Downloads Stück für Stück auf Alternativen umgestellt."
+
+menu:
+  home:
+    name: "Home"
+    url: "/"
+  about:
+    name: "Blog"
+    url: "/blog.html"
+  download:
+    name: "Downloads"
+    url: "/downloads/index.html"
+  contact:
+    name: "Kontakt"
+    url: "/kontakt.html"

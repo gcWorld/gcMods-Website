@@ -6,10 +6,11 @@ layout: main
 
   {{ content }}
   {% assign date_format = site.minima.date_format | default: "%e. %B %Y" %}
-  {% for post in site.posts %}
+  {% assign posts = site.posts | where:"lang", page.lang %}
+  {% for post in posts %}
   <article>
     <h2><a href="{{post.url}}">{{post.title | escape}}</a></h2>
-    <span class="blog-post-meta">Geschrieben von {{post.author}} am {{post.date | date: date_format}}</span>
+    <span class="blog-post-meta">{{site.data[page.lang].string.writtenby}} {{post.author}} {{site.data[page.lang].string.writtenon}} {{post.date | date: date_format}}</span>
     {% if post.image %}
       <a href="{{post.url}}"><img class="img-responsive" src="{{"/assets/images/blog/"}}{{post.image}}" /></a>
     {% endif %}
@@ -21,7 +22,7 @@ layout: main
         {{ post.excerpt | strip_html }}
     {% endif %}
     </p>
-    <a href="{{ post.url }}" class="btn btn-default">Mehr &raquo;</a>
+    <a href="{{ post.url }}" class="btn btn-default">{{site.data[page.lang].string.more}} &raquo;</a>
   </article>
   <hr>
   {% endfor %}

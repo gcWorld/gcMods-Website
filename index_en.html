@@ -1,7 +1,7 @@
 ---
 title: Home
 layout: default
-lang: de
+lang: en
 ref: home
 ---
 
@@ -17,7 +17,7 @@ ref: home
 
     <div class="jumbotron">
 
-        {% include jumbotron.md %}
+        {% include jumbotron_en.md %}
 
     </div>
 
@@ -44,32 +44,32 @@ ref: home
             <h3>{{ record.title }} <small>{{ record.version}}</small></h3>
             <p>{{ record.introduction }}</p>
             {% if record.wip %}
-                <p><a class="btn btn-default" href="{{ record.link }}" role="button">Mehr Informationen &raquo;</a></p>
+                <p><a class="btn btn-default" href="{{ record.link }}" role="button">More information &raquo;</a></p>
             {% else %}
                 {% if record.website %}
-                    <p><a class="btn btn-default" href="{{ record.url }}" role="button">Zur Website &raquo;</a></p>
+                    <p><a class="btn btn-default" href="{{ record.url }}" role="button">To website &raquo;</a></p>
                 {% else %}
-                    <p><a class="btn btn-default" href="{{ record.url }}" role="button">Zum Download &raquo;</a></p>
+                    <p><a class="btn btn-default" href="{{ record.url }}" role="button">Download &raquo;</a></p>
                 {% endif %}
             {% endif %}
         </div>
         <hr class="visible-xs visible-sm">
     {% else %}
         <div class="col-md-4">
-            Keine Downloads
+            No Downloads
         </div>
     {% endfor %}
 
     </div>
 
-    <a class="btn btn-default pull-right" href="/downloads" role="button">Weitere Downloads &raquo;</a><br>
+    <a class="btn btn-default pull-right" href="/downloads" role="button">More Downloads &raquo;</a><br>
 
     <hr class="featurette-divider">
 
     <div class="row">
 
     <div class="col-md-8">
-{% assign posts = site.posts | where:"lang",page.lang %}
+      {% assign posts = site.posts | where:"lang",page.lang %}
     {% for record in posts limit:1 %}
 
         <div class="blog-post">
@@ -78,7 +78,7 @@ ref: home
 
   {% assign date_format = site.minima.date_format | default: "%e. %B %Y" %}
 
-            <p class="blog-post-meta">Geschrieben von {{ record.author }} am {{ record.date | date: date_format }}</p>
+            <p class="blog-post-meta">Written by {{ record.author }} on {{ record.date | date: date_format }}</p>
 
             {% if record.image %}
 
@@ -90,7 +90,7 @@ ref: home
             <p>{{ record.excerpt }}</p>
 
 
-            <a class="btn btn-default pull-right" href="/blog" role="button">Zum Blog &raquo;</a>
+            <a class="btn btn-default pull-right" href="/blog" role="button">To the Blog &raquo;</a>
 
         </div>
 
@@ -98,13 +98,13 @@ ref: home
 
     </div>
         <aside class="col-md-4 hidden-sm hidden-xs">
-            <h4>Weitere Einträge</h4>
+            <h4>More Entries</h4>
             <ul class="nav nav-pills nav-stacked">
                     {% for record in posts %}
                         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
                         <li><a href="{{ record.url }}">&raquo; {{ record.title }}</a></li>
                     {% else %}
-                        <li>Keine Blogeinträge</li>
+                        <li>No Entries</li>
                     {% endfor %}
                 </ul>
         </aside>

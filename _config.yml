@@ -38,12 +38,30 @@ exclude:
 - content
 disqus: gcmods
 
-t:
+m:
   de:
-    weiteres: "Weiteres"
-    more_entries: "Weitere Einträge"
-    support: "Unterstützen"
+    home:
+      name: "Home"
+      url: "/"
+    about:
+      name: "Blog"
+      url: "/blog"
+    download:
+      name: "Downloads"
+      url: "/downloads/"
+    contact:
+      name: "Kontakt"
+      url: "/kontakt"
   en:
-    weiteres: "More"
-    more_entries: "More Entries"
-    support: "Support me"
+    home:
+      name: "Home"
+      url: "/"
+    about:
+      name: "Blog"
+      url: "/blog_en"
+    download:
+      name: "Downloads"
+      url: "/downloads/"
+    contact:
+      name: "Contact"
+      url: "/contact"

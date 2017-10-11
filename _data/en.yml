@@ -1,0 +1,28 @@
+string:
+  weiteres: "More"
+  more: "More"
+  more_entries: "More Entries"
+  support: "Support me"
+  home: "Home"
+  blog: "Blog"
+  downloads: "Downloads"
+  contact: "Contact"
+  writtenby: "Written by"
+  writtenon: "on"
+  installer: "Installer"
+  installer_desc: "Downloads with this symbol are available as installer. This makes the installation process easier"
+  oam_desc: "To allow for an easy mod installation the OMSI Addon Manager used to be the recommended way of installing addons. Because this program is no longer available the existing and future addons will offer alternative ways to install them without a hassle."
+
+menu:
+  home:
+    name: "Home"
+    url: "/"
+  about:
+    name: "Blog"
+    url: "/blog_en.html"
+  download:
+    name: "Downloads"
+    url: "/downloads/en/index.html"
+  contact:
+    name: "Contact"
+    url: "/contact.html"

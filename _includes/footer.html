@@ -4,26 +4,18 @@
             <div class="col-sm-3">
                 <h4>Navigation</h4>
                 <ul class="nav nav-pills nav-stacked">
-                    <li {% if page.url == "/" %} class="active" {% endif %} >
-                        <a class="" href="/">Home</a>
-                    </li>
-                    <li{% if page.url == my_page.url %}class="active"{% endif %}>
-                        <a class="" href="/blog">Blog</a>
-                    </li>
-                    <li{% if page.url == my_page.url %}class="active"{% endif %}>
-                        <a class="" href="/downloads/">Downloads</a>
-                    </li>
-                    <li{% if page.url == my_page.url %}class="active"{% endif %}>
-                        <a class="" href="/kontakt">Kontakt</a>
-                    </li>
+                  {% for menu in site.data.[page.lang].menu %}
+                    <li {% if page.url == menu[1].url %} class="active" {% endif %}><a href="{{ menu[1].url }}">{{ menu[1].name }}</a></li>
+                  {% endfor %}
                 </ul>
             </div>
 
             <div class="col-sm-3">
                 <h4>Blog</h4>
                 <ul class="nav nav-pills nav-stacked">
-                    {% if site.posts %}
-                        {% for post in site.posts %}
+                        {% assign posts = site.posts | where:"lang",page.lang %}
+                    {% if posts %}
+                        {% for post in posts %}
                                     <li><a href="{{ post.url }}">&raquo; {{ post.title }}</a></li>
                         {% endfor %}
                     {% else %}
@@ -36,7 +28,7 @@
                 <h4>Downloads</h4>
                 <ul class="nav nav-pills nav-stacked">
                     {% if site.downloads %}
-                        {% assign downloads = site.downloads | where:"layout","download" | sort: 'updated','first' %}
+                        {% assign downloads = site.downloads | where:"layout","download" | where:"lang",page.lang | sort: 'updated','first' %}
                         {% for post in downloads reversed limit:4 %}
                             {% if post.website!="true" %}
                                 <li><a href="{{ post.url }}">&raquo; {{ post.title }}</a></li>
