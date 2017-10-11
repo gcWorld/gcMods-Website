@@ -1,5 +1,6 @@
 ---
 title: IBISdroid
+lang: de
 section: Downloads
 released: 2013-12-03 22:30:28 Z
 updated: 2013-12-03 22:30:28 Z

@@ -2,6 +2,7 @@
 title: Kontakt
 layout: main
 section: Kontakt
+lang: de
 ---
 <div class="row">
 <div class="col-md-8">

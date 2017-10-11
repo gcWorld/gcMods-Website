@@ -1,5 +1,6 @@
 ---
 title: gcW Straßenobjekte
+lang: de
 section: Downloads
 released: 2012-01-02 22:30:28 Z
 updated: 2017-09-22 22:30:28 Z

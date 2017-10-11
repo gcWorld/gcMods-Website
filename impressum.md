@@ -3,6 +3,7 @@ title: Impressum
 layout: main
 section: Impressum
 comments: false
+lang: de
 ---
 <div class="row">
 <div class="col-md-8">
