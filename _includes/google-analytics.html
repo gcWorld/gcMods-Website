@@ -1,7 +1,7 @@
 <!-- Piwik -->
 <script type="text/javascript">
   var _paq = _paq || [];
-{% if page.404 %}
+{% if page.errorpage %}
     _paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);
  {% endif %}
   _paq.push(['trackPageView']);
