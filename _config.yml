@@ -37,3 +37,13 @@ exclude:
 - themes
 - content
 disqus: gcmods
+
+t:
+  de:
+    weiteres: "Weiteres"
+    more_entries: "Weitere Einträge"
+    support: "Unterstützen"
+  en:
+    weiteres: "More"
+    more_entriesö "More Entries"
+    support: "Support me"
