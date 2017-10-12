@@ -16,7 +16,7 @@ string:
 menu:
   home:
     name: "Home"
-    url: "/"
+    url: "/en"
   about:
     name: "Blog"
     url: "/blog_en.html"
