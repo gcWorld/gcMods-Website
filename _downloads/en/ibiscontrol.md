@@ -1,6 +1,6 @@
 ---
 title: IBIScontrol
-lang: de
+lang: en
 ref: ibiscontrol
 section: Downloads
 released: 2015-04-01 22:30:28 Z
@@ -25,7 +25,7 @@ beta:
 beta-format: zip
 beta-version: 1.2.0
 
-introduction: IBIScontrol für Android ermöglicht die Steuerung vom IBIS, der Kasse sowie dem Ticketdrucker in der Omnibussimulation OMSI 2 von Aerosoft mittels Smartphone oder Tablet.
+introduction: IBIScontrol for Android makes it possible to control IBIS, cash desk and ticket printer in OMSI 2 (by Aerosoft) on your smartphone or tablet.
 
 image_list:
 - filename: ibiscontrol-header.png
@@ -48,59 +48,55 @@ video_list:
 
 ---
 
-Funktionen:
+Features:
+-IBIS
+-Cashdesk
+-Ticketprinter
+-Dashboard with speed, door control, control for lights, temperature, next stop, stop request etc.
 
-- IBIS
-- Kasse
-- Ticketdrucker
-- Dashboard mit Geschwindigkeit, Türsteuerung, Lichtsteuerung, Temperatur, Haltestelle, Haltewunsch usw.
-- Rollbandsteuerung
+Supported maps:
+-All
 
-Unterstützte Karten:
-
-- Alle
-
-Unterstützte Busse:
-
-- Alle Standard OMSI 2 Busse
+Supported busses:
+- All default busses
 - O520 [(alterr)](http://www.omnibussimulator.de/forum/index.php?page=Thread&threadID=19798)
 - O530 [(alterr)](http://www.omnibussimulator.de/forum/index.php?page=Thread&threadID=19798)
 - O530 G [(alterr)](http://www.omnibussimulator.de/forum/index.php?page=Thread&threadID=19798)
 - Solaris Urbino 12/18 [(alterr)](http://www.omnibussimulator.de/forum/index.php?page=Thread&threadID=28280)
-- (Weitere sollten funktionieren, werden aber (noch) nicht offiziell unterstützt.)
+(Others should work but are not officially supported)
+[Request support for new busses here.](http://9cw.de/buswunsch)
 
-[Weiter Busse können hier vorgeschlagen werden.](http://9cw.de/buswunsch)
+Supported Currencies:
+-DM
+-Euro
 
-Unterstützte Währungen:
-
-- DM
-- Euro
+In case of trouble or questions, you can contact me via email.
+Errors can be reported at https://github.com/gcWorld/IBIScontrol-Bugs/issues
 
 <div class="bg bg-success" markdown="block">
 
-### Änderungen in 1.2.0
-- Unterstützung der Euro-Version vom NG272
-- Android 6 kompatibel
+### Changes in 1.2.0
+- Support for the euro version of the NG272
+- compatible with Android 6
 
 </div>
 
 <div class="bg bg-danger" markdown="block">
 
-### Vorraussetzungen
+### System Requirements
 
 #### Android
-- Mindestens Version 4.0.3
+- At least version 4.0.3
 
 #### Windows
 - .NET Framework 4.5
 
-Damit die Anwendung korrekt funktioniert wird ein Plugin für OMSI 2 benötigt. Dieses kann über den Link rechts oben heruntergeladen werden.
+To uses this app you also need a plugin for OMSI 2 which you can download via the "Download" button.
 
-### Bei Problemen
-Mögliche Ursachen:
-
-- Firewall blockiert das Plugin. Es muss eine Ausnahmeregel für die Datei node_id_gcw.exe im Ordner /OMSI 2/plugins/IBIScontrol_data/ hinzugefügt werden
-- Antivirus Programm
-- Ansonsten kann eine Neuinstallation von App und Plugin weiterhelfen (Das Plugin vorher entfernen)
+### In case of Problems
+Possible solutions:
+- A firewall blocks the connection. Please add an exception rule for the file node_id_gcw.exe in the folder /OMSI 2/plugins/IBIScontrol_data
+- Antivirus software may block the connection
+- Activate the function "Alternative Port (8080)" in the app settings and the plugin window.
 
 </div>
