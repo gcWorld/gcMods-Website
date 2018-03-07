@@ -20,6 +20,7 @@ ref: contact
     <div class="form-group">
     <label for="message">Nachricht:</label><textarea rows="8" class="form-control" name="message"></textarea>
     </div>
+    <div netlify-recaptcha></div>
     <button class="btn btn-primary" type="submit">Senden</button>
 </form>
 
