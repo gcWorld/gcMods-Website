@@ -11,16 +11,15 @@ ref: contact
 <h2>Get in touch</h2>
 
 <form name="contact" action="/thanks" netlify>
-<div class="form-group">
-    <label>Name: <input class="form-control" type="text" name="name"></label>   
+    <div class="form-group">
+        <label>Name: <input class="form-control" type="text" name="name"></label>   
     </div>
     <div class="form-group">
-    <label>Email: <input class="form-control" type="email" name="email"></label>
+        <label>Email: <input class="form-control" type="email" name="email"></label>
     </div>
     <div class="form-group">
-    <label for="message">Message:</label><textarea rows="8" class="form-control" name="message"></textarea>
+        <label for="message">Message:</label><textarea rows="8" class="form-control" name="message"></textarea>
     </div>
-    <div netlify-recaptcha></div>
     <button class="btn btn-primary" type="submit">Send</button>
 </form>
 
