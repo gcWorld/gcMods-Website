@@ -30,14 +30,6 @@ Rappstr. 32b<br />
         </tr>
         <tr>
             <td>
-            <p>Telefax:</p>
-            </td>
-            <td>
-            <p>0541/7120814</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
             <p>E-Mail:</p>
             </td>
             <td>
