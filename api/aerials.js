@@ -42,7 +42,7 @@ exports.handler = function(event, context, callback) {
         host : 'dev.virtualearth.net', // here only the domain name
         // (no http/https !)
         port : 80,
-        path : '/REST/V1/"+"Imagery/Metadata/" + type + "?mapVersion=v1&output=json&key=" + apicode', // the rest of the url with parameters if needed
+        path : "/REST/V1/"+"Imagery/Metadata/" + type + "?mapVersion=v1&output=json&key=" + apicode, // the rest of the url with parameters if needed
         method : 'GET' // do GET
     };
 
