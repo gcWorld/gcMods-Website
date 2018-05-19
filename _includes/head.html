@@ -3,8 +3,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title | escape }}{% endif %} | {{ site.title | escape }}</title>
-  <meta name="theme-color" content="#222">
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=eE5NE4RwMO">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=eE5NE4RwMO">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=eE5NE4RwMO">
+  <link rel="manifest" href="/site.webmanifest?v=eE5NE4RwMO">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg?v=eE5NE4RwMO" color="#6cd55b">
+  <link rel="shortcut icon" href="/favicon.ico?v=eE5NE4RwMO">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="theme-color" content="#1e1e1e">
 
   <link rel="stylesheet" href="{{ "/assets/css/bootstrap.min.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/css/jquery.bxslider.css" | relative_url }}">
