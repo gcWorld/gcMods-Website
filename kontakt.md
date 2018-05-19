@@ -30,7 +30,7 @@ ref: contact
 
 <ul>
 <li><a href="https://discord.gg/tJNMaQG" aria-label="Discord">
-    <i class="fa fa-discord fa-2x" aria-hidden="true"></i> Get in touch on Discord.
+    <i class="fab fa-discord fa-2x" aria-hidden="true"></i> Discord
 </a></li>
 
 {% if site.github_username %}

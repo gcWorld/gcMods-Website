@@ -11,7 +11,7 @@ ref: contact
 <h2>Get in touch</h2>
 
 <a href="https://discord.gg/tJNMaQG" aria-label="Discord">
-    <i class="fa fa-discord fa-2x" aria-hidden="true"></i> Get in touch on Discord.
+    <i class="fab fa-discord fa-2x" aria-hidden="true"></i> Get in touch on Discord.
 </a>
 
 <form name="contact" action="/thanks" netlify>
