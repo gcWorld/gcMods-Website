@@ -1,5 +1,7 @@
+"use strict";
+const https = require('https');
+
 exports.handler = function(event, context, callback) {
-  var https = require('https');
   var statCode = 500;
   var errMsg = "Not provided";
   if (typeof event["queryStringParameters"]["service"] !== 'undefined') {
@@ -26,82 +28,73 @@ exports.handler = function(event, context, callback) {
         errMsg = "No APIcode provided";
       }
     }
-    if (typeof event["queryStringParameters"]["type"] !== 'undefined') {
-      var type;
-      type = event["queryStringParameters"]["type"];
-    } else {
-        type = "Aerial";
-    }
-    var api;
+    if(statCode != 403) {
+      if (typeof event["queryStringParameters"]["type"] !== 'undefined') {
+        var type;
+        type = event["queryStringParameters"]["type"];
+      } else {
+          type = "Aerial";
+      }
+      var api;
 
-    var response
+      var response;
+      console.info('Do the GET call');
 
-    /**
-     * HOW TO Make an HTTP Call - GET
-     */
-    // options for GET
-    var optionsget = {
-        host : 'dev.virtualearth.net', // here only the domain name
-        // (no http/https !)
-        port : 80,
-        path : "/REST/V1/"+"Imagery/Metadata/" + type + "?mapVersion=v1&output=json&key=" + apicode, // the rest of the url with parameters if needed
-        method : 'GET' // do GET
-    };
-
-    console.info('Options prepared:');
-    console.info(optionsget);
-    console.info('Do the GET call');
-
-    // do the GET request
-    var reqGet = https.get(optionsget, function(res) {
-        console.log("statusCode: ", res.statusCode);
-        // uncomment it for header details
-    //  console.log("headers: ", res.headers);
+      // do the GET request
+      var reqGet = https.get("https://dev.virtualearth.net/REST/V1/"+"Imagery/Metadata/" + type + "?mapVersion=v1&output=json&key=" + apicode, function(res) {
+          console.log("statusCode: ", res.statusCode);
+          // uncomment it for header details
+      //  console.log("headers: ", res.headers);
 
 
-        res.on('data', function(d) {
-            console.info('GET result:\n');
-            errMsg += d;
-            console.info('\n\nCall completed');
-        });
-        res.on('close', function() {
-          console.error("Error: "+statCode+" Err: "+errMsg);
-          callback(null, {
-            statusCode: statCode,
-            body: errMsg
+          res.on('data', function(d) {
+              console.info('GET result:');
+              response = d;
           });
-        });
+          res.on("end", () => {
+              console.info("GET Done: "+response);
+              response = JSON.parse(response);
+              statCode = response.statusCode;
+              if (response.statusCode == 200) {
+                  var bing_url;
+                  bing_url = response.resourceSets[0].resources[0].imageUrl;
+                  var subdomain;
+                  subdomain = response.resourceSets[0].resources[0].imageUrlSubdomains;
+                  //var_dump($subdomain);
+                  var subdomain_nr;
+                  subdomain_nr = Math.floor((Math.random() * subdomain.length));
+                  subdomain = subdomain[subdomain_nr];
+                  //echo $bing_url;
+                  var bing_url2;
+                  bing_url2 = bing_url.replace("{subdomain}", subdomain);
+                  bing_url = bing_url2.replace("{quadkey}", toQuad(event["queryStringParameters"]["x"], event["queryStringParameters"]["y"], event["queryStringParameters"]["z"]));
+                  //echo $bing_url;
+                  base_url = bing_url;
+                  console.info(base_url);
 
-    });
+                  console.info("Success: "+statCode+" Url: "+base_url);
+                  callback(null, {
+                    statusCode: statCode,
+                    body: base_url,
+                    header: {
+                      "location": base_url
+                    }
+                    });
+              } else {
+                  console.log("Error: " + res.statusCode + " " + response["errorDetails"][0]);
+                  console.error("Error: "+statCode+" Err: "+errMsg);
+                  callback(null, {
+                    statusCode: statCode,
+                    body: errMsg
+                  });
+              }
+          });
 
-    reqGet.end();
-    reqGet.on('error', function(e) {
-        errMsg = e;
-    });
-
-
-    if (false) {//response.http_code == 200) {
-        //$resp = array();
-        var response;
-        response = result.decode_response();
-        //$resp = json_decode($response);
-        //$response=$result->decode_response();
-        var bing_url;
-        bing_url = response.resourceSets[0].resources[0].imageUrl;
-        var subdomain;
-        subdomain = response.resourceSets[0].resources[0].imageUrlSubdomains;
-        //var_dump($subdomain);
-        var subdomain_nr;
-        subdomain_nr = rand(0, count(subdomain) - 1);
-        subdomain = subdomain[subdomain_nr];
-        //echo $bing_url;
-        var bing_url2;
-        bing_url2 = bing_url.replace("{subdomain}", subdomain);
-        bing_url = bing_url2.replace("{quadkey}", toQuad(event["queryStringParameters"]["x"], event["queryStringParameters"]["y"], event["queryStringParameters"]["z"]));
-        //echo $bing_url;
-        base_url = bing_url;
-    } else {
-        //console.log("Error: " + result.info.http_code + " " + result["errorDetails"][0]);
+      });
+      reqGet.on('error', function(e) {
+          errMsg = e;
+      });
+      reqGet.end();
     }
 
 
