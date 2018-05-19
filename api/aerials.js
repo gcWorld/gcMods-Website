@@ -177,6 +177,7 @@ exports.handler = function(event, context, callback) {
           console.info("Input x:"+x+" y:"+y+" z:"+z);
             var n;
             n = Math.pow(2, z);
+            console.info("n:"+n);
             var lon_deg;
             lon_deg = (x + 0.5) / n * 360.0 - 180.0;
             var lat_deg;
@@ -188,7 +189,6 @@ exports.handler = function(event, context, callback) {
         function toLatLongMapbox(x, y, z) {
             var n;
             n = Math.pow(2, z);
-            console.info("n:"+n);
             var lon_deg;
             lon_deg = (x + 0.5) / n * 360.0 - 180.0;
             var lat_deg;
