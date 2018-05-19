@@ -92,7 +92,7 @@ exports.handler = function(event, context, callback) {
         //echo $bing_url;
         base_url = bing_url;
     } else {
-        console.log("Error: " + result.info.http_code + " " + result["errorDetails"][0]);
+        //console.log("Error: " + result.info.http_code + " " + result["errorDetails"][0]);
     }
 
 
