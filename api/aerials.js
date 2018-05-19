@@ -38,21 +38,21 @@ exports.handler = function(event, context, callback) {
       var api;
 
       var response;
-      console.info('Do the GET call');
+      //console.info('Do the GET call');
 
       // do the GET request
       var reqGet = https.get("https://dev.virtualearth.net/REST/V1/"+"Imagery/Metadata/" + type + "?mapVersion=v1&output=json&key=" + apicode, function(res) {
-          console.log("statusCode: ", res.statusCode);
+          //console.log("statusCode: ", res.statusCode);
           // uncomment it for header details
       //  console.log("headers: ", res.headers);
 
 
           res.on('data', function(d) {
-              console.info('GET result:');
+              //console.info('GET result:');
               response = d;
           });
           res.on("end", () => {
-              console.info("GET Done: "+response);
+              //console.info("GET Done: "+response);
               response = JSON.parse(response);
               statCode = response.statusCode;
               if (response.statusCode == 200) {
@@ -70,7 +70,7 @@ exports.handler = function(event, context, callback) {
                   bing_url = bing_url2.replace("{quadkey}", toQuad(event["queryStringParameters"]["x"], event["queryStringParameters"]["y"], event["queryStringParameters"]["z"]));
                   //echo $bing_url;
                   base_url = bing_url;
-                  console.info(base_url);
+                  //console.info(base_url);
 
                   console.info("Success: "+statCode+" Url: "+base_url);
                   callback(null, {
