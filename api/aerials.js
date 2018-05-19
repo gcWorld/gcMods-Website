@@ -76,7 +76,7 @@ exports.handler = function(event, context, callback) {
                   callback(null, {
                     statusCode: statCode,
                     body: base_url,
-                    header: {
+                    headers: {
                       "location": base_url
                     }
                     });
