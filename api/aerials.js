@@ -174,14 +174,12 @@ exports.handler = function(event, context, callback) {
             return quadKey;
         }
         function toLatLong(x, y, z) {
-          console.info("Input x:"+x+" y:"+y+" z:"+z);
             var n;
-            n = Math.pow(2, z);
-            console.info("n:"+n);
+            n = Math.pow(2, parseInt(z));
             var lon_deg;
-            lon_deg = (x + 0.5) / n * 360.0 - 180.0;
+            lon_deg = (parseInt(x) + 0.5) / n * 360.0 - 180.0;
             var lat_deg;
-            lat_deg = (Math.atan(Math.sinh(Math.PI * (1 - 2 * (y + 0.5) / n))))* 180 / Math.PI;
+            lat_deg = (Math.atan(Math.sinh(Math.PI * (1 - 2 * (parseInt(y) + 0.5) / n))))* 180 / Math.PI;
             var return_string;
             return_string = lat_deg + "," + lon_deg;
             return return_string;
