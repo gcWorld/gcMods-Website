@@ -20,7 +20,7 @@ exports.handler = function(event, context, callback) {
       apicode = "";
       if(typeof event["queryStringParameters"]["jonas"] !== 'undefined') {
         if(event["queryStringParameters"]["jonas"]=="itsme") {
-          apicode = "AuYJlEX2HugxuIHOWhUlDDb14-fhBuNzBCmBrI9Q2MvFHQ4LoR_drvUuyC8MN7Zi";
+          apicode = process.env.BING_API;
         }
       }
       else {
