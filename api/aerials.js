@@ -131,8 +131,8 @@ exports.handler = function(event, context, callback) {
         format = "png";
     }
     var base_url;
-    base_url = "http://maps.googleapis.com/maps/api/staticmap?center=" + toLatLong(event["queryStringParameters"]["x"], event["queryStringParameters"]["y"], event["queryStringParameters"]["z"]) + "&maptype=" + type + "&zoom=" +
-        event["queryStringParameters"]["z"] + "&size=" + res + "&scale=" + scale + "&sensor=false&format=" + format + "&key=" + apicode + "";
+    base_url = "http://maps.googleapis.com/maps/api/staticmap?center=" + toLatLong(event["queryStringParameters"]["x"], event["queryStringParameters"]["y"], event["queryStringParameters"]["z"]) + "&maptype=" + type + "&zoom=" + event["queryStringParameters"]["z"] + "&size=" + res + "&scale=" + scale + "&sensor=false&format=" + format + "&key=" + apicode + "";
+    statCode = 200;
 
 } else if (provider == "yandex") {
     if (typeof event["queryStringParameters"]["type"] !== 'undefined') {
@@ -200,8 +200,8 @@ exports.handler = function(event, context, callback) {
           if(statCode == 200) {
             console.info("Success: "+statCode+" Url: "+base_url);
             callback(null, {
-              statusCode: statCode,
-              body: base_url
+              statusCode: 307,
+              headers: { "location": base_url }
               });
           } else {
             console.error("Error: "+statCode+" Err: "+errMsg);
