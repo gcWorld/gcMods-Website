@@ -1,5 +1,7 @@
 exports.handler = function(event, context, callback) {
+  var https = require('https');
   var statCode = 500;
+  var errMsg = "Not provided";
   if (typeof event["queryStringParameters"]["service"] !== 'undefined') {
     var provider;
     provider = event["queryStringParameters"]["service"];
@@ -31,7 +33,7 @@ exports.handler = function(event, context, callback) {
         type = "Aerial";
     }
     var api;
-    var https = require('https');
+
     var response
 
     /**
