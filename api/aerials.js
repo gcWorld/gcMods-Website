@@ -53,7 +53,7 @@ exports.handler = function(event, context, callback) {
     console.info('Do the GET call');
 
     // do the GET request
-    var reqGet = https.request(optionsget, function(res) {
+    var reqGet = https.get(optionsget, function(res) {
         console.log("statusCode: ", res.statusCode);
         // uncomment it for header details
     //  console.log("headers: ", res.headers);
@@ -61,8 +61,15 @@ exports.handler = function(event, context, callback) {
 
         res.on('data', function(d) {
             console.info('GET result:\n');
-            errMsg = d;
+            errMsg += d;
             console.info('\n\nCall completed');
+        });
+        res.on('close', function() {
+          console.error("Error: "+statCode+" Err: "+errMsg);
+          callback(null, {
+            statusCode: statCode,
+            body: errMsg
+          });
         });
 
     });
@@ -196,17 +203,19 @@ exports.handler = function(event, context, callback) {
             return return_string;
         }
 
-      if(statCode == 200) {
-        console.info("Success: "+statCode+" Url: "+base_url);
-        callback(null, {
-          statusCode: statCode,
-          body: base_url
-          });
-      } else {
-        console.error("Error: "+statCode+" Err: "+errMsg);
-        callback(null, {
-          statusCode: statCode,
-          body: errMsg
-        });
-      }
+        if(provider != "bing") {
+          if(statCode == 200) {
+            console.info("Success: "+statCode+" Url: "+base_url);
+            callback(null, {
+              statusCode: statCode,
+              body: base_url
+              });
+          } else {
+            console.error("Error: "+statCode+" Err: "+errMsg);
+            callback(null, {
+              statusCode: statCode,
+              body: errMsg
+            });
+          }
+        }
 }
