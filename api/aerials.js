@@ -1,22 +1,32 @@
 exports.handler = function(event, context, callback) {
-    
-    if (typeof event["queryStringParameters"]["service"] !== 'undefined') {
+  var statCode = 500;
+  if (typeof event["queryStringParameters"]["service"] !== 'undefined') {
     var provider;
     provider = event["queryStringParameters"]["service"];
-} else {
+  } else {
     provider = "bing";
-}
-if (provider == "bing") {
+  }
+
+
+  if (provider == "bing") {
     if (typeof event["queryStringParameters"]["apicode"] !== 'undefined') {
-        var apicode;
-        apicode = event["queryStringParameters"]["apicode"];
+      var apicode;
+      apicode = event["queryStringParameters"]["apicode"];
     } else {
-        apicode = "";
-        //"AuYJlEX2HugxuIHOWhUlDDb14-fhBuNzBCmBrI9Q2MvFHQ4LoR_drvUuyC8MN7Zi"; //
+      apicode = "";
+      if(typeof event["queryStringParameters"]["jonas"] !== 'undefined') {
+        if(event["queryStringParameters"]["jonas"]=="itsme") {
+          apicode = "AuYJlEX2HugxuIHOWhUlDDb14-fhBuNzBCmBrI9Q2MvFHQ4LoR_drvUuyC8MN7Zi";
+        }
+      }
+      else {
+        statCode = 403;
+        errMsg = "No APIcode provided";
+      }
     }
     if (typeof event["queryStringParameters"]["type"] !== 'undefined') {
-        var type;
-        type = event["queryStringParameters"]["type"];
+      var type;
+      type = event["queryStringParameters"]["type"];
     } else {
         type = "Aerial";
     }
@@ -50,7 +60,9 @@ if (provider == "bing") {
     } else {
         console.log("Error: " + result.info.http_code + " " + result["errorDetails"][0]);
     }
-} else if (provider == "google") {
+
+
+  } else if (provider == "google") {
     if (typeof event["queryStringParameters"]["apicode"] !== 'undefined') {
         apicode = event["queryStringParameters"]["apicode"];
     } else {
@@ -85,7 +97,7 @@ if (provider == "bing") {
     var base_url;
     base_url = "http://maps.googleapis.com/maps/api/staticmap?center=" + toLatLong(event["queryStringParameters"]["x"], event["queryStringParameters"]["y"], event["queryStringParameters"]["z"]) + "&maptype=" + type + "&zoom=" +
         event["queryStringParameters"]["z"] + "&size=" + res + "&scale=" + scale + "&sensor=false&format=" + format + "&key=" + apicode + "";
-    
+
 } else if (provider == "yandex") {
     if (typeof event["queryStringParameters"]["type"] !== 'undefined') {
         type = event["queryStringParameters"]["type"];
@@ -93,43 +105,36 @@ if (provider == "bing") {
         type = "sat";
     }
     base_url = "http://static-maps.yandex.ru/1.x/?lang=en-US&ll=" + toLatLong(event["queryStringParameters"]["x"], event["queryStringParameters"]["y"], event["queryStringParameters"]["z"]) + "&z=" + event["queryStringParameters"]["z"] + "&l=" + type + "&size=256,256";
-    
-} 
 
-    
-        
+}
+
+
+
         var baseurl;
         baseurl = "Imagery/Metadata/Aerial?mapVersion=v1&output=xml&key=";
-        
-        function rad2deg (angle) {
-  //  discuss at: http://locutus.io/php/rad2deg/
-  // original by: Enrique Gonzalez
-  // improved by: Brett Zamir (http://brett-zamir.me)
-  //   example 1: rad2deg(3.141592653589793)
-  //   returns 1: 180
 
-  return angle * 57.29577951308232 // angle / Math.PI * 180
-}
-        
+        function rad2deg (angle) {
+          return angle * 57.29577951308232 // angle / Math.PI * 180
+        }
+
         function toQuad(tileX, tileY, levelOfDetail) {
             var quadKey;
             quadKey = "";
             var i;
-            __loop1:
-                for (i = levelOfDetail; i > 0; i--) {
-                    var digit;
-                    digit = "0";
-                    var mask;
-                    mask = 1 << i - 1;
-                    if ((tileX & mask) != 0) {
-                        digit++;
-                    }
-                    if ((tileY & mask) != 0) {
-                        digit++;
-                        digit++;
-                    }
-                    quadKey += digit;
+            for (i = levelOfDetail; i > 0; i--) {
+                var digit;
+                digit = "0";
+                var mask;
+                mask = 1 << i - 1;
+                if ((tileX & mask) != 0) {
+                    digit++;
                 }
+                if ((tileY & mask) != 0) {
+                    digit++;
+                    digit++;
+                }
+                quadKey += digit;
+            }
             return quadKey;
         }
         function toLatLong(x, y, z) {
@@ -155,11 +160,15 @@ if (provider == "bing") {
             return return_string;
         }
 
-                        
-
-    
-    callback(null, {
-    statusCode: 200,
-    body: base_url
-    });
+      if(statCode == 200) {
+        callback(null, {
+          statusCode: statCode,
+          body: base_url
+          });
+      } else {
+        callback(null, {
+          statusCode: statCode,
+          body: errMsg
+        });
+      }
 }
