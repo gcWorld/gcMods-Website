@@ -31,13 +31,13 @@ exports.handler = function(event, context, callback) {
         type = "Aerial";
     }
     var api;
-    api = new RestClient({
-        "base_url": "http://dev.virtualearth.net/REST/V1/"
-    });
-    var result;
-    result = api.get("Imagery/Metadata/" + type + "?mapVersion=v1&output=json&key=" + apicode + "");
-    // GET http://api.twitter.com/1.1/search/tweets.json?q=#php
-    if (result.info.http_code == 200) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "http://dev.virtualearth.net/REST/V1/"+"Imagery/Metadata/" + type + "?mapVersion=v1&output=json&key=" + apicode, true);
+    xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.send();
+    var response = JSON.parse(xhttp.responseText);
+    errMsg = response;
+    if (false) {//response.http_code == 200) {
         //$resp = array();
         var response;
         response = result.decode_response();
