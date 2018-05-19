@@ -195,11 +195,13 @@ exports.handler = function(event, context, callback) {
         }
 
       if(statCode == 200) {
+        console.info("Success: "+statCode+" Url: "+base_url);
         callback(null, {
           statusCode: statCode,
           body: base_url
           });
       } else {
+        console.error("Error: "+statCode+" Err: "+errMsg);
         callback(null, {
           statusCode: statCode,
           body: errMsg
