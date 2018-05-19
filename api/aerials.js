@@ -174,6 +174,7 @@ exports.handler = function(event, context, callback) {
             return quadKey;
         }
         function toLatLong(x, y, z) {
+          console.info("Input x:"+x+" y:"+y+" z:"+z);
             var n;
             n = Math.pow(2, z);
             var lon_deg;
