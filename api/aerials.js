@@ -31,12 +31,46 @@ exports.handler = function(event, context, callback) {
         type = "Aerial";
     }
     var api;
-    var xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "http://dev.virtualearth.net/REST/V1/"+"Imagery/Metadata/" + type + "?mapVersion=v1&output=json&key=" + apicode, true);
-    xhttp.setRequestHeader("Content-type", "application/json");
-    xhttp.send();
-    var response = JSON.parse(xhttp.responseText);
-    errMsg = response;
+    var https = require('https');
+    var response
+
+    /**
+     * HOW TO Make an HTTP Call - GET
+     */
+    // options for GET
+    var optionsget = {
+        host : 'dev.virtualearth.net', // here only the domain name
+        // (no http/https !)
+        port : 80,
+        path : '/REST/V1/"+"Imagery/Metadata/" + type + "?mapVersion=v1&output=json&key=" + apicode', // the rest of the url with parameters if needed
+        method : 'GET' // do GET
+    };
+
+    console.info('Options prepared:');
+    console.info(optionsget);
+    console.info('Do the GET call');
+
+    // do the GET request
+    var reqGet = https.request(optionsget, function(res) {
+        console.log("statusCode: ", res.statusCode);
+        // uncomment it for header details
+    //  console.log("headers: ", res.headers);
+
+
+        res.on('data', function(d) {
+            console.info('GET result:\n');
+            errMsg = d;
+            console.info('\n\nCall completed');
+        });
+
+    });
+
+    reqGet.end();
+    reqGet.on('error', function(e) {
+        errMsg = e;
+    });
+
+
     if (false) {//response.http_code == 200) {
         //$resp = array();
         var response;
