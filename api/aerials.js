@@ -74,7 +74,7 @@ exports.handler = function(event, context, callback) {
 
                   console.info("Success: "+statCode+" Url: "+base_url);
                   callback(null, {
-                    statusCode: 302,
+                    statusCode: 307,
                     //body: base_url,
                     headers: {
                       "location": base_url
