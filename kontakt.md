@@ -29,6 +29,10 @@ ref: contact
 <h3>Kontaktmöglichkeiten</h3>
 
 <ul>
+<li><a href="https://discord.gg/tJNMaQG" aria-label="Discord">
+    <i class="fa fa-discord fa-2x" aria-hidden="true"></i> Get in touch on Discord.
+</a></li>
+
 {% if site.github_username %}
     <li>{% include icon-github.html username=site.github_username %}</li>
   {% endif %}
