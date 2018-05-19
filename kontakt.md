@@ -10,6 +10,11 @@ ref: contact
 
 <h2>Kontaktformular</h2>
 
+<a href="https://discord.gg/tJNMaQG" aria-label="Discord">
+    <i class="fab fa-discord fa-2x" aria-hidden="true"></i> Discord
+</a>
+<br>
+
 <form name="contact" action="/thanks" netlify>
 <div class="form-group">
     <label>Name: <input class="form-control" type="text" name="name"></label>   
