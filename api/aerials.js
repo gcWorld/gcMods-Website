@@ -180,7 +180,7 @@ exports.handler = function(event, context, callback) {
             var lon_deg;
             lon_deg = (x + 0.5) / n * 360.0 - 180.0;
             var lat_deg;
-            lat_deg = rad2deg(Math.atan(Math.sinh(Math.PI * (1 - 2 * (y + 0.5) / n))));
+            lat_deg = (Math.atan(Math.sinh(Math.PI * (1 - 2 * (y + 0.5) / n))))* 180 / Math.PI;
             var return_string;
             return_string = lat_deg + "," + lon_deg;
             return return_string;
@@ -188,6 +188,7 @@ exports.handler = function(event, context, callback) {
         function toLatLongMapbox(x, y, z) {
             var n;
             n = Math.pow(2, z);
+            console.info("n:"+n);
             var lon_deg;
             lon_deg = (x + 0.5) / n * 360.0 - 180.0;
             var lat_deg;
