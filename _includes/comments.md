@@ -1,4 +1,15 @@
 <div id="comments">
+  {% assign comments = site.data.comments[page.slug] | sort | where_exp: "comment", "comment[1].replying_to == blank" %}
+  {% for comment in comments %}
+    {% assign avatar      = comment[1].avatar %}
+    {% assign email       = comment[1].email %}
+    {% assign name        = comment[1].name %}
+    {% assign url         = comment[1].url %}
+    {% assign date        = comment[1].date %}
+    {% assign message     = comment[1].message %}
+    {% include comment.html avatar=avatar email=email name=name url=url date=date message=message %}
+  {% endfor %}
+
     <form class="form js-form" method="POST" action="https://api.staticman.net/v2/entry/gcworld/gcMods-Website/master/comments">
       <div class="form__spinner mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
       <fieldset>

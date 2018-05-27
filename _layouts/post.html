@@ -23,10 +23,6 @@ layout: main
     {% endif %}
     {{ content }}
   </div>
-
-  {% if site.disqus.shortname %}
-    {% include disqus_comments.html %}
-  {% endif %}
 </article>
 </div>
 
@@ -35,10 +31,9 @@ layout: main
 
     {% include google_ad_sidebar.html %}
 </aside>
-
-</div>
-{% if site.disqus %}
+{% if page.comments %}
 <hr>
 <h3>Kommentare</h3>
-  {% include disqus_comments.html %}
+  {% include comments.md %}
 {% endif %}
+</div>
