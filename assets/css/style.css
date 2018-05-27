@@ -276,6 +276,8 @@ aside a>small {
 }
 .comment .body hr {
   margin: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .ui-group-buttons .or{position:relative;float:left;width:.3em;height:1.3em;z-index:3;font-size:12px}
