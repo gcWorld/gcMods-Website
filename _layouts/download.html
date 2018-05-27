@@ -130,10 +130,10 @@ layout: main
     </aside>
 </div>
 
-      {% if site.disqus %}
+      {% if page.comments %}
       <hr>
       <h3>Kommentare</h3>
-        {% include disqus_comments.html %}
+        {% include comments.html %}
       {% endif %}
     </article>
 
