@@ -1,4 +1,4 @@
-<div id="comments"> 
+<div id="comments">
   {% if site.data.comments[page.slug] %}
     {% assign comments = site.data.comments[page.slug] | sort %}
     {% for comment in comments %}
@@ -34,7 +34,7 @@
           <label for="message">Message</label>
           <textarea id="message" class="form-control" rows="4" name="fields[usermessage]"></textarea>
         </div>
-        <button class="btn btn-default" id="comment-submit" data-loading-text="Loading...">Submit Comment</button>
+        <button class="btn btn-default" id="comment-submit" data-loading-text="<i class='fas fa-cog fa-spin'></i> Loading...">Submit Comment</button>
       </fieldset>
     </form>
 </div>
