@@ -10,6 +10,9 @@
       {% assign message     = comment[1].usermessage %}
       {% include comment.html avatar=avatar email=email name=name url=url date=date message=message %}
     {% endfor %}
+
+  {% else %}
+    No Comments
   {% endif %}
 </div>
     <form class="form js-form" method="POST" action="https://api.staticman.net/v2/entry/gcworld/gcMods-Website/master/comments">
