@@ -120,6 +120,7 @@
             var form = this;
 
             $(form).addClass('form--loading');
+            $('#comment-submit').button('loading');
 
             $.ajax({
               type: $(this).attr('method'),
@@ -148,7 +149,8 @@
             $('#myModalLabel').text(title);
             $('#myModalBody').html(message);
 
-            $('#myModal').modal('show')
+            $('#myModal').modal('show');
+            $('#comment-submit').button('reset');
           }
         })(jQuery);
         </script>
