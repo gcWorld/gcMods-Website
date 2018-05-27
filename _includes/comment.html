@@ -1,7 +1,10 @@
 <div class="comment">
-    <br>
-    <legend><strong>{{ name }}</strong><legend>
-    <em>{{ date | date: "%B %d, %Y" }}</em>
-    <p>{{ message | markdownify }}
-    <hr>
+    <img class="avatar" alt="avatar" src="https://www.gravatar.com/avatar/{{email}}">
+    <div class="body">
+        <span>{{name}}</span>
+        <span>{{ date | date: "%B %d, %Y" }}</span>
+        <br />
+        <br />
+        <p>{{ message | markdownify }}</p>
+    </div>
 </div>
