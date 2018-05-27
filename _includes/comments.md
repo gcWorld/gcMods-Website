@@ -15,6 +15,7 @@
     {{site.data[page.lang].string.no_comments}}
   {% endif %}
 </div>
+<div class="jumbotron">
     <form class="form js-form" method="POST" action="https://api.staticman.net/v2/entry/gcworld/gcMods-Website/master/comments">
       <div class="form__spinner mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
       <fieldset>
