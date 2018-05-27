@@ -110,6 +110,8 @@
             <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect js-close-modal">Close</button>
           </div>
         </article>
+
+
         <script>
         (function ($) {
           var $comments = $('.js-comments');
@@ -143,10 +145,10 @@
           });
 
           function showModal(title, message) {
-            $('.js-modal-title').text(title);
-            $('.js-modal-text').html(message);
+            $('#myModalLabel').text(title);
+            $('#myModalBody').html(message);
 
-            $('body').addClass('show-modal');
+            $('#myModal').modal('show')
           }
         })(jQuery);
         </script>
