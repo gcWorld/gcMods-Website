@@ -1,12 +1,12 @@
 <div id="comments">
-  {% assign comments = site.data.comments[page.slug] | sort | where_exp: "comment", "comment[1].replying_to == blank" %}
+  {% assign comments = site.data.comments[page.slug] | sort %}
   {% for comment in comments %}
     {% assign avatar      = comment[1].avatar %}
     {% assign email       = comment[1].email %}
     {% assign name        = comment[1].name %}
     {% assign url         = comment[1].url %}
     {% assign date        = comment[1].date %}
-    {% assign message     = comment[1].message %}
+    {% assign message     = comment[1].usermessage %}
     {% include comment.html avatar=avatar email=email name=name url=url date=date message=message %}
   {% endfor %}
 
