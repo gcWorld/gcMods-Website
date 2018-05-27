@@ -1,5 +1,5 @@
 <div id="comments">
-    <form method="POST" action="https://api.staticman.net/v2/entry/gcworld/gcMods-Website/comments-static">
+    <form method="POST" action="https://api.staticman.net/v2/entry/gcworld/gcMods-Website/master/comments">
     <input name="options[redirect]" type="hidden" value="https://my-site.com">
     <!-- e.g. "2016-01-02-this-is-a-post" -->
     <input name="options[slug]" type="hidden" value="{{ page.slug }}">
