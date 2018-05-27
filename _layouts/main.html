@@ -1,26 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
   {% include head.html %}
-
   <body>
-
     {% include header.html %}
-
     <div class="toptitle">
         <div class="container">
             <h1>{{page.section}}</h1>
         </div>
     </div>
-
     <div class="container">
         {{ content }}
-
-        {% include comments.md %}
     </div>
-
     {% include footer.html %}
-
   </body>
-
 </html>
