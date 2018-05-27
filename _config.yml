@@ -31,7 +31,7 @@ url: 'www.gcmods.de'
 twitter_username: gcMods
 github_username: gcWorld
 google_analytics: true
-google_ads: true
+google_ads: false
 markdown: kramdown
 plugins:
 - jekyll-feed

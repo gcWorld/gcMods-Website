@@ -1,0 +1,100 @@
+---
+title: IBIScontrol Bus API
+layout: main
+section: IBIScontrol
+lang: en
+ref: ibiscontrol-bus-api
+---
+
+<div class="row">
+            <div class="col-md-7">
+                <h2>Daten 1</h2>
+                <div id="data1">
+
+                </div>
+
+            </div>
+            <div class="col-md-5">
+                <h3>Aktionen</h3>
+                <a href="#" id="connect-btn" onclick="connectWS();" class="btn btn-success">Connect</a>
+                <a href="#" id="data-btn" onclick="getData1();" class="btn btn-warning">Data1</a>
+                <a href="#" id="data-btn" onclick="getData2();" class="btn btn-warning">Data2</a>
+
+                <div id="savedData">
+
+                </div>
+            </div>
+        </div>
+
+<script>
+            var exampleSocket;
+            var isConnected = false;
+            var isOne = false;
+            var isTwo = false;
+            var n;
+            var data2;
+            var funktion = "Door1,Door2,Door3,Door4,Door5,Headlights,Parking Lights,Interior Lights 1,Interior Lights 2,Engine Start,Engine Stop".split(',');
+            var header =  "Version,temp,oat,passengers,cockpit_uhr_sec,haltewunsch,blinkerl,blinkerr,light,interlight,speed,entry0,enty1,entry2,entry3,exit0,exit1,exit2,exit3,IBIS_Route,IBIS_TerminusCode,IBIS_Linie,IBIS_Mode,IBIS_busstoop,IBIS_busstop_index,IBIS_busstop_entwerter_ist,act_busstop,delay_state,delay_min,delay_sec,giventicket,km_counter,m_counter,elec_busbar_main_sw,sysdate,cit_bremse,tp_display,yard,ident,terminus,bremse_halte,engine_on,bremse_halte_sw,door_20h_sw,door_freigabe".split(',');
+
+            function connectWS() {
+                if(isConnected) {
+                    exampleSocket.close();
+                    document.getElementById("connect-btn").innerHTML = "Connect"
+                } else {
+                    exampleSocket = new WebSocket("ws://localhost:50123", "protocolOne");
+
+                    exampleSocket.onopen = function (event) {
+                     document.getElementById("connect-btn").innerHTML = "Disconnect"
+                     isConnected = true;
+                    };
+
+                    exampleSocket.onmessage = function (event) {
+                        console.log(event.data);
+                        if(isOne) {
+                            n = event.data.split("|");
+                            //var table = "<table class='table' border='1'>";
+                            //for (var i=0; i< header.length; i++) {
+                            //    table = table + "<tr><td>"+ (i) +"</td><td>"+ header[i]+"</td><td>"+ n[i]+"</td></tr>";
+                            //}
+                            //table = table + '<table>';
+                            //document.getElementById("data1").innerHTML = table;
+                        } else {
+                            data2 = event.data.split("|");
+                            var table = "<table class='table' border='1'>";
+                            for (var i=0; i< header.length; i++) {
+                                if(n[i] == data2[i]) {
+
+                                }else {
+                                    table = table + "<tr><td>"+ (i) +"</td><td>"+ header[i]+"</td><td>"+ n[i]+" | "+ data2[i] +"</td><td>";
+                                    table = table + '<select id="funktion-'+i+'">';
+                                    for (var y=0; y< funktion.length; y++) {
+                                        table = table + "<option>"+funktion[y]+"</option>"
+                                    }
+                                    table = table + '</select> ';
+                                    table = table + "<a href='#' class='btn btn-primary' onclick='addData("+i+",\""+ header[i]+":"+n[i]+"|"+ data2[i]+"\");'>Add</a></td></tr>";
+                                }
+                            }
+                            table = table + '<table>';
+                            document.getElementById("data1").innerHTML = table;
+                        }
+                    };
+
+                }
+            }
+
+            function getData1() {
+                exampleSocket.send("ibiscontrol-1");
+                isOne = true;
+                isTwo = false;
+            }
+            function getData2() {
+                exampleSocket.send("ibiscontrol-1");
+                isOne = false;
+                isTwo = true;
+            }
+            function addData(id,data) {
+                var func = "funktion-"+id;
+                var e = document.getElementById(func);
+                document.getElementById("savedData").innerHTML = document.getElementById("savedData").innerHTML + e.value + "=" + data + "\n";
+            }
+        </script>
