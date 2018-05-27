@@ -1,4 +1,4 @@
-<div id="comments">
+<div id="comments"> 
   {% if site.data.comments[page.slug] %}
     {% assign comments = site.data.comments[page.slug] | sort %}
     {% for comment in comments %}
