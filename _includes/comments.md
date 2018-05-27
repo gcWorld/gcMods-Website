@@ -12,14 +12,14 @@
     {% endfor %}
 
   {% else %}
-    No Comments
+    {{site.data[page.lang].string.no_comments}}
   {% endif %}
 </div>
     <form class="form js-form" method="POST" action="https://api.staticman.net/v2/entry/gcworld/gcMods-Website/master/comments">
       <div class="form__spinner mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
       <fieldset>
         <!-- Form Name -->
-        <legend>Neuer Kommentar</legend>
+        <legend>{{site.data[page.lang].string.new_comment}}</legend>
         <!-- e.g. "2016-01-02-this-is-a-post" -->
         <input name="options[slug]" type="hidden" value="{{ page.slug }}">
         <div class="form-group">
@@ -34,7 +34,7 @@
           <label for="message">Message</label>
           <textarea id="message" class="form-control" rows="4" name="fields[usermessage]"></textarea>
         </div>
-        <button class="btn btn-primary" id="comment-submit" data-loading-text="<i class='fas fa-cog fa-spin'></i> Loading...">Submit Comment</button>
+        <button class="btn btn-primary" id="comment-submit" data-loading-text="<i class='fas fa-cog fa-spin'></i> {{site.data[page.lang].string.loading}}...">{{site.data[page.lang].string.submit_comment}}</button>
       </fieldset>
     </form>
 </div>

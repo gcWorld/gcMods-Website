@@ -12,6 +12,11 @@ string:
   installer: "Installationsprogramm"
   installer_desc: "Mit diesem Symbol gekennzeichnete Downloads stehen auch als automatisches Installationsprogramm zur Verfügung. Dieses erleichtert die Installation sowie die Deinstallation."
   oam_desc: "Um eine unkomplizierte Installation der Addons zu ermöglichen, wurde die Verwendung des OMSI Addon Managers empfohlen. Da dieser nicht mehr existiert werden die Downloads Stück für Stück auf Alternativen umgestellt."
+  comments: "Kommentare"
+  new_comment: "Neuer Kommentar"
+  no_comments: "Keine Kommentare"
+  submit_comment: "Abschicken"
+  loading: "Wird geladen"
 
 menu:
   home:

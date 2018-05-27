@@ -132,6 +132,6 @@ layout: main
 
       {% if page.comments %}
       <hr>
-      <h3>Kommentare</h3>
+      <h3>{{site.data[page.lang].string.comments}}</h3>
         {% include comments.md %}
       {% endif %}

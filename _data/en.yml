@@ -12,6 +12,11 @@ string:
   installer: "Installer"
   installer_desc: "Downloads with this symbol are available as installer. This makes the installation process easier"
   oam_desc: "To allow for an easy mod installation the OMSI Addon Manager used to be the recommended way of installing addons. Because this program is no longer available the existing and future addons will offer alternative ways to install them without a hassle."
+  comments: "Comments"
+  new_comment: "New Comment"
+  no_comments: "No Comments"
+  submit_comment: "Submit Comment"
+  loading: "Loading"
 
 menu:
   home:
