@@ -23,6 +23,8 @@
         <legend>{{site.data[page.lang].string.new_comment}}</legend>
         <!-- e.g. "2016-01-02-this-is-a-post" -->
         <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+        <input type="hidden" name="options[reCaptcha][siteKey]" value="6LdfFcUSAAAAABjim_wfeAZCrDDGNbnnPLq50PJQ">
+        <input type="hidden" name="options[reCaptcha][secret]" value="SigJy9V5W6PvmVr/LFRlIQ8hI4fBPd84rNKGzfClv9HD2tAYBlNTjrcahpYmcFlUUm7lAwe94uB8Qy8oeblKHnDUX5eBcG9j6/zIWFMsU/7lUV/aO3ZjlkqVmwkPaLUiD5ppltzOTQ7V+mmxcFitYBL1bEumdus/8x/Dl3yVKHY=">
         <div class="form-group">
           <label for="name">Name</label>
           <input id="name" class="form-control" name="fields[name]" type="text">
@@ -36,6 +38,7 @@
           <textarea id="message" class="form-control" rows="4" name="fields[usermessage]"></textarea>
         </div>
         <button class="btn btn-primary" id="comment-submit" data-loading-text="<i class='fas fa-cog fa-spin'></i> {{site.data[page.lang].string.loading}}...">{{site.data[page.lang].string.submit_comment}}</button>
+        <div class="g-recaptcha" data-sitekey="6LdfFcUSAAAAABjim_wfeAZCrDDGNbnnPLq50PJQ"></div>
       </fieldset>
     </form>
 </div>
