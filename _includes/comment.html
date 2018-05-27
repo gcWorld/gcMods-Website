@@ -1,7 +1,7 @@
 <div class="comment">
-    <span>{{name}}</span>
-    <span>{{email}}</span>
-    <div>
-        {{message}}
-    </div>
+    <br>
+    <legend><strong>{{ name }}</strong><legend>
+    <em>{{ date | date: "%B %d, %Y" }}</em>
+    <p>{{ message | markdownify }}
+    <hr>
 </div>
