@@ -7,8 +7,8 @@
       {% assign name        = comment[1].name %}
       {% assign url         = comment[1].url %}
       {% assign date        = comment[1].date %}
-      {% assign message     = comment[1].usermessage %}
-      {% include comment.html avatar=avatar email=email name=name url=url date=date message=message %}
+      {% assign usermessage     = comment[1].usermessage %}
+      {% include comment.html avatar=avatar email=email name=name url=url date=date usermessage=usermessage %}
     {% endfor %}
 
   {% else %}
