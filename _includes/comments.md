@@ -5,16 +5,16 @@
     <input name="options[slug]" type="hidden" value="{{ page.slug }}">
     <div class="form-group">
       <label for="name">Name</label>
-      <input id="name" name="fields[name]" type="text">
+      <input id="name" class="form-control" name="fields[name]" type="text">
     </div>
     <div class="form-group">
       <label for="email">E-mail</label>
-      <input id="email" name="fields[email]" type="email">
+      <input id="email" class="form-control" name="fields[email]" type="email">
     </div>
     <div class="form-group">
       <label for="message">Message</label>
-      <textarea id="message" name="fields[message]"></textarea>
+      <textarea id="message" class="form-control" name="fields[message]"></textarea>
     </div>
-    <button type="submit">Go!</button>
+    <button class="btn btn-default" type="submit">Go!</button>
     </form>
 </div>
