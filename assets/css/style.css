@@ -268,7 +268,7 @@ aside a>small {
   height: 48px;
   float: left;
 }
-.comment strong {
+.comment strong, .comment .body p {
   color: #000;
 }
 .comment .body {
