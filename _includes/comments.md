@@ -31,7 +31,7 @@
           <input id="email" class="form-control" name="fields[email]" type="email">
         </div>
         <div class="form-group">
-          <label for="message">Message</label>
+          <label for="message">{{site.data[page.lang].string.message}}</label>
           <textarea id="message" class="form-control" rows="4" name="fields[usermessage]"></textarea>
         </div>
         <button class="btn btn-primary" id="comment-submit" data-loading-text="<i class='fas fa-cog fa-spin'></i> {{site.data[page.lang].string.loading}}...">{{site.data[page.lang].string.submit_comment}}</button>

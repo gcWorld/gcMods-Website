@@ -17,6 +17,7 @@ string:
   no_comments: "Keine Kommentare"
   submit_comment: "Abschicken"
   loading: "Wird geladen"
+  message: "Nachricht"
 
 menu:
   home:

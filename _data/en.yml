@@ -17,6 +17,7 @@ string:
   no_comments: "No Comments"
   submit_comment: "Submit Comment"
   loading: "Loading"
+  message: "Message"
 
 menu:
   home:
