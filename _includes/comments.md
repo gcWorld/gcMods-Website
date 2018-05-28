@@ -16,7 +16,7 @@
   {% endif %}
 </div>
 <div class="jumbotron">
-    <form class="form js-form" method="POST" action="http://159.89.10.250:8080/v2/entry/gcworld/gcMods-Website/master/comments">
+    <form class="form " method="POST" action="http://159.89.10.250:8080/v2/entry/gcworld/gcMods-Website/master/comments">
       <div class="form__spinner mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
       <fieldset>
         <!-- Form Name -->
@@ -37,7 +37,7 @@
           <label for="message">{{site.data[page.lang].string.message}}</label>
           <textarea id="message" class="form-control" rows="4" name="fields[usermessage]"></textarea>
         </div>
-        <button class="btn btn-primary" type="submit"  data-loading-text="<i class='fas fa-cog fa-spin'></i> {{site.data[page.lang].string.loading}}...">{{site.data[page.lang].string.submit_comment}}</button>
+        <button class="btn btn-primary" type="submit" id="comment-submit" data-loading-text="<i class='fas fa-cog fa-spin'></i> {{site.data[page.lang].string.loading}}...">{{site.data[page.lang].string.submit_comment}}</button>
         <div class="g-recaptcha" data-sitekey="6LdfFcUSAAAAABjim_wfeAZCrDDGNbnnPLq50PJQ"></div>
       </fieldset>
     </form>
