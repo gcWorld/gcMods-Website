@@ -16,7 +16,7 @@
   {% endif %}
 </div>
 <div class="jumbotron">
-    <form class="form js-form" method="POST" action="https://api.staticman.net/v2/entry/gcworld/gcMods-Website/master/comments">
+    <form class="form js-form" method="POST" action="http://159.89.10.250:8080/v2/entry/gcworld/gcMods-Website/master/comments">
       <div class="form__spinner mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
       <fieldset>
         <!-- Form Name -->
@@ -24,7 +24,7 @@
         <!-- e.g. "2016-01-02-this-is-a-post" -->
         <input name="options[slug]" type="hidden" value="{{ page.slug }}">
         <input type="hidden" name="options[reCaptcha][siteKey]" value="6LdfFcUSAAAAABjim_wfeAZCrDDGNbnnPLq50PJQ">
-        <input type="hidden" name="options[reCaptcha][secret]" value="SigJy9V5W6PvmVr/LFRlIQ8hI4fBPd84rNKGzfClv9HD2tAYBlNTjrcahpYmcFlUUm7lAwe94uB8Qy8oeblKHnDUX5eBcG9j6/zIWFMsU/7lUV/aO3ZjlkqVmwkPaLUiD5ppltzOTQ7V+mmxcFitYBL1bEumdus/8x/Dl3yVKHY=">
+        <input type="hidden" name="options[reCaptcha][secret]" value="zgCHRjuMFpxiZ5YfX6hvWRnBaVvkkaH4oex6rXU7n7EdhS1Og6SSlcEX9I0Ck/Tx1HNyvwF4m/VPthOKOzveAoLcIZ87k5JCVksZDsiy0jkxQaORsuxwXX/Fz5vZ11sLn7Enw89qu4XbfrmkUdnLe1WimwbSl500dt0ReJqiuaYynlB6WnP9iEWWu0+dYmlAXYTSc9x7j57ddIrhUEWy+GmtH/hYmkp3ulN4zeTzmdbNAdBQiwhNEll0UjDLRFOsGWUdmsiICxM9ychofAsCwHjZI/dkkG8/ypSlF3MxJM6q5anAp5QDFwpeBbcmbwApzdmwDSdmLQ9O6CEMYKlbFR49sEuIYU32QU+WEL6fe3qY2lwCj0rOLypbChcp0875NO/O7UhYPWY1ACy3NioA5L65a3PlU+hs270Qg5YLpjAg+qfbhvGIeGiAsaL2eX8V54E/NvYWok6aGtc3p9DPlntofgTJcogUnUmJT14F7mFkewq4FBYCfk+tfs4zVHYzZVY+mNCCYSsILEbkgUBNBsSgeN5KxaKmobXak6LZ7z5K2DuZdJT48MFTySWolziXQK1SZ+AGf0eHdqKBJ4Mwk6Q0TzkPqJBfw6Wog9B8uZ4iLZmjQBYZV2XsbdmxgU4cwnFP1OeT/U/g/4AIIqKgZVm47Rds5pxS5srschogkA8=">
         <div class="form-group">
           <label for="name">Name</label>
           <input id="name" class="form-control" name="fields[name]" type="text">
