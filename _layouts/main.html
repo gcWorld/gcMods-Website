@@ -12,7 +12,9 @@
         {{ content }}
       
       {% if page.comments %}
-      {% include comments.md %}
+      <hr>
+      <h3>{{site.data[page.lang].string.comments}}</h3>
+        {% include comments.md %}
       {% endif %}
     </div>
     {% include footer.html %}
