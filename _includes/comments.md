@@ -24,7 +24,7 @@
         <!-- e.g. "2016-01-02-this-is-a-post" -->
         <input name="options[slug]" type="hidden" value="{{ page.slug }}">
         <input type="hidden" name="options[reCaptcha][siteKey]" value="6LdfFcUSAAAAABjim_wfeAZCrDDGNbnnPLq50PJQ">
-        <input type="hidden" name="options[reCaptcha][secret]" value="gfsQFwVc+c+9YjVoX3PAs/1HryM44UONvReu34dBUux/g24BNHmvg925rJG8saE/UOpb9s0Kw8HbTdk+UHeyNwDW1R4IBFTb+mpAJ4g5rKyidCO6jSANTgM/8FzzqQ9JaFeVX1rNSUYHX">
+        <input type="hidden" name="options[reCaptcha][secret]" value="sXTcieaAEh+88WVNJzn0aL22o0uaEZRTAEvN8k1ph4uxbWFhScaVIg6M1XPKpdXawlGUpPrzzwCICDWdeVpI8V3CCSJjQg7IANYEFkpDl4N6MNGkFno+C0Ibj4Cb1rxWqgs+CYlc275Q1LKw1mcgQHOWjks3KG30W/4QYKzPaTp4rsgTtIGX4h1ZYRMVgg+c/6slOhoom1/JvRmDrW8za2gtzZtmH4lzv+1v1VzltEkRQM+97Ra+EPVoeosqTXSC17TLW627LP25aM0EdYcUYO9llaMe32qkRGTN8AdqvZOKhC32bkHoqSxFYU955b9mLI626PHvVC6krvFzR8EhMedQ+W+heH3pMa7p6+/PF6ZFOy8H0WpuICFGgmyHEC82/0mj5bUNxUQ1/OEsyMhoSkZJHDkREB2BBytX+wgD0zH/LiI9BcAztfJBP+biedam6lHL4L6oJjMCSS+7NhFzL/YUFHAs2iA5uIVYYyHgf8ziwABCjQS34D3BSLAKfwFphTGckrfnM8uWTgF/UTjs75EcWhQpq0prpemOysw8bazvuN/OPy6/1cnoOHWmOc1RULWyP8QJiv0HZ8NUrHCAnxQji+Y5U5DbJyXigli+jiTcYxedtYXd767Ph+exSCQdGv+1zRs3/lOO2yWlO/x74q8HIMqJEOtjpkLFrCltUwU=">
         <div class="form-group">
           <label for="name">Name</label>
           <input id="name" class="form-control" name="fields[name]" type="text">
