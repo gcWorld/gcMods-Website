@@ -16,7 +16,7 @@
   {% endif %}
 </div>
 <div class="jumbotron">
-    <form class="form " method="POST" action="https://api.staticman.net/v2/entry/gcworld/gcMods-Website/master/comments">
+    <form class="form " method="POST" action="http://http://80.211.53.205:8080/v2/entry/gcworld/gcMods-Website/master/comments">
       <div class="form__spinner mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
       <fieldset>
         <!-- Form Name -->
