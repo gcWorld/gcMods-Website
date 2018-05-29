@@ -76,3 +76,8 @@ comments:
   transforms:
     email: md5
 
+  reCaptcha:
+    enabled: true
+    siteKey: "6LdfFcUSAAAAABjim_wfeAZCrDDGNbnnPLq50PJQ"
+    secret: "sXTcieaAEh+88WVNJzn0aL22o0uaEZRTAEvN8k1ph4uxbWFhScaVIg6M1XPKpdXawlGUpPrzzwCICDWdeVpI8V3CCSJjQg7IANYEFkpDl4N6MNGkFno+C0Ibj4Cb1rxWqgs+CY$
+
