@@ -71,7 +71,7 @@ Tickets können auf Knopfdruck in OMSI ausgedruckt werden. Sollte mal ein falsch
 								</tr>
 								<tr>
 									<th>Unterstützte Karten</th>
-									<td>Grundorf, Spandau 1989, Rheinhausen, R&ouml;merberg, Bad Kinzau, Teltow, Langbach, Landkreis Wehlen und weitere <a href="http://s.gcmods.de/karten">(neue vorschlagen)</a></td>			
+									<td>Grundorf, Spandau 1989, Rheinhausen, R&ouml;merberg, Bad Kinzau, Teltow, Langbach, Landkreis Wehlen und weitere <a href="http://9cw.de/karten">(neue vorschlagen)</a></td>			
 								</tr>
 								<tr>
 									<th>Unterstützte Busse</th>
@@ -154,7 +154,7 @@ Tickets können auf Knopfdruck in OMSI ausgedruckt werden. Sollte mal ein falsch
 </ul>
 <div><img src="http://dl.dropbox.com/s/3pwjbuswo0w6178/async_error.png" alt="Async Error" width="300" height="201" /><img src="http://dl.dropbox.com/s/4l7ikryq6viu0oq/async_error2.png" alt="Async Error 2" width="300" height="112" /></div>-->
 <h2>Fehler melden</h2>
-<p>Fehler können entweder per Email an <em>info@gcmods.de</em> oder direkt über den <a href="http://github.com/gcWorld/ibis-droid/issues" target="_blank">Bugtracker</a> auf GitHub gemeldet werden.<br /><br /><em>Sollte die App mit einem Force Close abstürzen werde ich automatisch über den Fehler informiert. Es wäre jedoch hilfreich wenn du mir zusätzlich eine Email schreibst und kurz beschreibst wie der Fehler aufgetreten ist.</em><br /><br /></p>
+<p>Fehler können entweder per Email an <em>info@gcmods.de</em> oder direkt über den <a href="http://github.com/gcWorld/IBISdroid/issues" target="_blank">Bugtracker</a> auf GitHub gemeldet werden.<br /><br /><em>Sollte die App mit einem Force Close abstürzen werde ich automatisch über den Fehler informiert. Es wäre jedoch hilfreich wenn du mir zusätzlich eine Email schreibst und kurz beschreibst wie der Fehler aufgetreten ist.</em><br /><br /></p>
 <h2>Kontakt</h2>
 <p>Bei Fragen oder Problemen stehe ich per Email zur Verfügung: <strong><a href="mailto:info@gcmods.de">info@gcmods.de</a></strong></p>
 
