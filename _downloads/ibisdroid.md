@@ -24,7 +24,7 @@ beta:
 beta-format: zip
 beta-version: 1.3.2
 
-introduction: IBISdroid für Android ermöglicht die Steuerung vom IBIS, der Kasse, sowie dem Ticketdrucker mittels Smartphone oder Tablet.
+introduction: IBISdroid für Android ermöglicht die Steuerung vom IBIS, der Kasse, sowie dem Ticketdrucker mittels Smartphone oder Tablet. Nur kompatibel mit OMSI 1. Wird nicht mehr weiter entwickelt.
 
 image_list:
 - filename: ibis.png
@@ -71,7 +71,7 @@ Tickets können auf Knopfdruck in OMSI ausgedruckt werden. Sollte mal ein falsch
 								</tr>
 								<tr>
 									<th>Unterstützte Karten</th>
-									<td>Grundorf, Spandau 1989, Rheinhausen, R&ouml;merberg, Bad Kinzau, Teltow, Langbach, Landkreis Wehlen und weitere <a href="http://9cw.de/karten">(neue vorschlagen)</a></td>			
+									<td>Grundorf, Spandau 1989, Rheinhausen, R&ouml;merberg, Bad Kinzau, Teltow, Langbach, Landkreis Wehlen und weitere</td>			
 								</tr>
 								<tr>
 									<th>Unterstützte Busse</th>
