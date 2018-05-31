@@ -26,20 +26,20 @@
                       {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
                       {% for post in posts %}
                         <li>
-                          <a href="{{ post.url }}" class="{{ post.lang }} language"><img src="/assets/images/{{ post.lang }}.png" /> {{ post.lang }}</a>
+                          <a href="{{ post.url }}" class="{{ post.lang }} language"><img src="/assets/images/{{ post.lang }}.png" alt="{{ post.lang }}" /> {{ post.lang }}</a>
                         </li>
                       {% endfor %}
 
                       {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
                       {% for page in pages %}
                         <li>
-                          <a href="{{ page.url }}" class="{{ page.lang }} language"><img src="/assets/images/{{ page.lang }}.png" /> {{ page.lang }}</a>
+                          <a href="{{ page.url }}" class="{{ page.lang }} language"><img src="/assets/images/{{ page.lang }}.png" alt="{{ page.lang }}" /> {{ page.lang }}</a>
                         </li>
                       {% endfor %}
                       {% assign dls=site.downloads | where:"ref", page.ref | sort: 'lang' %}
                       {% for page in dls %}
                         <li>
-                          <a href="{{ page.url }}" class="{{ page.lang }} language"><img src="/assets/images/{{ page.lang }}.png" /> {{ page.lang }}</a>
+                          <a href="{{ page.url }}" class="{{ page.lang }} language"><img src="/assets/images/{{ page.lang }}.png" alt="{{ page.lang }}" /> {{ page.lang }}</a>
                         </li>
                       {% endfor %}
         	          </ul>

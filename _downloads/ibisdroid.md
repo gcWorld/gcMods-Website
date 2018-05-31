@@ -10,7 +10,7 @@ link: http://ibis-droid.gcmods.de/
 ams: false
 zip: https://github.com/gcWorld/IBISdroid/releases/download/v1.0/IBISdroid.zip
 zip-alt:
-exe: 
+exe:
 android: http://play.google.com/store/apps/details?id=de.gcworld.ibisdroid
 homepage: false
 image_big: ibis.png
@@ -152,7 +152,7 @@ Tickets können auf Knopfdruck in OMSI ausgedruckt werden. Sollte mal ein falsch
 <ul>
 <li> In einigen Fällen kann es vorkommen, das nach dem Abbruch der Verbindung in OMSI eine Fehlermeldung erscheint. Wenn man sich nun erneut verbindet erscheint eine weitere Fehlermeldung. Beide Meldungen können mit einem Klick auf OK beendet werden und OMSI anschließend normal weiterbenutzt werden.</li>
 </ul>
-<div><img src="http://dl.dropbox.com/s/3pwjbuswo0w6178/async_error.png" alt="" width="300" height="201" /><img src="http://dl.dropbox.com/s/4l7ikryq6viu0oq/async_error2.png" alt="" width="300" height="112" /></div>-->
+<div><img src="http://dl.dropbox.com/s/3pwjbuswo0w6178/async_error.png" alt="Async Error" width="300" height="201" /><img src="http://dl.dropbox.com/s/4l7ikryq6viu0oq/async_error2.png" alt="Async Error 2" width="300" height="112" /></div>-->
 <h2>Fehler melden</h2>
 <p>Fehler können entweder per Email an <em>info@gcmods.de</em> oder direkt über den <a href="http://github.com/gcWorld/ibis-droid/issues" target="_blank">Bugtracker</a> auf GitHub gemeldet werden.<br /><br /><em>Sollte die App mit einem Force Close abstürzen werde ich automatisch über den Fehler informiert. Es wäre jedoch hilfreich wenn du mir zusätzlich eine Email schreibst und kurz beschreibst wie der Fehler aufgetreten ist.</em><br /><br /></p>
 <h2>Kontakt</h2>
