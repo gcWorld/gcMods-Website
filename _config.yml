@@ -42,6 +42,7 @@ plugins:
 exclude:
 - themes
 - content
+- api_source
 disqus: gcmods
 
 m:
