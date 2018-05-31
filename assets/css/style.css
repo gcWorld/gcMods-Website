@@ -56,14 +56,14 @@ small {
     margin-bottom:20px;
     height:340px;
     background: #75bf34;
-    background-image:url(../images/bg.png);
+    /*background-image:url(../images/bg.png);*/
 }
 .toptitle {
     margin-top:-20px;
     padding-top:5px;
     height:60px;
     background: #75bf34;
-    background-image:url(../images/bg.png);
+    /*background-image:url(../images/bg.png);*/
 }
 .toptitle h1 {
     text-shadow: 0 0 2px white;
