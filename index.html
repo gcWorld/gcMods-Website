@@ -4,25 +4,16 @@ layout: default
 lang: de
 ref: home
 ---
-
 <section class="slider">
     <div class="container">
         {% include slider.html %}
     </div>
 </section>
-
 <div class="container">
-
-
-
     <div class="jumbotron">
-
         {% include jumbotron.md %}
-
     </div>
-
     <div class="row">
-
     {% assign downloads = site.downloads | where:"layout","download" | where:"homepage","true" | where:"lang", page.lang | sort: 'updated','first' %}
     {% for record in downloads reversed limit:3 %}
         <div class="col-md-4">
@@ -59,43 +50,24 @@ ref: home
             Keine Downloads
         </div>
     {% endfor %}
-
     </div>
-
     <a class="btn btn-default pull-right" href="/downloads" role="button">Weitere Downloads &raquo;</a><br>
-
     <hr class="featurette-divider">
-
     <div class="row">
-
     <div class="col-md-8">
 {% assign posts = site.posts | where:"lang",page.lang %}
     {% for record in posts limit:1 %}
-
         <div class="blog-post">
-
             <h2 class="blog-post-title">{{ record.title }}</h2>
-
   {% assign date_format = site.minima.date_format | default: "%e. %B %Y" %}
-
             <p class="blog-post-meta">Geschrieben von {{ record.author }} am {{ record.date | date: date_format }}</p>
-
             {% if record.image %}
-
                 <a href="{{ record.url }}"><img class="img-responsive" src="{{"assets/images/blog/"}}{{ record.image }}" alt="{{ record.title }}"></a>
-
             {% endif %}
-
-
             <p>{{ record.excerpt }}</p>
-
-
             <a class="btn btn-default pull-right" href="/blog" role="button">Zum Blog &raquo;</a>
-
         </div>
-
     {% endfor %}
-
     </div>
         <aside class="col-md-4 hidden-sm hidden-xs">
             <h4>Weitere Einträge</h4>
