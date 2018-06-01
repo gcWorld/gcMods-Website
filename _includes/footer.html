@@ -80,80 +80,66 @@
         <p>&copy; {{ 'now' | date: "%Y" }} gcmods.de &middot; <a class="green" href="/impressum">Impressum</a> &middot; <a class="green" href="/datenschutz">Datenschutz</a>
     </div>
 </footer>
-
-
-
-
-
-
-
         <!-- Bootstrap core JavaScript
-
         ================================================== -->
-
         <!-- Placed at the end of the document so the pages load faster -->
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
-
         <script>$('#tooltip').tooltip();</script>
 
         {% if page.comments %}
-        <article class="modal mdl-card mdl-shadow--2dp">
-          <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text js-modal-title"></h2>
-          </div>
-          <div class="mdl-card__supporting-text js-modal-text"></div>
-          <div class="mdl-card__actions mdl-card--border">
-            <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect js-close-modal">Close</button>
-          </div>
-        </article>
+            <article class="modal mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text js-modal-title"></h2>
+              </div>
+              <div class="mdl-card__supporting-text js-modal-text"></div>
+              <div class="mdl-card__actions mdl-card--border">
+                <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect js-close-modal">Close</button>
+              </div>
+            </article>
+            <script>
+            (function ($) {
+              var $comments = $('.js-comments');
 
+              $('.js-form').submit(function () {
+                var form = this;
 
-        <script>
-        (function ($) {
-          var $comments = $('.js-comments');
+                $(form).addClass('form--loading');
+                $('#comment-submit').button('loading');
 
-          $('.js-form').submit(function () {
-            var form = this;
+                $.ajax({
+                  type: $(this).attr('method'),
+                  url: $(this).attr('action'),
+                  data: $(this).serialize(),
+                  contentType: 'application/x-www-form-urlencoded',
+                  success: function (data) {
+                    showModal('Comment submitted', 'Thanks for your comment! It will show on the site once it has been approved.');
+                    $(form).removeClass('form--loading');
+                  },
+                  error: function (err) {
+                    console.log(err);
+                    showModal('Error', 'Sorry, there was an error with the submission!');
+                    $(form).removeClass('form--loading');
+                  }
+                });
 
-            $(form).addClass('form--loading');
-            $('#comment-submit').button('loading');
+                return false;
+              });
 
-            $.ajax({
-              type: $(this).attr('method'),
-              url: $(this).attr('action'),
-              data: $(this).serialize(),
-              contentType: 'application/x-www-form-urlencoded',
-              success: function (data) {
-                showModal('Comment submitted', 'Thanks for your comment! It will show on the site once it has been approved.');
-                $(form).removeClass('form--loading');
-              },
-              error: function (err) {
-                console.log(err);
-                showModal('Error', 'Sorry, there was an error with the submission!');
-                $(form).removeClass('form--loading');
+              $('.js-close-modal').click(function () {
+                $('body').removeClass('show-modal');
+              });
+
+              function showModal(title, message) {
+                $('#myModalLabel').text(title);
+                $('#myModalBody').html(message);
+
+                $('#myModal').modal('show');
+                $('#comment-submit').button('reset');
               }
-            });
-
-            return false;
-          });
-
-          $('.js-close-modal').click(function () {
-            $('body').removeClass('show-modal');
-          });
-
-          function showModal(title, message) {
-            $('#myModalLabel').text(title);
-            $('#myModalBody').html(message);
-
-            $('#myModal').modal('show');
-            $('#comment-submit').button('reset');
-          }
-        })(jQuery);
-        </script>
+            })(jQuery);
+            </script>
         {% endif %}
 
         <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
@@ -165,5 +151,11 @@
         <!-- End Cookie Consent plugin -->
 
 {% if jekyll.environment == 'production' and site.google_analytics %}
-{% include google-analytics-actual.html %}
+    {% include google-analytics-actual.html %}
+{% endif %}
+{% if jekyll.environment == 'production' and site.piwik %}
+    {% include google-analytics.html %}
+{% endif %}
+{% if jekyll.environment == 'production' and site.tracking_pixel %}
+    {% include tracking_pixel.html %}
 {% endif %}
