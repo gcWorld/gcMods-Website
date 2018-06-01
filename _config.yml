@@ -53,7 +53,7 @@ tweetsert:
   enabled: true
   timeline:
     handle: 'gcmods'
-  limit: 5
+  limit: 6
 
 m:
   de:
