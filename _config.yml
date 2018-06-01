@@ -38,6 +38,7 @@ piwik: false
 google_analytics: false
 tracking_pixel: true
 google_ads: false
+cookies: false
 markdown: kramdown
 plugins:
 - jekyll-feed
