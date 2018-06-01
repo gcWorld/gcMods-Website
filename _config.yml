@@ -42,11 +42,18 @@ cookies: false
 markdown: kramdown
 plugins:
 - jekyll-feed
+- jekyll-tweetsert
 exclude:
 - themes
 - content
 - api_source
 disqus: gcmods
+
+tweetsert:
+  enabled: true
+  timeline:
+    handle: 'gcmods'
+  limit: 5
 
 m:
   de:
