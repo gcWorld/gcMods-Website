@@ -34,6 +34,15 @@ layout: main
 <aside class="col-md-4">
 		{% include twitter.html %}
 
+        twitter
+        {% for post in site.posts %}
+            {% if post.tags contains "tweet" %}
+            {{post.title}}
+            {{post.excerpt}}
+            {{post.description}}
+            {{post.date}}
+            {% endif %}
+        {% endfor %}
     {% include google_ad_sidebar.html %}
 </aside>
 
