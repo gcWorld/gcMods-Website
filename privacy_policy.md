@@ -1,25 +1,25 @@
 ---
-title: Datenschutz
+title: Privacy Policy
 layout: main
-section: Datenschutz
+section: Privacy Policy
 comments: false
-lang: de
+lang: en
 ref: privacy
 ---
-## Datenschutzerklärung
-Diese Datenschutzerklärung klärt dich über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten auf dieser Internetseite auf.
+## Privacy Policy
+This privacy policy informs you about the kind of personally identifiable information I collect on this website and for what purpose.
 
-### Verantwortlicher
+### Contact
 Jonas Elbers  
 Rappstr. 32b  
 49084 Osnabrück  
-Deutschland  
-E-Mailadresse: info@gcmods.de
+Germany  
+E-Mail: info@gcmods.de
 
-Link zum Impressum: https://www.gcmods.de/impressum
+Imprint: https://www.gcmods.de/impressum
 
-### Arten der verarbeiteten Daten:
--	Bestandsdaten (Name, sofern dieser im Kontaktformular oder der Kommentarfunktion angegeben wird).
+### Categories of Data:
+-	Bestandsdate (Name, sofern dieser im Kontaktformular oder der Kommentarfunktion angegeben wird).
 -	Kontaktdaten (E-Mail, für das Kontaktformular sowie die Kommentarfunktion).
 -	Inhaltsdaten (Texteingaben, im Kontaktformular oder der Kommentarfunktion).
 -	Nutzungsdaten (Aufgerufene Seiten, Zugriffszeiten, für Zugriffsstatistiken).
