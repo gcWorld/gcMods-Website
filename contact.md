@@ -14,7 +14,10 @@ ref: contact
     <i class="fab fa-discord fa-2x" aria-hidden="true"></i> Get in touch on Discord.
 </a>
 <br>
-<form name="contact" action="/thanks" netlify>
+<form name="contact" action="/thanks" netlify-honeypot="bot-name" netlify>
+    <p class="hidden">
+    <label>Don’t fill this out if you're human: <input name="bot-name" /></label>
+    </p>
     <div class="form-group">
         <label>Name: <input class="form-control" type="text" name="name"></label>   
     </div>
