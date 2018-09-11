@@ -9,7 +9,7 @@ copyright: '2015'
 ams: false
 zip: false
 zip-alt:
-exe: http://dl2.gcmods.de/IBIScontrolUpdater/publish.htm
+exe: https://www..gcmods.de/dl2/IBIScontrolUpdater/publish.htm
 android: http://play.google.com/store/apps/details?id=de.gcworld.ibiscontrol
 homepage: true
 image_big: ibiscontrol-header.png
