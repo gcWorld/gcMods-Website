@@ -48,6 +48,15 @@ video_list:
 
 ---
 
+<div class="bg bg-warning" markdown="block">
+
+### .exe Installation funktioniert aktuell nicht
+Die Installation des Updaters funktioniert aktuell nicht. Bitte direkt das Plugin herunterladen und im Ordner OMSI 2\plugins\ entpacken.
+
+[Plugin .zip](https://github.com/gcWorld/gcMods-Website/raw/master/dl2/ibiscontrol/full-current.zip)
+
+</div>
+
 Funktionen:
 
 - IBIS

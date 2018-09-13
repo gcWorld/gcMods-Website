@@ -48,6 +48,15 @@ video_list:
 
 ---
 
+<div class="bg bg-warning" markdown="block">
+
+### .exe Installation is currently broken
+The installation for the updater is currently not working. Please download the plugin directly and unzip to OMSI 2\plugins\
+
+[Plugin .zip](https://github.com/gcWorld/gcMods-Website/raw/master/dl2/ibiscontrol/full-current.zip)
+
+</div>
+
 Features:
 -IBIS
 -Cashdesk
