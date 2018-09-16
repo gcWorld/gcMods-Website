@@ -1,0 +1,20 @@
+---
+title: I broke it
+date: 2018-09-16 19:00:00 Z
+categories:
+- Website
+- IBIScontrol
+layout: post
+menu: blog
+section: Blog
+image:
+author: seeadler
+comments: true
+lang: en
+---
+
+As some of you have probably noticed by now is that the IBIScontrol updater no longer works. The reason behind this is that I recently moved the installation files from the old server to a new location without realising that the installer does a check of the installation files which now fails with the new location. Sadly, I do not have the source files of the installer any more and thus am unable to quickly fix this issue.
+
+As such my current recommendation is to simply uninstall the Updater completly (No need to uninstall the plugin first if you want to keep using the plugin).
+
+To keep using the plugin simply make sure it's still in your OMSI 2 plugins folder and launch OMSI 2 normally. You can grab a .zip file with the plugin files on the IBIScontrol download page.
