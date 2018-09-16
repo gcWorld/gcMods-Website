@@ -7,9 +7,9 @@ released: 2015-04-01 22:30:28 Z
 updated: 2015-10-24 22:30:28 Z
 copyright: '2015'
 ams: false
-zip: false
+zip: https://github.com/gcWorld/gcMods-Website/raw/master/dl2/ibiscontrol/full-current.zip
 zip-alt:
-exe: http://www.gcmods.de/dl2/IBIScontrolUpdater/publish.htm
+exe: 
 android: http://play.google.com/store/apps/details?id=de.gcworld.ibiscontrol
 homepage: true
 image_big: ibiscontrol-header.png
@@ -56,6 +56,8 @@ The installation for the updater is currently not working. Please download the p
 [Plugin .zip](https://github.com/gcWorld/gcMods-Website/raw/master/dl2/ibiscontrol/full-current.zip)
 
 </div>
+
+
 
 Features:
 -IBIS
