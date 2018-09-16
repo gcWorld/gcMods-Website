@@ -12,7 +12,7 @@ zip-alt:
 exe: 
 android: 
 homepage: true
-image_big: ibiscontrol-header.png
+image_big: 
 version: 0.2.0
 omsi_version: 2
 author: seeadler
@@ -28,34 +28,14 @@ beta-version: 0.2.0
 introduction: IBIScontrol für Android ermöglicht die Steuerung vom IBIS, der Kasse sowie dem Ticketdrucker in der Omnibussimulation OMSI 2 von Aerosoft mittels Smartphone oder Tablet.
 
 image_list:
-- filename: ibiscontrol-header.png
+- filename: 
   title:
-- filename: ibiscontrol_1.png
-  title:
-- filename: ibiscontrol_2.png
-  title:
-- filename: ibiscontrol_3.png
-  title:
-- filename: ibiscontrol_4.png
-  title:
-- filename: ibiscontrol_5.png
-  title:
-- filename: ibiscontrol_6.png
-  title:
+
 video_list:
 
 
 
 ---
-
-<div class="bg bg-warning" markdown="block">
-
-### .exe Installation funktioniert aktuell nicht
-Die Installation des Updaters funktioniert aktuell nicht. Bitte direkt das Plugin herunterladen und im Ordner OMSI 2\plugins\ entpacken.
-
-[Plugin .zip](https://github.com/gcWorld/gcMods-Website/raw/master/dl2/ibiscontrol/full-current.zip)
-
-</div>
 
 Funktionen:
 
