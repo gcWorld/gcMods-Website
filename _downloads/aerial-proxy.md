@@ -17,7 +17,7 @@ version: 0.2.0
 omsi_version: 2
 author: seeadler
 link_forum: http://omnibussimulator.de/forum/index.php?page=Thread&threadID=31324
-wip: true
+wip: 
 
 comments: true
 
