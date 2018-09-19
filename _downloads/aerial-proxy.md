@@ -25,7 +25,7 @@ beta: https://github.com/gcWorld/gcWorld-Aerial-Proxy/raw/master/gcWorld%20Aeria
 beta-format: exe
 beta-version: 0.2.0
 
-introduction: IBIScontrol für Android ermöglicht die Steuerung vom IBIS, der Kasse sowie dem Ticketdrucker in der Omnibussimulation OMSI 2 von Aerosoft mittels Smartphone oder Tablet.
+introduction: Aerial Proxy erlaubt das einfache Herunterladen von Luftbildern im OMSI 2 Editor.
 
 image_list:
 - filename: 
@@ -37,59 +37,23 @@ video_list:
 
 ---
 
-Funktionen:
 
-- IBIS
-- Kasse
-- Ticketdrucker
-- Dashboard mit Geschwindigkeit, Türsteuerung, Lichtsteuerung, Temperatur, Haltestelle, Haltewunsch usw.
-- Rollbandsteuerung
-
-Unterstützte Karten:
-
-- Alle
-
-Unterstützte Busse:
-
-- Alle Standard OMSI 2 Busse
-- O520 [(alterr)](http://www.omnibussimulator.de/forum/index.php?page=Thread&threadID=19798)
-- O530 [(alterr)](http://www.omnibussimulator.de/forum/index.php?page=Thread&threadID=19798)
-- O530 G [(alterr)](http://www.omnibussimulator.de/forum/index.php?page=Thread&threadID=19798)
-- Solaris Urbino 12/18 [(alterr)](http://www.omnibussimulator.de/forum/index.php?page=Thread&threadID=28280)
-- (Weitere sollten funktionieren, werden aber (noch) nicht offiziell unterstützt.)
-
-[Weiter Busse können hier vorgeschlagen werden.](http://9cw.de/buswunsch)
-
-Unterstützte Währungen:
-
-- DM
-- Euro
 
 <div class="bg bg-success" markdown="block">
 
-### Änderungen in 1.2.0
-- Unterstützung der Euro-Version vom NG272
-- Android 6 kompatibel
+### Änderungen in 1.0.0
+
 
 </div>
 
 <div class="bg bg-danger" markdown="block">
+###Anleitung
 
-### Vorraussetzungen
+options.cfg: Am Ende die folgenden Zeilen und anschließen eine leere Zeile einfügen und abspeichern.
 
-#### Android
-- Mindestens Version 4.0.3
+[Editor_LinkAerial]
+http://localhost:50129/~x/~y/~z
 
-#### Windows
-- .NET Framework 4.5
 
-Damit die Anwendung korrekt funktioniert wird ein Plugin für OMSI 2 benötigt. Dieses kann über den Link rechts oben heruntergeladen werden.
-
-### Bei Problemen
-Mögliche Ursachen:
-
-- Firewall blockiert das Plugin. Es muss eine Ausnahmeregel für die Datei node_id_gcw.exe im Ordner /OMSI 2/plugins/IBIScontrol_data/ hinzugefügt werden
-- Antivirus Programm
-- Ansonsten kann eine Neuinstallation von App und Plugin weiterhelfen (Das Plugin vorher entfernen)
 
 </div>
