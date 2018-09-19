@@ -16,12 +16,12 @@ image_big:
 version: 0.2.0
 omsi_version: 2
 author: seeadler
-link_forum: 
+link_forum:
 wip: 
 
 comments: true
 
-beta: https://github.com/gcWorld/gcWorld-Aerial-Proxy/raw/master/gcWorld%20Aerial%20Proxy/publish/gcWorld%20Aerial%20Proxy.application
+beta: https://github.com/gcWorld/gcWorld-Aerial-Proxy/raw/master/gcWorld%20Aerial%20Proxy/publish/setup.exe
 beta-format: exe
 beta-version: 0.2.0
 
