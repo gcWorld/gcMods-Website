@@ -41,21 +41,22 @@ video_list:
 
 <div class="bg bg-success" markdown="block">
 
-### Änderungen in 1.0.0
+### Änderungen in 1.0.1
+
+- Port 50129
 
 
 </div>
 
 <div class="bg bg-danger" markdown="block">
 
-###Anleitung
+### Anleitung
 
 
 options.cfg: Am Ende die folgenden Zeilen und anschließen eine leere Zeile einfügen und abspeichern.
 
 
 [Editor_LinkAerial]
-
 http://localhost:50129/~x/~y/~z
 
 
