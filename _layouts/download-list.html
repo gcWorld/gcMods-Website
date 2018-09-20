@@ -4,17 +4,19 @@ layout: main
 <div class="row">
 
 <div class="col-md-8" role="content" id="download-listing">
-    <h1 class="page-heading">OMSI Downloads</h1>
+    <h1 class="page-heading">Downloads</h1>
 
     {{ content }}
 
     {% assign downloads = site.downloads | where:"layout","download" | where:"category","omsi" | where:"lang",page.lang | sort: 'updated','last' %}
-      {% for post in downloads reversed %}
-      {% if post.website %}
-          <a href="{{ post.link }}" class="dl_a">
-      {% else %}
-          <a href="{{ post.url }}" class="dl_a">
-      {% endif %}
+      {% if downloads %}
+	  <h2>OMSI Downloads</h2>
+		  {% for post in downloads reversed %}
+		  {% if post.website %}
+			  <a href="{{ post.link }}" class="dl_a">
+		  {% else %}
+			  <a href="{{ post.url }}" class="dl_a">
+		  {% endif %}
               <article class="dl_view">
                   {% if post.exe %}
                       <span class="pull-right"><i class="fa fa-file"></i> .exe</span>
@@ -40,7 +42,9 @@ layout: main
               </article>
           </a>
           <hr />
-    {% endfor %}
+		  {% endfor %}
+	  {% else %}
+	  {% endif %}
 </div>
 <!-- Sidebar -->
 
