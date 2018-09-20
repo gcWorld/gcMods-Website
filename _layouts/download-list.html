@@ -10,7 +10,7 @@ layout: main
 
     {% assign downloads = site.downloads | where:"layout","download" | where:"category","omsi" | where:"lang",page.lang | sort: 'updated','last' %}
       {% if downloads %}
-	  <h2>OMSI Downloads</h2>
+	  <h2 id="omsi">OMSI Downloads</h2>
 		  {% for post in downloads reversed %}
 		  {% if post.website %}
 			  <a href="{{ post.link }}" class="dl_a">

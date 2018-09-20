@@ -7,7 +7,7 @@ ref: downloads
 
 Hier findest du eine Liste aller bisher veröffentlichte Erweiterungen.
 
-OMSI
+<a href="#omsi" class="btn btn-primary">OMSI</a>
 
 X-Plane
 
