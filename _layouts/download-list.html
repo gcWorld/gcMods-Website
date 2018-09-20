@@ -4,11 +4,11 @@ layout: main
 <div class="row">
 
 <div class="col-md-8" role="content" id="download-listing">
-    <h1 class="page-heading">Downloads</h1>
+    <h1 class="page-heading">OMSI Downloads</h1>
 
     {{ content }}
 
-    {% assign downloads = site.downloads | where:"layout","download" | where:"lang",page.lang | sort: 'updated','last' %}
+    {% assign downloads = site.downloads | where:"layout","download" | where:"category","omsi" | where:"lang",page.lang | sort: 'updated','last' %}
       {% for post in downloads reversed %}
       {% if post.website %}
           <a href="{{ post.link }}" class="dl_a">
