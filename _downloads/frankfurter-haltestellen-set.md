@@ -2,6 +2,7 @@
 title: Frankfurter Haltestellen Set
 lang: de
 section: Downloads
+category: omsi
 released: 2012-12-08 22:30:28 Z
 updated: 2012-12-08 22:30:28 Z
 copyright: '2013'
