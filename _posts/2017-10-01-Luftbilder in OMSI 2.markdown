@@ -14,9 +14,6 @@ comments: true
 lang: de
 ---
 
-## Warnung!
-Die unten beschriebenen Methoden funktionieren aktuell nicht mehr. Aufgrund des gestiegenen Interesses ist das Monatskontingent (17. Sep - 17. Okt) bereits verbraucht. Eine Alternative ist in Arbeit und sollte zeitnah verfügbar sein. Mehr dann auf der Startseite.
-
 OMSI 2 bietet die Möglichkeit Luftbilder direkt im Editor anzeigen zu lassen. Um dies zu nutzen ist es jedoch erforderlich einige Dinge vorab einzustellen. Im Folgenden wird der notwendige Prozess beschrieben.
 
 ## Ordnerstruktur
