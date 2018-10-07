@@ -18,6 +18,7 @@ string:
   submit_comment: "Abschicken"
   loading: "Wird geladen"
   message: "Nachricht"
+  categories: "Kategorien"
 
 menu:
   home:
