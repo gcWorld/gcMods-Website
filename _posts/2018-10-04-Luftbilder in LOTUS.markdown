@@ -33,6 +33,7 @@ Es gibt eine Reihe von Quellen welche für die Luftbilder verwendet werden könn
 
 ### OpenStreetMap
     http://b.tile.openstreetmap.org/~z/~x/~y.png
+
 Dies sind die gleichen Kartenbilder wie bereits im Editor unter "Map" integriert sind.
 
 ### Bing
