@@ -65,7 +65,7 @@ ref: home
                 <a href="{{ record.url }}"><img class="img-responsive" src="{{"assets/images/blog/"}}{{ record.image }}" alt="{{ record.title }}"></a>
             {% endif %}
             <p>{{ record.excerpt }}</p>
-            <a class="btn btn-default pull-right" href="/blog" role="button">Zum Blog &raquo;</a>
+            <a class="btn btn-default" href="{{ record.url }}" role="button">Mehr lesen &raquo;</a>
         </div>
     {% endfor %}
     </div>

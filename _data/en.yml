@@ -18,6 +18,7 @@ string:
   submit_comment: "Submit Comment"
   loading: "Loading"
   message: "Message"
+  categories: "Categories"
 
 menu:
   home:
