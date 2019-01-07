@@ -256,6 +256,10 @@ aside a>small {
     color:#efefef;
 }
 
+#comments {
+  padding-bottom: 15px;	
+}
+
 .comment {
   border: 1px dashed #ccc;
   padding: 15px;
