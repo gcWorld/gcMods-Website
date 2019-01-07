@@ -119,7 +119,7 @@
             var form = this;
         
             $(form).addClass("disabled");
-            $("#comment-form-submit").html(
+            $("#comment-submit").html(
                 '<svg class="icon spin"><use xlink:href="/assets/icons/icons.svg#icon-loading"></use></svg> Loading...'
             );
         
@@ -129,7 +129,7 @@
                 data: $(this).serialize(),
                 contentType: "application/x-www-form-urlencoded",
                 success: function(data) {
-                $("#comment-form-submit")
+                $("#comment-submit")
                     .html("Submitted")
                     .addClass("btn--disabled");
                 $("#comment-form .js-notice")
@@ -141,7 +141,7 @@
                 },
                 error: function(err) {
                 console.log(err);
-                $("#comment-form-submit").html("Submit Comment");
+                $("#comment-submit").html("Submit Comment");
                 $("#comment-form .js-notice")
                     .removeClass("success")
                     .addClass("danger");
