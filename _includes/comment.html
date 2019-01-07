@@ -5,9 +5,9 @@
         <span>&middot; {{ date | date: "%d.%m.%Y" }}</span>
         <hr />
         {{ usermessage | markdownify }}
-    </div>
-    <div class="reply">
-        <a rel="nofollow" class="btn" href="#comment-{{ include.index }}" onclick="return addComment.moveForm('comment-{{ include.index }}', '{{ include.index }}', 'respond', '{{ page.slug }}')"><i class="fas fa-reply"></i> Reply to {{ include.name }}</a>
+        <div class="reply">
+            <a rel="nofollow" class="btn btn-default" href="#comment-{{ include.index }}" onclick="return addComment.moveForm('comment-{{ include.index }}', '{{ include.index }}', 'respond', '{{ page.slug }}')"><i class="fas fa-reply"></i> Reply to {{ include.name }}</a>
+        </div>
     </div>
 </div>
 
