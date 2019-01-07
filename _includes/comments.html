@@ -2,6 +2,7 @@
   {% if site.data.comments[page.slug] %}
     {% assign comments = site.data.comments[page.slug] | sort %}
     {% for comment in comments %}
+      {% assign index       = forloop.index %}
       {% assign avatar      = comment[1].avatar %}
       {% assign email       = comment[1].email %}
       {% assign name        = comment[1].name %}
@@ -9,7 +10,7 @@
       {% assign date        = comment[1].date %}
       {% assign usermessage     = comment[1].usermessage %}
       {% assign replying_to = comment[1].replying_to | to_integer %}
-      {% include comment.html avatar=avatar email=email name=name url=url date=date usermessage=usermessage replying_to=replying_to %}
+      {% include comment.html index=index avatar=avatar email=email name=name url=url date=date usermessage=usermessage replying_to=replying_to %}
     {% endfor %}
 
   {% else %}
