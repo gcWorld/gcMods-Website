@@ -39,6 +39,11 @@
           <textarea id="message" required class="form-control" rows="4" name="fields[usermessage]"></textarea>
         </div>
         <br />
+        <!-- Start comment form alert messaging -->
+        <div class="hidden js-notice notice">
+          <p class="js-notice-text"></p>
+        </div>
+        <!-- End comment form alert messaging -->
         <button class="btn btn-primary" type="submit" id="comment-submit" data-loading-text="<i class='fas fa-cog fa-spin'></i> {{site.data[page.lang].string.loading}}...">{{site.data[page.lang].string.submit_comment}}</button>
       </fieldset>
     </form>
