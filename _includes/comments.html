@@ -17,35 +17,44 @@
     {{site.data[page.lang].string.no_comments}}
   {% endif %}
 </div>
-<div class="jumbotron">
+<div class="jumbotron" id="respond">
     <form class="form js-form" method="POST" action="https://api.staticman.net/v2/entry/gcworld/gcMods-Website/master/comments">
       <div class="form__spinner mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
       <fieldset>
+        
         <!-- Form Name -->
-        <legend>{{site.data[page.lang].string.new_comment}}</legend>
+        <legend>{{site.data[page.lang].string.new_comment}} <small><a rel="nofollow" id="cancel-comment-reply-link" href="{{ page.url | relative_url }}#respond" style="display:none;">{{site.data[page.lang].string.cancel_reply}}</a></small></legend>
         <!-- e.g. "2016-01-02-this-is-a-post" -->
-        <input name="options[slug]" type="hidden" value="{{ page.slug }}">
-        <input type="hidden" id="comment-parent" name="fields[replying_to]" value="">
+        <input type="hidden" name="options[origin]" value="{{ page.url | relative_url }}">
+        <input type="hidden" name="options[parent]" value="{{ page.url | relative_url }}">
+        <input type="hidden" id="comment-replying-to" name="fields[replying_to]" value="">
+        <input type="hidden" id="comment-post-id" name="options[slug]" value="{{ page.slug }}">
         <input type="hidden" name="options[reCaptcha][siteKey]" value="6LdfFcUSAAAAABjim_wfeAZCrDDGNbnnPLq50PJQ">
         <input type="hidden" name="options[reCaptcha][secret]" value="bAXGfgfTTWCfeYSClX9Y/YOZjU5EuJw91aTqjTw7BtIpy8v0SUFreLmD/ZGYjAmmElWiNYqAhENyiyum5JH3bGyrGOyynEmtMbUxlXbL8GoxJrrCMaHBTj8QHTPeBFIuzbjbcaAbdinR1d5oLkh9YKI3kT0F60LAIfamGkEoIps=">
         <div class="form-group">
           <label for="name">Name</label>
-          <input id="name" class="form-control" name="fields[name]" type="text">
+          <input id="name" class="form-control" required name="fields[name]" type="text" placeholder="Name">
         </div>
         <div class="form-group">
           <label for="email">E-mail</label>
-          <input id="email" class="form-control" name="fields[email]" type="email">
+          <input id="email" class="form-control" required name="fields[email]" type="email" placeholder="email@domain.com">
         </div>
         <div class="form-group">
           <label for="message">{{site.data[page.lang].string.message}}</label>
-          <textarea id="message" class="form-control" rows="4" name="fields[usermessage]"></textarea>
+          <textarea id="message" required class="form-control" rows="4" name="fields[usermessage]"></textarea>
         </div>
         <div class="g-recaptcha" data-sitekey="6LdfFcUSAAAAABjim_wfeAZCrDDGNbnnPLq50PJQ"></div>
         <br />
+        <!-- Start comment form alert messaging -->
+          <div class="hidden js-notice notice">
+            <p class="js-notice-text"></p>
+          </div>
+        <!-- End comment form alert messaging -->
         <button class="btn btn-primary" type="submit" id="comment-submit" data-loading-text="<i class='fas fa-cog fa-spin'></i> {{site.data[page.lang].string.loading}}...">{{site.data[page.lang].string.submit_comment}}</button>
       </fieldset>
     </form>
 </div>
+<script async src="https://www.google.com/recaptcha/api.js"></script>
 <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">

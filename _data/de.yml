@@ -19,6 +19,8 @@ string:
   loading: "Wird geladen"
   message: "Nachricht"
   categories: "Kategorien"
+  cancel_reply: "Antworten abbrechen"
+  reply_to: "Antwort an"
 
 menu:
   home:
