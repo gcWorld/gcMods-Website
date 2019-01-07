@@ -1,9 +1,12 @@
-<div class="comment">
+<div class="comment {% unless include.replying_to == 0 %}child{% endunless %}">
     <img class="avatar" alt="avatar" src="https://www.gravatar.com/avatar/{{email}}" alt="Gravatar">
     <div class="body">
         <strong>{{name}}</strong>
         <span>&middot; {{ date | date: "%d.%m.%Y" }}</span>
         <hr />
         {{ usermessage | markdownify }}
+    </div>
+    <div class="reply">
+        <a rel="nofollow" class="btn" href="#comment-{{ include.index }}" onclick="return addComment.moveForm('comment-{{ include.index }}', '{{ include.index }}', 'respond', '{{ page.slug }}')">Reply to {{ include.name }}</a>
     </div>
 </div>

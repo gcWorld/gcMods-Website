@@ -8,7 +8,8 @@
       {% assign url         = comment[1].url %}
       {% assign date        = comment[1].date %}
       {% assign usermessage     = comment[1].usermessage %}
-      {% include comment.html avatar=avatar email=email name=name url=url date=date usermessage=usermessage %}
+      {% assign replying_to = comment[1].replying_to | to_integer %}
+      {% include comment.html avatar=avatar email=email name=name url=url date=date usermessage=usermessage replying_to=replying_to %}
     {% endfor %}
 
   {% else %}
@@ -23,6 +24,7 @@
         <legend>{{site.data[page.lang].string.new_comment}}</legend>
         <!-- e.g. "2016-01-02-this-is-a-post" -->
         <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+        <input type="hidden" id="comment-parent" name="fields[replying_to]" value="">
         <input type="hidden" name="options[reCaptcha][siteKey]" value="6LdfFcUSAAAAABjim_wfeAZCrDDGNbnnPLq50PJQ">
         <input type="hidden" name="options[reCaptcha][secret]" value="bAXGfgfTTWCfeYSClX9Y/YOZjU5EuJw91aTqjTw7BtIpy8v0SUFreLmD/ZGYjAmmElWiNYqAhENyiyum5JH3bGyrGOyynEmtMbUxlXbL8GoxJrrCMaHBTj8QHTPeBFIuzbjbcaAbdinR1d5oLkh9YKI3kT0F60LAIfamGkEoIps=">
         <div class="form-group">
