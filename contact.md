@@ -10,10 +10,6 @@ ref: contact
 
 <h2>Get in touch</h2>
 
-<a href="https://discord.gg/tJNMaQG" aria-label="Discord">
-    <i class="fab fa-discord fa-2x" aria-hidden="true"></i> Get in touch on Discord.
-</a>
-<br>
 <form name="contact" action="/thanks" netlify-honeypot="bot-name" netlify>
     <p class="hidden">
     <label>Don’t fill this out if you're human: <input name="bot-name" /></label>

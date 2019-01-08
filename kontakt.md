@@ -10,14 +10,9 @@ ref: contact
 
 <h2>Kontaktformular</h2>
 
-<a href="https://discord.gg/tJNMaQG" aria-label="Discord">
-    <i class="fab fa-discord fa-2x" aria-hidden="true"></i> Discord
-</a>
-<br>
-
 <form name="contact" action="/thanks" netlify-honeypot="bot-name" netlify>
     <p class="hidden">
-    <label>Don’t fill this out if you're human: <input name="bot-name" /></label>
+    <label>Bitte nicht ausfüllen: <input name="bot-name" /></label>
     </p>
     <div class="form-group">
     <label>Name: <input class="form-control" type="text" name="name"></label>   
@@ -37,10 +32,6 @@ ref: contact
 <h3>Kontaktmöglichkeiten</h3>
 
 <ul>
-<li><a href="https://discord.gg/tJNMaQG" aria-label="Discord">
-    <i class="fab fa-discord fa-2x" aria-hidden="true"></i> Discord
-</a></li>
-
 {% if site.github_username %}
     <li>{% include icon-github.html username=site.github_username %}</li>
   {% endif %}
