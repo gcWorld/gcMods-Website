@@ -23,7 +23,7 @@
                     <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img id="imgNavSel" src="/assets/images/{{ page.lang }}.png" alt="..." class="icon-small"> <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                      {% assign posts=site.posts | where:"title", page.title | sort: 'lang' %}
+                      {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
                       {% for post in posts %}
                         <li>
                           <a href="{{ post.url }}" class="{{ post.lang }} language"><img src="/assets/images/{{ post.lang }}.png" alt="{{ post.lang }}" /> {{ post.lang }}</a>
