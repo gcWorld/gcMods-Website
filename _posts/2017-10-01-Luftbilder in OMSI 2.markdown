@@ -12,6 +12,7 @@ image: aerials.JPG
 author: seeadler
 comments: true
 lang: de
+ref: luftbilder-omsi
 ---
 
 OMSI 2 bietet die Möglichkeit Luftbilder direkt im Editor anzeigen zu lassen. Um dies zu nutzen ist es jedoch erforderlich einige Dinge vorab einzustellen. Im Folgenden wird der notwendige Prozess beschrieben.

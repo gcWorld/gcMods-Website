@@ -12,6 +12,7 @@ image: aerials_lotus.png
 author: seeadler
 comments: true
 lang: de
+ref: luftbilder-in-lotus
 ---
 
 LOTUS bietet zusätzlich zu den eingebauten OSM Karten die Möglichkeit Luftbilder direkt im Editor anzeigen zu lassen. Um dies zu nutzen ist es jedoch erforderlich einige Dinge vorab einzustellen. Im Folgenden wird der notwendige Prozess beschrieben.

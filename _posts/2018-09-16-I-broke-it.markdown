@@ -11,6 +11,7 @@ image:
 author: seeadler
 comments: true
 lang: en
+ref: i-broke-it
 ---
 
 As some of you have probably noticed by now is that the IBIScontrol updater no longer works. The reason behind this is that I recently moved the installation files from the old server to a new location without realising that the installer does a check of the installation files which now fails with the new location. Sadly, I do not have the source files of the installer any more and thus am unable to quickly fix this issue.

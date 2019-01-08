@@ -11,6 +11,7 @@ image:
 author: seeadler
 comments: true
 lang: de
+ref: neue-seite
 ---
 
 Die Seite wurde mal wieder aktualisiert und sollte nun vor allem sehr performant sein. Nebenher wurde die Downloadseite für die IBIS droid App für OMSI 1 nun auch integriert.
