@@ -17,7 +17,7 @@ comments: true
               {% assign _id        = reply[1]._id %}
               {% assign author        = reply[1].author %}
               {% assign publisher        = reply[1].publisher %}
-              <li><a href="https://github.com/gcWorld/gcMods-Website/blob/master/_data/bus/{{name | lowercase}}-{{_id}}.yml">{{name}}</a> ({{author}},{{publisher}})</li>
+              <li><a href="https://github.com/gcWorld/gcMods-Website/blob/master/_data/bus/{{name | downcase}}-{{_id}}.yml">{{name}}</a> ({{author}},{{publisher}})</li>
 {% endfor %}       
             </ul>
 </div>
