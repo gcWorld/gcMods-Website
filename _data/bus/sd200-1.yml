@@ -1,16 +1,29 @@
 _id: 1
-name: "D92"
+name: "SD200"
 author: "MR Software"
 publisher: "Aerosoft"
-paid: true
+paidaddon: false
+beta: false
+
+ibis: ibis1
+cashdesk: normal
+control: true
+ticketprinter: false
+rollband: true
+
 doors:
   1:
     name: "1"
     var: "door_entry_0"
     trigger: "door_open_1"
     manual: true
+    style: "tbd"
   2:
     name: "2"
     var: "door_entry_1"
     trigger: "door_open_1"
     manual: false
+    style: "tbd"
+
+#triggers
+lights: "triggername"
