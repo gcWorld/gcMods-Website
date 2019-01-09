@@ -3,7 +3,6 @@ title: IBIScontrol Bus API
 layout: main
 section: IBIScontrol
 lang: en
-permalink: ibiscontrol-bus-api
 ref: ibiscontrol-bus-api
 comments: true
 ---
@@ -15,7 +14,10 @@ comments: true
 {% assign replies = site.data.bus | sort %}
 {% for reply in replies %}
   {% assign name        = reply[1].name %}
-                        <li>{{name}}</li>
+              {% assign _id        = reply[1]._id %}
+              {% assign author        = reply[1].author %}
+              {% assign publisher        = reply[1].publisher %}
+              <li><a href="https://github.com/gcWorld/gcMods-Website/blob/master/_data/bus/{{name | lowercase}}-{{_id}}.yml">{{name}}</a> ({{author}},{{publisher}})</li>
 {% endfor %}       
             </ul>
 </div>
