@@ -1,0 +1,16 @@
+_id: 1
+name: "D92"
+author: "MR Software"
+publisher: "Aerosoft"
+paid: true
+doors:
+  1:
+    name: "1"
+    var: "door_entry_0"
+    trigger: "door_open_1"
+    manual: true
+  2:
+    name: "2"
+    var: "door_entry_1"
+    trigger: "door_open_1"
+    manual: false
