@@ -7,9 +7,19 @@ permalink: ibiscontrol-bus-api
 ref: ibiscontrol-bus-api
 comments: true
 ---
-
 <div class="row">
-            <div class="col-md-7">
+            <h2>Busses</h2>
+            <ul>
+            {% capture i %}{{ include.index }}{% endcapture %}
+{% assign replies = site.data.bus | sort %}
+{% for reply in replies %}
+  {% assign name        = reply[1].name %}
+                        <li>{{name}}</li>
+{% endfor %}       
+            </ul>
+</div>
+<div class="row">
+  <div class="col-md-7">
                 <h2>Daten 1</h2>
                 <div id="data1">
 
