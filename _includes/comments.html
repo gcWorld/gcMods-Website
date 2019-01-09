@@ -1,7 +1,7 @@
 <div id="comments">
   <script src="https://utteranc.es/client.js"
         repo="gcworld/gcMods-Website"
-        issue-term="{% if page.slug == blank %}{{ page.ref }}{% else %}{{ page.slug }}{% endif %}"
+        issue-term="{{ page.title }}"
         theme="github-light"
         crossorigin="anonymous"
         async>
