@@ -1,29 +1,72 @@
 _id: 1
+
+#General Information
 name: "SD200"
 author: "MR Software"
 publisher: "Aerosoft"
 paidaddon: false
 beta: false
+created_by: seeadler
 
-ibis: ibis1
-cashdesk: normal
+#Capabilities
+ibis: true
+ibis_type: 'ibis1'
+cashdesk: true
+cashdesk_type: 'normal'
 control: true
+control_type: 'normal'
 ticketprinter: false
+ticketprinter_type: ''
 rollband: true
+rollband_type: ''
 
+#Doors
 doors:
   1:
     name: "1"
     var: "door_entry_0"
-    trigger: "door_open_1"
+    trigger: "door_door_0_toggle"
     manual: true
     style: "tbd"
   2:
     name: "2"
     var: "door_entry_1"
-    trigger: "door_open_1"
+    trigger: "door_door_1_toggle"
+    manual: false
+    style: "tbd"
+  3:
+    name: "3"
+    var: "door_entry_3"
+    trigger: "door_door_2_toggle"
     manual: false
     style: "tbd"
 
-#triggers
-lights: "triggername"
+##Triggers
+
+#Engine
+engine_start: engine_startbutton
+engine_stop: engine_stopbutton
+
+#Lights
+blinker_off: blinker_off
+blinker_left: blinker_left
+blinker_right: blinker_right
+standlicht: standlicht_toggle
+scheinwerfer: scheinwerfer_toggle
+fernlicht: fernlicht_toggle
+interior_lights_on: licht_beide_toggle
+interior_lights_off: licht_beide_toggle
+interior_lights_2_on: licht_untenrechts_toggle
+interior_lights_2_off: licht_untenrechts_toggle
+
+
+#HST Brake
+hst_brake: bus_stopbrake
+
+#IBIS
+ibis_vor: IBIS_vor
+
+##Vars
+
+
+##String Vars
