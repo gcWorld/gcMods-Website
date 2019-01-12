@@ -1,3 +1,4 @@
+!!de.gcworld.ibiscontrol.Bus
 _id: 1
 
 #General Information
@@ -22,19 +23,19 @@ rollband_type: ''
 
 #Doors
 doors:
-  1:
+  - id: 1
     name: "1"
     var: "door_entry_0"
     trigger: "door_door_0_toggle"
     manual: true
     style: "tbd"
-  2:
+  - id: 2
     name: "2"
     var: "door_entry_1"
     trigger: "door_door_1_toggle"
     manual: false
     style: "tbd"
-  3:
+  - id: 3
     name: "3"
     var: "door_entry_3"
     trigger: "door_door_2_toggle"
