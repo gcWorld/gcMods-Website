@@ -4,19 +4,19 @@ lang: de
 ref: ibiscontrol
 section: Downloads
 released: 2015-04-01 22:30:28 Z
-updated: 2015-10-24 22:30:28 Z
-copyright: '2015'
+updated: 2019-01-12 15:30:28 Z
+copyright: '2019'
 ams: false
-zip: https://github.com/gcWorld/gcMods-Website/raw/master/dl2/ibiscontrol/full-current.zip
+zip: 
 zip-alt:
-exe: 
+exe: https://github.com/gcWorld/IBIScontrol-Bugs/releases/download/1.2.2/IBIScontrol_1.3.0.exe
 android: http://play.google.com/store/apps/details?id=de.gcworld.ibiscontrol
 homepage: true
 image_big: ibiscontrol-header.png
-version: 1.2.0
+version: 1.2.2
 omsi_version: 2
 author: seeadler
-link_forum: http://omnibussimulator.de/forum/index.php?page=Thread&threadID=31324
+link_forum: https://forum.omnibussimulator.de/forum/index.php?thread/31324-ibiscontrol-f%C3%BCr-omsi-2/
 wip:
 
 comments: true
@@ -50,10 +50,8 @@ video_list:
 
 <div class="bg bg-warning" markdown="block">
 
-### .exe Installation funktioniert aktuell nicht
-Die Installation des Updaters funktioniert aktuell nicht. Bitte direkt das Plugin herunterladen und im Ordner OMSI 2\plugins\ entpacken.
-
-[Plugin .zip](https://github.com/gcWorld/gcMods-Website/raw/master/dl2/ibiscontrol/full-current.zip)
+### Neue Installationsdatei
+Das Plugin kommt in der aktuellen Version mit einem neuen Installationsprogramm. Bitte vor Installation alle alten IBIScontrol Dateien und Ordner aus dem OMSI2/plugins Ordner entfernen!
 
 </div>
 
@@ -89,7 +87,11 @@ Unterstützte Währungen:
 
 <div class="bg bg-success" markdown="block">
 
-### Änderungen in 1.2.0
+### Änderungen in 1.2.2
+- O530G (4 Türen) - Vierte Tür war nicht richtig implementiert. Dies wurde behoben.
+- Für dieses Update ist eine neue Version des Plugins erforderlich!
+
+### Änderungen in 1.2.1
 - Unterstützung der Euro-Version vom NG272
 - Android 6 kompatibel
 
