@@ -7,4 +7,4 @@ lang: de
 ---
 
 ## IBIScontrol Beta Test
-Bitte nutzt die Disqus-Kommentarfunktion für Feedback und Problembeschreibungen.
+Bitte nutzt die Github-Kommentarfunktion für Feedback und Problembeschreibungen.
