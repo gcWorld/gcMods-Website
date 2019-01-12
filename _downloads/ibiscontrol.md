@@ -7,9 +7,9 @@ released: 2015-04-01 22:30:28 Z
 updated: 2019-01-12 15:30:28 Z
 copyright: '2019'
 ams: false
-zip: https://github.com/gcWorld/IBIScontrol-Bugs/releases/download/1.2.2/IBIScontrol_1.3.0.exe
+zip: 
 zip-alt:
-exe: 
+exe: https://github.com/gcWorld/IBIScontrol-Bugs/releases/download/1.2.2/IBIScontrol_1.3.0.exe
 android: http://play.google.com/store/apps/details?id=de.gcworld.ibiscontrol
 homepage: true
 image_big: ibiscontrol-header.png
