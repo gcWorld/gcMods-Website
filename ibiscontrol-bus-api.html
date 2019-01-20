@@ -125,4 +125,10 @@ comments: true
                 var e = document.getElementById(func);
                 document.getElementById("savedData").innerHTML = document.getElementById("savedData").innerHTML + e.value + "=" + data + "\n";
             }
+
+            function sendData() {
+                var e = document.getElementById("sendDataSelect");
+                var message = e.options[e.selectedIndex].text;
+                exampleSocket.send(message);
+            }
         </script>
