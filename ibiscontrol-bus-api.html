@@ -35,7 +35,8 @@ comments: true
                 <a href="#" id="connect-btn" onclick="connectWS();" class="btn btn-success">Connect</a>
                 <a href="#" id="data-btn" onclick="getData1();" class="btn btn-warning">Data1</a>
                 <a href="#" id="data-btn" onclick="getData2();" class="btn btn-warning">Data2</a>
-                <input type="text" id="ip" name="ip">
+                <input type="text" id="ip" name="ip" value="localhost">
+                <div id="sendData"></div>
                 <div id="savedData">
 
                 </div>
@@ -65,6 +66,14 @@ comments: true
                     exampleSocket.onopen = function (event) {
                      document.getElementById("connect-btn").innerHTML = "Disconnect"
                      isConnected = true;
+
+                     var content = '<select id="funktion-'+i+'">';
+                                    for (var y=0; y< triggers.length; y++) {
+                                        content = content + "<option>"+triggers[y]+"</option>"
+                                    }
+                                    content = content + '</select> ';
+                                    content = content + "<a href='#' class='btn btn-primary' onclick='sendData();'>Add</a></td></tr>";
+                                    document.getElementById("sendData").innerHTML = content;
                     };
 
                     exampleSocket.onmessage = function (event) {
