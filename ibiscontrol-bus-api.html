@@ -35,7 +35,7 @@ comments: true
                 <a href="#" id="connect-btn" onclick="connectWS();" class="btn btn-success">Connect</a>
                 <a href="#" id="data-btn" onclick="getData1();" class="btn btn-warning">Data1</a>
                 <a href="#" id="data-btn" onclick="getData2();" class="btn btn-warning">Data2</a>
-
+                <input type="text" id="ip" name="ip">
                 <div id="savedData">
 
                 </div>
@@ -49,15 +49,18 @@ comments: true
             var isTwo = false;
             var n;
             var data2;
+            var triggers = "IBIS_setmode_route,IBIS_setmode_linie_kurs,IBIS_setmode_ziel,IBIS_loeschen,IBIS_0,IBIS_1,IBIS_2,IBIS_3,IBIS_4,IBIS_5,IBIS_6,IBIS_7,IBIS_8,IBIS_9,IBIS_eingabe,IBIS_vor_stumm,IBIS_vor,IBIS_rueck,cashdesk_changer_5_00,cashdesk_changer_15_00,cashdesk_changer_8_00,cashdesk_changer_4_00,cashdesk_changer_2_00,cashdesk_changer_1_50,cashdesk_changer_1_00,cashdesk_changer_0_50,cashdesk_changer_0_30,cashdesk_changer_0_15,cashdesk_changer_0_10,cashdesk_changer_0_05,ticketprinter_button_cancel,ticketprinter_button_enter,ticketprinter_button_ticket_0,ticketprinter_button_ticket_1,ticketprinter_button_ticket_2,ticketprinter_getticket,kw_standlicht_toggle,kw_scheinwerfer_toggle,cp_licht_unterdeck_toggle,cp_licht_oberdeck_toggle,bus_doorfront0,bus_doorfront1,bus_doorfront2,change_take,ticketprinter_button_ticket_3,ticketprinter_button_ticket_4,ticketprinter_button_dummy_1,kw_fernlicht_toggle,bus_dooraft,ticketprinter_button_dummy_0,blinker_left_set,blinker_right_set,blinker_off,bus_rollband_up,bus_rollband_dn,bus_rollband_setT,bus_rollband_up_step,bus_rollband_dn_step,bus_rollband_setL1,bus_rollband_setL2,bus_rollband_setL3,cashdesk_changer_0_40,cashdesk_changer_0_20,kw_m_engine_startbutton,kw_m_engineshutdown,bus_20h-switch,cp_schalter_kinderwagen,ticket_give,cp_licht_untenrechts_toggle,bus_doorfront3".split(',');
             var funktion = "Door1,Door2,Door3,Door4,Door5,Headlights,Parking Lights,Interior Lights 1,Interior Lights 2,Engine Start,Engine Stop".split(',');
             var header =  "Version,temp,oat,passengers,cockpit_uhr_sec,haltewunsch,blinkerl,blinkerr,light,interlight,speed,entry0,enty1,entry2,entry3,exit0,exit1,exit2,exit3,IBIS_Route,IBIS_TerminusCode,IBIS_Linie,IBIS_Mode,IBIS_busstoop,IBIS_busstop_index,IBIS_busstop_entwerter_ist,act_busstop,delay_state,delay_min,delay_sec,giventicket,km_counter,m_counter,elec_busbar_main_sw,sysdate,cit_bremse,tp_display,yard,ident,terminus,bremse_halte,engine_on,bremse_halte_sw,door_20h_sw,door_freigabe,exit4,exit5".split(',');
 
             function connectWS() {
+
+                var ipAddress = document.getElementById("ip").value;
                 if(isConnected) {
                     exampleSocket.close();
                     document.getElementById("connect-btn").innerHTML = "Connect"
                 } else {
-                    exampleSocket = new WebSocket("ws://localhost:50123", "protocolOne");
+                    exampleSocket = new WebSocket("ws://"+ ipAddress +":50123", "protocolOne");
 
                     exampleSocket.onopen = function (event) {
                      document.getElementById("connect-btn").innerHTML = "Disconnect"
