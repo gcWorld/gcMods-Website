@@ -107,7 +107,7 @@ h2>a {
 footer {
 	background:#222;
 	position: absolute;
-	bottom: 0;
+	bottom: -20px;
 	width: 100%;
 	/* Set the fixed height of the footer here */
 	min-height: 280px;
