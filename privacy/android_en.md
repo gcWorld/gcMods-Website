@@ -32,8 +32,10 @@ ref: android_privacy
 <li>Crash traces</li>
 </ul>
 <p>How data helps provide the service:</p>
-<ul><li>
-Helping a customer associate crash data with specific instances of their app.
+<ul>
+    <li>Detect and analyse crashes and issues of the app.</li>
+    <li>
+Helping us associate crash data with specific instances of the app.
 </li>
 </ul>
 <p>Retention:</p>

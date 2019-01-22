@@ -3,6 +3,7 @@ title: Thanks
 layout: main
 section: Danke
 lang: de
+ref: thanks
 ---
 
 ## Nachricht verschickt
