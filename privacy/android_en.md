@@ -74,5 +74,5 @@ Crash traces and their associated identifiers are kept for 90 days.
 <h2>Contact Us</h2>
 <p>If you have any questions about this Privacy Policy, please contact us:</p>
 <ul>
-    <li>By visiting this page on our website: https://www.gcmods.de/contact</li>
+    <li>By visiting this page on our website: [Contact](https://www.gcmods.de/contact)</li>
 </ul>
