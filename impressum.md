@@ -4,6 +4,7 @@ layout: main
 section: Impressum
 comments: false
 lang: de
+ref: impressum
 ---
 <div class="row">
 <div class="col-md-8">

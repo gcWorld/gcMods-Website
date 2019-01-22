@@ -1,5 +1,6 @@
 ---
 title: Euro Mod
+ref: euro_mod
 lang: de
 section: Downloads
 released: 2011-12-03 22:30:28 Z
