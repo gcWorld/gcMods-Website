@@ -84,5 +84,5 @@ Die gesammelten Daten werden für 90 Tage aufbewahrt.
 <h2>Kontaktaufnahme</h2>
 <p>Falls Sie Fragen zu dieser Datenschutz-Richtlinie haben, können Sie wie folgt Kontakt zu uns aufnehmen:</p>
 <ul>
-    <li>Durch Besuch der folgenden Seite unserer Website: [Kontaktformular](https://www.gcmods.de/kontakt)</li>
+    <li>Durch Besuch der folgenden Seite unserer Website: <a href="https://www.gcmods.de/kontakt">Kontaktformular</a></li>
 </ul>
