@@ -4,6 +4,7 @@ layout: main
 section: IBIScontrol
 comments: true
 lang: de
+ref: ibiscontrol-beta-test
 ---
 
 ## IBIScontrol Beta Test
