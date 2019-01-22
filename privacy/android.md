@@ -113,17 +113,6 @@ ref: android_privacy
     </li>
                             </ul>
 
-
-<h2>Links zu anderen Websites</h2>
-<p>Unser Dienst kann Links zu anderen Websites enthalten, die nicht von uns betrieben werden. Wenn Sie auf einen Drittlink klicken, werden Sie direkt auf die Website des betreffenden Dritten weitergeleitet. Wir empfehlen Ihnen dringend, sich jeweils die Datenschutz-Richtlinien aller von Ihnen besuchten Websites durchzulesen.</p>
-<p>Wir haben keine Kontrolle über die Inhalte, Datenschutzvorschriften und -praktiken dritter Websites oder Dienste und übernehmen in diesem Zusammenhang keine Haftung.</p>
-
-
-<h2>Privatsphäre Minderjähriger</h2>
-<p>Unser Dienst richtet sich nicht an Personen, die das 18. Lebensjahr noch nicht vollendet haben ("minderjährige Personen").</p>
-<p>Wir erfassen wissentlich keine persönlich identifizierbaren Daten zu minderjährigen Personen. Falls Sie ein Elternteil oder Vormund sind und es Ihnen bekannt wird, dass eine Ihrer Aufsicht unterstehende minderjährige Person uns personenbezogene Daten übermittelt hat, bitten wir Sie, mit uns Kontakt aufzunehmen. Falls uns bekannt wird, dass wir personenbezogene Daten einer minderjährigen Person ohne elterliche Zustimmung erfasst haben, setzen wir Maßnahmen zur Entfernung dieser Daten von unseren Servern um.</p>
-
-
 <h2>Änderungen dieser Datenschutz-Richtlinie</h2>
 <p>Wir können unsere Datenschutz-Richtlinie von Zeit zu Zeit aktualisieren. Jegliche solcher Änderungen teilen wir Ihnen mit, indem wir die aktualisierte Fassung auf dieser Seite veröffentlichen.</p>
 <p>Wir werden Sie vor dem Inkrafttreten der betreffenden Änderung per E-Mail und/oder mittels einer sonstigen sichtbaren Mitteilung innerhalb unseres Dienstes informieren und das "Datum des Inkrafttretens" am Beginn dieser Datenschutz-Richtlinie aktualisieren.</p>
@@ -133,7 +122,5 @@ ref: android_privacy
 <h2>Kontaktaufnahme</h2>
 <p>Falls Sie Fragen zu dieser Datenschutz-Richtlinie haben, können Sie wie folgt Kontakt zu uns aufnehmen:</p>
 <ul>
-        <li>Per E-Mail: info@gcmods.de</li>
             <li>Durch Besuch der folgenden Seite unserer Website: https://www.gcmods.de/contact</li>
-      
-        </ul>
+</ul>
