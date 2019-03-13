@@ -57,6 +57,7 @@ options.cfg: Am Ende die folgenden Zeilen und anschließen eine leere Zeile einf
 
 
 [Editor_LinkAerial]
+
 http://localhost:50129/~x/~y/~z
 
 
