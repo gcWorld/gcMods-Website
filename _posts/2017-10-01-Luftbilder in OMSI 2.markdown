@@ -54,10 +54,10 @@ Straßen
     http://aerial.gcmods.de/toquad.php?x=~x&y=~y&z=~z&type=road&apicode=[API-Code]
 
 ### Google
-Die Besonderheit hier ist, dass nur die 256px Auflösung funktioniert.
+Die Besonderheit hier ist, dass nur die 256px Auflösung funktioniert. __Auch hier wird ein API Code benötigt. Dieser kann [hier](https://cloud.google.com/maps-platform/#get-started) erworben werden. [API-Code] muss in den untenstehenden Links durch den eigenen API Code ersetzt werden.__
 
-    http://aerial.gcmods.de/toquad.php?x=~x&y=~y&z=~z&service=google&hres=1
+    http://aerial.gcmods.de/toquad.php?x=~x&y=~y&z=~z&service=google&hres=1&apicode=[API-Code]
 
 Straßen
 
-    http://aerial.gcmods.de/toquad.php?x=~x&y=~y&z=~z&service=google&type=roadmap
+    http://aerial.gcmods.de/toquad.php?x=~x&y=~y&z=~z&service=google&type=roadmap&apicode=[API-Code]

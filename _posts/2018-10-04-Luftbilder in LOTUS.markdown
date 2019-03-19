@@ -49,15 +49,13 @@ Straßen
     https://aerial.gcmods.de/toquad.php?x=~x&y=~y&z=~z&type=road&apicode=[API-Code]
 
 ### Google
-Google funktioniert auch ohne API Code. Es wird jedoch dringend empfohlen einen eigenen Code anzugeben, da ohne die Zahl der Anfragen auf 5000 pro Tag begrenzt sind. Dieses Limit gilt insgesamt zusammen für alle die den Link nutzen, und ist daher schnell erreicht.
-Dieser kann kostenlos [hier](https://developers.google.com/maps/documentation/maps-static/intro) erworben werden. [API-Code] muss in den untenstehenden Links durch den eigenen API Code ersetzt werden.
+~~Google funktioniert auch ohne API Code. Es wird jedoch dringend empfohlen einen eigenen Code anzugeben, da ohne die Zahl der Anfragen auf 5000 pro Tag begrenzt sind. Dieses Limit gilt insgesamt zusammen für alle die den Link nutzen, und ist daher schnell erreicht.~~
+__Google benötigt einen API Code.__ Dieser kann [hier](https://cloud.google.com/maps-platform/#get-started) erworben werden. [API-Code] muss in den untenstehenden Links durch den eigenen API Code ersetzt werden.
 
 Satelliten
 
-    https://aerial.gcmods.de/toquad.php?x=~x&y=~y&z=~z&service=google
 	https://aerial.gcmods.de/toquad.php?x=~x&y=~y&z=~z&service=google&apicode=[API-Code]
 
 Straßen
 
-    https://aerial.gcmods.de/toquad.php?x=~x&y=~y&z=~z&service=google&type=roadmap
 	https://aerial.gcmods.de/toquad.php?x=~x&y=~y&z=~z&service=google&type=roadmap&apicode=[API-Code]
