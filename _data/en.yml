@@ -31,7 +31,7 @@ string:
   published_on: "Published on"
   forum: "Support topic in OMSI Forum"
   beta_warning: "Beta versions are usually tested for bugs. It is still highly recommended to create backups!"
-  android: "Android are available via the Google Play Store."
+  android: "Android apps are available via the Google Play Store."
 
 menu:
   home:
