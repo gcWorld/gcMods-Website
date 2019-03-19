@@ -5,7 +5,7 @@ lang: de
 ref: downloads
 ---
 
-Hier findest du eine Liste aller bisher veröffentlichte Erweiterungen.
+Hier findest du eine Liste aller bisher veröffentlichten Erweiterungen.
 
 <a href="#omsi" class="btn btn-primary">OMSI</a>
 
