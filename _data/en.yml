@@ -6,6 +6,7 @@ string:
   home: "Home"
   blog: "Blog"
   downloads: "Downloads"
+  download: "Download"
   contact: "Contact"
   writtenby: "Written by"
   writtenon: "on"
@@ -21,6 +22,16 @@ string:
   categories: "Categories"
   cancel_reply: "Cancel reply"
   reply_to: "Reply to"
+  pictures: "Pictures"
+  videos: "Videos"
+  not_yet_available: "Not yet available"
+  altzip: "Alternatively as .zip"
+  information: "Information"
+  licence: "Licence"
+  published_on: "Published on"
+  forum: "Support Board"
+  beta_warning: "Beta versions are usually tested for bugs. It is still highly recommended to create backups!"
+  android: "Android are available via the Google Play Store."
 
 menu:
   home:
