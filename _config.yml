@@ -18,7 +18,7 @@ defaults:
       type: downloads
     values:
       layout: download
-      menu: downloads
+      menu: /downloads/index.html
 email: info@gcmods.de
 description: 'gcWorld Modifications bietet kostenlose Erweiterungen für den Omnibussimulator OMSI 1 und OMSI 2.
 

@@ -3,7 +3,6 @@ title: Euro Mod
 ref: euro_mod
 lang: de
 section: Downloads
-menu: /downloads/index.html
 released: 2011-12-03 22:30:28 Z
 updated: 2014-11-08 22:30:28 Z
 copyright: 'cc-by-nc'

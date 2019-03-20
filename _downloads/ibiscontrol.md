@@ -3,7 +3,6 @@ title: IBIScontrol
 lang: de
 ref: ibiscontrol
 section: Downloads
-menu: /downloads/index.html
 released: 2015-04-01 22:30:28 Z
 updated: 2019-01-12 15:30:28 Z
 copyright: '2019'
