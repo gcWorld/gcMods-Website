@@ -18,7 +18,7 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                   {% for menu in site.data.[page.lang].menu %}
-                    <li {% if page.menu == menu[1].url %} class="active" {% endif %}{% if page.menu_en == menu[1].url %} class="active" {% endif %}><a class="{{page.menu_en}} {{ menu[1].url }}" href="{{ menu[1].url }}">{{ menu[1].name }}</a></li>
+                    <li {% if page.menu == menu[1].url %} class="active" {% endif %}{% if page.menu_en == menu[1].url %} class="active" {% endif %}><a href="{{ menu[1].url }}">{{ menu[1].name }}</a></li>
                   {% endfor %}
                     <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img id="imgNavSel" src="/assets/images/{{ page.lang }}.png" alt="..." class="icon-small"> <span class="caret"></span></a>
