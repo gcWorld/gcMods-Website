@@ -4,6 +4,7 @@ layout: main
 section: Contact
 lang: en
 ref: contact
+menu_en: /contact.html
 ---
 <div class="row">
 <div class="col-md-8">
