@@ -6,7 +6,6 @@ categories:
 - LOTUS
 - Editor
 layout: post
-menu: blog
 section: Blog
 image: aerials_lotus.png
 author: seeadler

@@ -6,7 +6,6 @@ categories:
 - OMSI
 - Editor
 layout: post
-menu: blog
 section: Blog
 image: aerials.JPG
 author: seeadler

@@ -5,7 +5,6 @@ categories:
 - downloads
 - update
 layout: post
-menu: blog
 section: Blog
 image:
 author: seeadler
