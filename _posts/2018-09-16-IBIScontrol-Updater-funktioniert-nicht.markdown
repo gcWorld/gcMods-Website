@@ -10,7 +10,7 @@ image:
 author: seeadler
 comments: true
 lang: de
-ref: ibiscontrol-updater-funktioniert-nicht
+ref: i-broke-it
 ---
 
 Der IBIScontrol Updater funktioniert aufgrund eines Serverumzugs nicht mehr. Das Problem lässt sich leider nicht beheben. Meine Empfehlung ist daher den Updater zu deinstallieren. Das Plugin funktioniert auch problemlos ohne den Updater.
