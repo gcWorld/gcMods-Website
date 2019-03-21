@@ -1,8 +1,8 @@
 ---
 title: Blog
 layout: blog
-menu: blog
 section: Blog
 lang: en
 ref: blog
+menu_en: /blog_en.html
 ---

@@ -4,7 +4,6 @@ date: 2017-10-12 15:00:00 Z
 categories:
 - Website
 layout: post
-menu: blog
 section: Blog
 image:
 author: seeadler

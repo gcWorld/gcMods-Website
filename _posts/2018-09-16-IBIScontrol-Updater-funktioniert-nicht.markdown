@@ -5,7 +5,6 @@ categories:
 - Website
 - IBIScontrol
 layout: post
-menu: blog
 section: Blog
 image:
 author: seeadler
