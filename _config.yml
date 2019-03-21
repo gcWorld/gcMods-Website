@@ -22,7 +22,7 @@ defaults:
       menu_en: /downloads/en/index.html
   - scope:
       path: ''
-      type: Posts
+      type: posts
     values:
       menu: /blog.html
       menu_en: /blog_en.html
