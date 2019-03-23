@@ -45,7 +45,7 @@ Bei der Kontaktaufnahme mit mir (z.B. per Kontaktformular, E-Mail oder via sozia
 Ich löschen die Anfragen, sofern diese nicht mehr erforderlich sind. Wir überprüfen die Erforderlichkeit alle 6 Monate.
 
 ### Kommentarfunktion
-Es ist möglich die Kommentarfunktion als Gast ohne Erstellung oder Verwendung eines Nutzerkontos zu nutzen. Gespeichert wird lediglich der angegebene Name, die E-Mailadresse (md5 verschlüsselt), sowie der angegebene Text.
+Die Kommentarfunktion nutzt Github. zum abgeben eines Kommentars ist ein Nutzerkonto von Github notwendig. [Die entsprechende Datenschutzerklärung von Github findet sich hier](https://help.github.com/en/articles/github-privacy-statement).
 
 ### Google ReCaptcha
 Wir binden die Funktion zur Erkennung von Bots, z.B. bei Eingaben in Onlineformularen ("ReCaptcha") des Anbieters Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA, ein.  
