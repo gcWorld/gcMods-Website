@@ -57,17 +57,6 @@ exclude:
 - api_source
 disqus: gcmods
 
-tweetsert:
-  enabled: true
-  timeline:
-    access_token: "285867665-Ovwg4sSaos35NWr5JamvngBQ3OFN08QVIHLXPpct"
-    handle: 'gcmods'
-    limit: 6
-  tags:
-    default: "tweet"
-  embed:
-    excerpts: true
-
 m:
   de:
     home:
