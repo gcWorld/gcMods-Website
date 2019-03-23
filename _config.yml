@@ -41,16 +41,32 @@ baseurl: ''
 url: 'www.gcmods.de'
 twitter_username: gcMods
 github_username: gcWorld
-google_analytics: true
+piwik: false
+google_analytics: false
 google_ads: false
+tracking_pixel: false
+fathom: true
+cookies: false
 markdown: kramdown
 plugins:
 - jekyll-feed
+- jekyll-tweetsert
 exclude:
 - themes
 - content
 - api_source
 disqus: gcmods
+
+tweetsert:
+  enabled: true
+  timeline:
+    access_token: "285867665-Ovwg4sSaos35NWr5JamvngBQ3OFN08QVIHLXPpct"
+    handle: 'gcmods'
+    limit: 6
+  tags:
+    default: "tweet"
+  embed:
+    excerpts: true
 
 m:
   de:

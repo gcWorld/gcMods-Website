@@ -1,0 +1,16 @@
+<!-- local image tracking -->
+<noscript data-src="https://api.gcmods.de/1x1.png">
+    <img src="https://api.gcmods.de/1x1.png" />
+  </noscript>
+  
+  <script>
+    [].forEach.call(document.querySelectorAll('noscript'), function(noscript) {
+      var img = new Image();
+      img.setAttribute('data-src', '');
+      noscript.parentNode.insertBefore(img, noscript);
+      img.onload = function() {
+          img.removeAttribute('data-src');
+      };
+      img.src = noscript.getAttribute('data-src');
+  });
+  </script>
