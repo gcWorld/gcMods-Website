@@ -1,6 +1,7 @@
 <section>
     <h4>{{site.data[page.lang].string.categories}}</h4>
 	{% for category in site.categories | sort: 'category[0]' %}
+  {% if category[1] %}
   <h5>{{ category[0] }}</h5>
   <ul>
     {% assign posts = category[1] | where:"lang",page.lang %}
@@ -12,6 +13,6 @@
         <li>Keine Blogeinträge</li>
     {% endif %}
   </ul>
-{% endfor %}
-
+  {% endif %}
+  {% endfor %}
 </section>
