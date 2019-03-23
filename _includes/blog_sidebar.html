@@ -1,12 +1,14 @@
 <section>
     <h4>{{site.data[page.lang].string.categories}}</h4>
-	{% for category in site.categories | sort: 'category' %}
+	{% for category in site.categories | sort: 'category[0]' %}
+  {% assign posts = category[1] | where:"lang",page.lang %}
+  {% unless posts[0].title == blank %}
   <h5>{{ category[0] }}</h5>
   <ul>
-    {% for post in category[1] | where:"lang", page.lang  %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
+        {% for post in posts %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
   </ul>
-{% endfor %}
-
+  {% endunless %}
+  {% endfor %}
 </section>

@@ -41,8 +41,12 @@ baseurl: ''
 url: 'www.gcmods.de'
 twitter_username: gcMods
 github_username: gcWorld
-google_analytics: true
+piwik: false
+google_analytics: false
 google_ads: false
+tracking_pixel: false
+fathom: true
+cookies: false
 markdown: kramdown
 plugins:
 - jekyll-feed

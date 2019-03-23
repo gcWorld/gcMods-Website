@@ -59,13 +59,9 @@
                 <a href="http://youtube.com/user/gcWorldMods">
                     <i class="fab fa-youtube-square fa-2x" aria-hidden="true"></i>
                 </a>
-                    
-
-
                 <a href="https://discord.gg/tJNMaQG" aria-label="Discord">
                     <i class="fab fa-discord fa-2x" aria-hidden="true"></i>
                 </a>
-
                 <br>
                 <!-- Pledgie went offline. Consider sending money via Paypal
                 <h4>{{ site.data[page.lang].string.support }}</h4>
@@ -80,88 +76,35 @@
     </div>
 </footer>
 
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="{{ '/assets/js/bootstrap.min.js' | relative_url }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
 
+<script>$('#tooltip').tooltip();</script>
 
+{% if site.cookies %}
+    <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+    <script type="text/javascript">
+        window.cookieconsent_options = {"message":"Wir verwenden ausschließlich notwendige funktionale Cookies, um einen sicheren Betrieb der Website zu ermöglichen.","dismiss":"OK","learnMore":"Details ansehen","link":"https://www.gcmods.de/datenschutz","theme":"dark-bottom"};
+    </script>
 
-
-
-        <!-- Bootstrap core JavaScript
-
-        ================================================== -->
-
-        <!-- Placed at the end of the document so the pages load faster -->
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
-
-        <script>$('#tooltip').tooltip();</script>
-
-        {% if page.comments %}
-        <article class="modal mdl-card mdl-shadow--2dp">
-          <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text js-modal-title"></h2>
-          </div>
-          <div class="mdl-card__supporting-text js-modal-text"></div>
-          <div class="mdl-card__actions mdl-card--border">
-            <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect js-close-modal">Close</button>
-          </div>
-        </article>
-
-
-        <script>
-        // Static comments
-        (function($) {
-            $("#comment-form").submit(function() {
-            var form = this;
-        
-            $(form).addClass("disabled");
-            $("#comment-submit").html(
-                '<svg class="icon spin"><use xlink:href="/assets/icons/icons.svg#icon-loading"></use></svg> Loading...'
-            );
-        
-            $.ajax({
-                type: $(this).attr("method"),
-                url: $(this).attr("action"),
-                data: $(this).serialize(),
-                contentType: "application/x-www-form-urlencoded",
-                success: function(data) {
-                $("#comment-submit")
-                    .html("Submitted")
-                    .addClass("btn--disabled");
-                $("#comment-form .js-notice")
-                    .removeClass("danger")
-                    .addClass("success");
-                showAlert(
-                    '<strong>Thanks for your comment!</strong> It is <a href="https://github.com/mmistakes/made-mistakes-jekyll/pulls">currently pending</a> and will show on the site once approved.'
-                );
-                },
-                error: function(err) {
-                console.log(err);
-                $("#comment-submit").html("Submit Comment");
-                $("#comment-form .js-notice")
-                    .removeClass("success")
-                    .addClass("danger");
-                showAlert(
-                    "<strong>Sorry, there was an error with your submission.</strong> Please make sure all required fields have been completed and try again."
-                );
-                $(form).removeClass("disabled");
-                }
-            });
-        
-            return false;
-            });
-        
-            function showAlert(message) {
-            $("#comment-form .js-notice").removeClass("hidden");
-            $("#comment-form .js-notice-text").html(message);
-            }
-        })(jQuery);
-        </script>
-        {% endif %}
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+    <!-- End Cookie Consent plugin -->
+{% endif %}
 
 {% if jekyll.environment == 'production' and site.google_analytics %}
-{% include google-analytics.html %}
+    {% include google-analytics-actual.html %}
+{% endif %}
+{% if jekyll.environment == 'production' and site.piwik %}
+    {% include google-analytics.html %}
+{% endif %}
+{% if jekyll.environment == 'production' and site.tracking_pixel %}
+    {% include tracking_pixel.html %}
+{% endif %}
+{% if jekyll.environment == 'production' and site.fathom %}
+    {% include fathom-analytics.html %}
 {% endif %}
