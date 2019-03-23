@@ -50,7 +50,6 @@ cookies: false
 markdown: kramdown
 plugins:
 - jekyll-feed
-- jekyll-tweetsert
 exclude:
 - themes
 - content
