@@ -1,0 +1,116 @@
+---
+label: Downloads
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+- type: text
+  name: ref
+  label: ref
+- type: select
+  name: lang
+  config:
+    source:
+      type: simple
+    options:
+    - de
+    - en
+  label: Language
+- type: select
+  name: section
+  config:
+    source:
+      type: simple
+    options:
+    - Downloads
+  label: Section
+- type: select
+  name: category
+  config:
+    source:
+      type: simple
+    options:
+    - omsi
+    - lotus
+    - xplane
+  label: Category
+- type: datetime
+  name: released
+  label: Release Date
+  config:
+    display_utc: false
+- type: datetime
+  name: updated
+  label: Updated
+- type: select
+  name: copyright
+  config:
+    source:
+      type: simple
+    options:
+    - cc-by-nc
+    - copy-2019
+  label: Copyright
+- type: boolean
+  name: ams
+  label: Addon Manager
+- type: boolean
+  label: ZIP
+  name: zip
+- type: text
+  name: zip-alt
+  label: zip-alt
+- type: text
+  name: exe
+  label: exe
+- type: text
+  name: android
+  label: android
+  description: false if none
+- type: boolean
+  name: homepage
+  label: Homepage
+  description: Show on homepage
+- type: file
+  name: image_big
+  label: Image Big
+- type: text
+- type: number
+- type: text
+  name: version
+  label: Version
+- type: select
+  name: omsi_version
+  config:
+    source:
+      type: simple
+    options:
+    - '1'
+    - '2'
+    - 1 & 2
+  label: OMSI Version
+- type: text
+  name: author
+  label: Author
+- type: text
+  name: link_forum
+  label: Link Forum
+- type: boolean
+  name: wip
+  label: wip
+- type: boolean
+  name: comments
+  label: comments
+- type: boolean
+  name: beta
+  label: beta
+- type: text
+- type: textarea
+  name: introduction
+  label: introduction
+- type: image_gallery
+  name: image_list
+  label: image list
