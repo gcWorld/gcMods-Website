@@ -45,6 +45,9 @@ layout: main
             {% if page.wip %}
                 {{site.data[page.lang].string.not_yet_available}}!
             {% else %}
+                {% if page.workshop %}
+                    <a class="btn btn-default btn-lg btn-primary btn-block" role="button" href="{{ page.workshop }}">{{site.data[page.lang].string.download}}<br><small>Workshop {{page.version}}</small></a>
+                {% endif %}
                 {% if page.exe %}
                     <a class="btn btn-default btn-lg btn-primary btn-block" role="button" href="{{ page.exe }}">{{site.data[page.lang].string.download}}<br><small>.exe {{page.version}}</small></a>
                 {% endif %}

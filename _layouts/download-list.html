@@ -8,6 +8,44 @@ layout: main
 
     {{ content }}
 
+    {% assign downloads = site.downloads | where:"layout","download" | where:"category","lotus" | where:"lang",page.lang | sort: 'updated','last' %}
+      {% if downloads %}
+	  <h2 id="lotus">LOTUS Downloads</h2>
+		  {% for post in downloads reversed %}
+		  {% if post.website %}
+			  <a href="{{ post.link }}" class="dl_a">
+		  {% else %}
+			  <a href="{{ post.url }}" class="dl_a">
+		  {% endif %}
+              <article class="dl_view">
+                  {% if post.exe %}
+                      <span class="pull-right"><i class="fa fa-file"></i> .exe</span>
+                  {% endif %}
+                  {% if post.ams %}
+                      <img class="pull-right am" src="{{ "/assets/images/"}}am.png" alt="Addon Manager Icon" height="35">
+                  {% endif %}
+                  {% if post.android %}
+                      <i class="fab fa-android android-c fa-2x pull-right"></i>
+                  {% endif %}
+
+
+                  <h2>{{post.title}} <small>{{post.version}}</small></h2>
+
+                  {% if post.image_list.first %}
+                    <div class="pull-left">
+                      <img src="{{ "/assets/images/downloads/thumbs/"}}{{post.image_list.first.filename}}" alt="{{post.title}}" />
+                    </div>
+                  {% endif %}
+
+                  {{ post.introduction }}
+
+              </article>
+          </a>
+          <hr />
+		  {% endfor %}
+	  {% else %}
+	  {% endif %}
+
     {% assign downloads = site.downloads | where:"layout","download" | where:"category","omsi" | where:"lang",page.lang | sort: 'updated','last' %}
       {% if downloads %}
 	  <h2 id="omsi">OMSI Downloads</h2>

@@ -6,7 +6,7 @@ section: Downloads
 category: lotus
 released: 2018-09-23 23:14:28 Z
 updated: 2019-04-06 23:58:28 Z
-copyright: 'copy-2019'
+copyright: '2019'
 ams: false
 zip: false
 zip-alt: 
