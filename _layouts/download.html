@@ -95,10 +95,18 @@ layout: main
                 <td></td>
             {% endif %}
         </tr>
+        {% if page.omsi_version %}
         <tr>
             <td>OMSI Version</td>
             <td>{{ page.omsi_version }}</td>
         </tr>
+        {% endif %}
+        {% if page.lotus_version %}
+        <tr>
+            <td>LOTUS Version</td>
+            <td>{{ page.lotus_version }}</td>
+        </tr>
+        {% endif %}
         <tr>
             <td>{{site.data[page.lang].string.published_on}}</td>
             <td>{{ page.released | date: "%e. %B %Y" }}</td>

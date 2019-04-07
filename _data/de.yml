@@ -29,7 +29,7 @@ string:
   information: "Informationen"
   licence: "Lizenz"
   published_on: "Veröffentlicht am"
-  forum: "Beitrag im off. OMSI Forum"
+  forum: "Beitrag im off. Forum"
   beta_warning: "Beta-Versionen wurden in der Regel auf ihre Funktion getestet. Es wird aber trotzdem dringend empfohlen ein Backup anzulegen!"
   android: "Android Apps werden über den Google Play Store zur Verfügung gestellt."
 
