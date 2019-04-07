@@ -32,6 +32,7 @@ string:
   forum: "Beitrag im off. Forum"
   beta_warning: "Beta-Versionen wurden in der Regel auf ihre Funktion getestet. Es wird aber trotzdem dringend empfohlen ein Backup anzulegen!"
   android: "Android Apps werden über den Google Play Store zur Verfügung gestellt."
+  documentation: "Anleitung"
 
 menu:
   home:

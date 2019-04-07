@@ -11,7 +11,7 @@ ams: false
 zip: false
 zip-alt: 
 exe: 
-workshop: https://doc.gcmods.de/documentation/gcw-streetobjects/
+workshop: https://steamcommunity.com/sharedfiles/filedetails/?id=1518967033
 android: false
 homepage: true
 image_big: 20190406145402_1.jpg

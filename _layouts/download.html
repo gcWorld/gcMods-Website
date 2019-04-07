@@ -118,6 +118,12 @@ layout: main
             <td>Author</td>
             <td>{{ page.author }}</td>
         </tr>
+        {% if page.documentation %}
+        <tr>
+            <td>{{site.data[page.lang].string.documentation}}</td>
+            <td>{{ page.documentation }}</td>
+        </tr>
+        {% endif %}
         {% if page.link_forum %}
         <tr>
             <td colspan="2"><a href="{{ page.link_forum }}">{{site.data[page.lang].string.forum}}</a></td>
