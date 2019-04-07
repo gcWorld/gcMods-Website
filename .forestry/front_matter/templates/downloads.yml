@@ -114,3 +114,5 @@ fields:
 - type: image_gallery
   name: image_list
   label: image list
+pages:
+- _downloads/gcw-straßenobjekte.md
