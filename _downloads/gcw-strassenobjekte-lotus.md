@@ -20,7 +20,7 @@ omsi_version:
 lotus_version: Early Access
 author: seeadler
 link_forum: https://www.lotus-simulator.de/forum/index.php?thread/3208-gcw-stra%C3%9Fenobjekte/
-wip: true
+wip: false
 documentation: https://doc.gcmods.de/documentation/gcw-streetobjects/
 
 comments: true
