@@ -13,7 +13,7 @@ zip-alt: ''
 exe: ''
 android: ''
 homepage: false
-image_big: "/uploads/20190406154725_1-2019.jpg"
+image_big: "/20190406154725_1-2019.jpg"
 undefined: ''
 version: 1.1
 omsi_version: ''
