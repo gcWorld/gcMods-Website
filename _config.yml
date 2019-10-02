@@ -45,7 +45,7 @@ piwik: false
 google_analytics: false
 google_ads: false
 tracking_pixel: false
-fathom: true
+fathom: false
 cookies: false
 markdown: kramdown
 plugins:
