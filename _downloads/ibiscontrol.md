@@ -6,7 +6,7 @@ section: Downloads
 category:
 - omsi
 released: 2015-04-01 22:30:28 Z
-updated: 2019-01-12 15:30:28 Z
+updated: 2019-02-02 15:30:28 Z
 copyright: '2019'
 ams: false
 zip: 
@@ -15,7 +15,7 @@ exe: https://github.com/gcWorld/IBIScontrol-Bugs/releases/download/1.2.2/IBIScon
 android: http://play.google.com/store/apps/details?id=de.gcworld.ibiscontrol
 homepage: true
 image_big: ibiscontrol-header.png
-version: 1.2.2
+version: 1.2.4+200
 omsi_version: 2
 author: seeadler
 link_forum: https://forum.omnibussimulator.de/forum/index.php?thread/31324-ibiscontrol-f%C3%BCr-omsi-2/
@@ -88,6 +88,9 @@ Unterstützte Währungen:
 - Euro
 
 <div class="bg bg-success" markdown="block" id="changelog">
+
+### Änderungen in 1.2.4
+- Absturz während des Spielens behoben.
 
 ### Änderungen in 1.2.2
 - O530G (4 Türen) - Vierte Tür war nicht richtig implementiert. Dies wurde behoben.
