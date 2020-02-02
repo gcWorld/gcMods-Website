@@ -87,7 +87,7 @@ Unterstützte Währungen:
 - DM
 - Euro
 
-<div class="bg bg-success" markdown="block">
+<div class="bg bg-success" markdown="block" id="changelog">
 
 ### Änderungen in 1.2.2
 - O530G (4 Türen) - Vierte Tür war nicht richtig implementiert. Dies wurde behoben.
@@ -99,7 +99,7 @@ Unterstützte Währungen:
 
 </div>
 
-<div class="bg bg-danger" markdown="block">
+<div class="bg bg-danger" markdown="block" id="troubleshooting">
 
 ### Vorraussetzungen
 
