@@ -83,7 +83,7 @@ Supported Currencies:
 In case of trouble or questions, you can contact me via email.
 Errors can be reported at https://github.com/gcWorld/IBIScontrol-Bugs/issues
 
-<div class="bg bg-success" markdown="block">
+<div class="bg bg-success" markdown="block" id="changelog">
 
 ### Changes in 1.2.4+200
 - Fixes a crash during gameplay when signals are active but the dashboard view is not selected
@@ -98,7 +98,7 @@ Errors can be reported at https://github.com/gcWorld/IBIScontrol-Bugs/issues
 
 </div>
 
-<div class="bg bg-danger" markdown="block">
+<div class="bg bg-danger" markdown="block" id="troubleshooting">
 
 ### System Requirements
 
