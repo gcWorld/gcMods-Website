@@ -51,6 +51,11 @@ small {
     border-bottom: 3px solid white;
     margin-bottom:-1px;
 }
+.navbar-inverse .navbar-nav>.active>a:hover, ul.nav li.active>a:hover {
+	background: #eee;
+    border-bottom: 3px solid white;
+    margin-bottom:-1px;
+}
 .slider {
     padding-top:10px;
     margin-bottom:20px;
@@ -120,7 +125,8 @@ footer hr {
     border-color:#424242;
 }
 footer h4 {
-	color:#75bf34;
+    color:#75bf34;
+    padding-top: 1rem;
 }
 footer a {
     color:#ccc;
@@ -129,8 +135,19 @@ footer a {
     border-bottom: 1px solid #424242;
     border-radius: 0;
 }
+#footer-nav .active a {
+    border-radius: 0.25rem;
+    color: #000;
+}
+#footer-nav .active a:hover {
+    border-radius: 0.25rem;
+    color:#000;
+    background-color: #eee;
+}
 #footer-nav a:hover {
-    border-radius: 4px;
+    border-radius: 0.25rem;
+    color:#000;
+    background-color: #eee;
 }
 footer a.green {
     color:#75bf34;
@@ -138,9 +155,6 @@ footer a.green {
 footer a.green:hover {
     color:#75bf34;
     text-decoration:underline;
-}
-footer a:hover {
-    color:#000;
 }
 #searchbox-footer a {
     margin-right: 5px;
@@ -258,34 +272,6 @@ aside a>small {
 
 #comments {
   padding-bottom: 15px;	
-}
-
-.comment {
-  border: 1px dashed #ccc;
-  padding: 15px;
-  min-height: 75px;
-  margin-bottom: 10px;
-  color: #ccc;
-}
-.comment .avatar {
-  width: 48px;
-  height: 48px;
-  float: left;
-}
-.comment strong, .comment .body p {
-  color: #000;
-}
-.comment .body {
-  margin-left: 55px;
-}
-.comment .body hr {
-  margin: 0;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.comment .g-recaptcha {
-  margin-top: 10px;
 }
 
 .ui-group-buttons .or{position:relative;float:left;width:.3em;height:1.3em;z-index:3;font-size:12px}

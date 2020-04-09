@@ -3,20 +3,20 @@
         <div class="row" id="footer-nav">
             <div class="col-sm-3">
                 <h4>Navigation</h4>
-                <ul class="nav nav-pills nav-stacked">
+                <ul class="nav flex-column nav-pills">
                   {% for menu in site.data.[page.lang].menu %}
-                    <li {% if page.url == menu[1].url %} class="active" {% endif %}><a href="{{ menu[1].url }}">{{ menu[1].name }}</a></li>
+                    <li  class="nav-item {% if page.url == menu[1].url %} active {% endif %}"><a class="nav-link" href="{{ menu[1].url }}">{{ menu[1].name }}</a></li>
                   {% endfor %}
                 </ul>
             </div>
 
             <div class="col-sm-3">
                 <h4>Blog</h4>
-                <ul class="nav nav-pills nav-stacked">
+                <ul class="nav flex-column nav-pills">
                         {% assign posts = site.posts | where:"lang",page.lang %}
                     {% if posts %}
                         {% for post in posts %}
-                                    <li><a href="{{ post.url }}">&raquo; {{ post.title }}</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="{{ post.url }}">&raquo; {{ post.title }}</a></li>
                         {% endfor %}
                     {% else %}
                         <li>Keine Blogeinträge</li>
@@ -26,14 +26,14 @@
 
             <div class="col-sm-3">
                 <h4>Downloads</h4>
-                <ul class="nav nav-pills nav-stacked">
+                <ul class="nav flex-column nav-pills">
                     {% if site.downloads %}
                         {% assign downloads = site.downloads | where:"layout","download" | where:"lang",page.lang | sort: 'updated','first' %}
                         {% for post in downloads reversed limit:4 %}
                             {% if post.website!="true" %}
-                                <li><a href="{{ post.url }}">&raquo; {{ post.title }}</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ post.url }}">&raquo; {{ post.title }}</a></li>
                             {% else %}
-                                <li><a href="{{ post.link }}">&raquo; {{ post.title }}</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ post.link }}">&raquo; {{ post.title }}</a></li>
                             {% endif %}
                         {% endfor %}
                     {% else %}
@@ -72,8 +72,10 @@
             </div>
         </div>
         <hr>
-        <p class="pull-right"><a class="green" href="#">Back to top</a></p>
-        <p>&copy; {{ 'now' | date: "%Y" }} gcmods.de &middot; <a class="green" href="/impressum">Impressum</a> &middot; <a class="green" href="/datenschutz">Datenschutz</a>
+        <div class="d-flex bd-highlight mb-2">
+            <div class="p-2 bd-highlight">&copy; {{ 'now' | date: "%Y" }} gcmods.de &middot; <a class="green" href="/impressum">Impressum</a> &middot; <a class="green" href="/datenschutz">Datenschutz</a></div>
+            <div class="ml-auto p-2 bd-highlight"><a class="green" href="#">Back to top</a></div>
+        </div>
     </div>
 </footer>
 
@@ -81,8 +83,9 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="{{ '/assets/js/bootstrap.min.js' | relative_url }}"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
 
 <script>$('#tooltip').tooltip();</script>
