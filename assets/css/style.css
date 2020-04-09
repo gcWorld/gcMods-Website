@@ -14,9 +14,6 @@ body {
 article h2 a:hover {
     text-decoration: none!important;
 }
-#twitter-widget-0 {
-height: 300px !important;
-}
 .bg {
            margin-left:-20px;
             padding: 1px 0 1px 20px;
@@ -90,7 +87,7 @@ small {
     }
 }
 
-#carousel-example-generic {
+#carouselExampleControls {
   border: 5px white solid;
 }
 
