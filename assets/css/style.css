@@ -144,7 +144,7 @@ footer a {
     color:#000;
     background-color: #eee;
 }
-#footer-nav a:hover {
+#footer-nav .nav-item a:hover {
     border-radius: 0.25rem;
     color:#000;
     background-color: #eee;
