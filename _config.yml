@@ -27,7 +27,7 @@ defaults:
       menu: /blog.html
       menu_en: /blog_en.html
 email: info@gcmods.de
-description: 'gcWorld Modifications bietet kostenlose Erweiterungen für den Omnibussimulator OMSI 1 und OMSI 2.
+description: 'gcWorld Modifications bietet kostenlose Erweiterungen für den Omnibussimulator OMSI und LOTUS.
 
 '
 reCaptcha:
@@ -39,7 +39,7 @@ include: [_redirects]
 lang: 'de'
 baseurl: ''
 url: 'www.gcmods.de'
-twitter_username: gcMods
+twitter_username: 
 github_username: gcWorld
 piwik: false
 google_analytics: false
@@ -53,7 +53,6 @@ plugins:
 exclude:
 - themes
 - content
-- api_source
 disqus: gcmods
 
 m:
