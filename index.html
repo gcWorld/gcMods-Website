@@ -15,36 +15,38 @@ menu_en: '/en'
     <div class="jumbotron">
         {% include jumbotron.md %}
     </div>
-    <div class="row">
+    <div class="card-deck">
     {% assign downloads = site.downloads | where:"layout","download" | where:"homepage","true" | where:"lang", page.lang | sort: 'updated','first' %}
     {% for record in downloads reversed limit:3 %}
-        <div class="col-md-4">
+        <div class="card">
             {% if record.image_big %}
                 {% if record.website %}
                     <a href="{{ record.link }}">
                 {% else %}
                     <a href="{{ record.url }}">
                 {% endif %}
-                <img class="img-responsive" src="{{"/assets/images/downloads/thumbs/home/"}}{{ record.image_big }}" alt="{{ record.title }}"></a>
+                <img class="card-img-top" src="{{"/assets/images/downloads/thumbs/home/"}}{{ record.image_big }}" alt="{{ record.title }}"></a>
             {% else %}
               <a href="{{ record.link }}">
-                  <img class="img-responsive" data-src="holder.js/350x150/text:Kein Bild" alt="{{ record.title }}">
+                  <img class="card-img-top" data-src="holder.js/350x150/text:Kein Bild" alt="{{ record.title }}">
               </a>
             {% endif %}
             {% if record.wip %}
                 <div class="ribbon-wrapper-green"><div class="ribbon-green">WIP</div></div>
             {% endif %}
-            <h3>{{ record.title }} <small>{{ record.version}}</small></h3>
-            <p>{{ record.introduction }}</p>
-            {% if record.wip %}
-                <p><a class="btn btn-default" href="{{ record.link }}" role="button">Mehr Informationen &raquo;</a></p>
-            {% else %}
-                {% if record.website %}
-                    <p><a class="btn btn-default" href="{{ record.url }}" role="button">Zur Website &raquo;</a></p>
+            <div class="card-body">
+                <h5 class="card-title">{{ record.title }} <small>{{ record.version}}</small></h5>
+                <p class="card-text">{{ record.introduction }}</p>
+                {% if record.wip %}
+                    <a class="btn btn-secondary" href="{{ record.link }}" role="button">Mehr Informationen &raquo;</a>
                 {% else %}
-                    <p><a class="btn btn-default" href="{{ record.url }}" role="button">Zum Download &raquo;</a></p>
+                    {% if record.website %}
+                        <a class="btn btn-secondary" href="{{ record.url }}" role="button">Zur Website &raquo;</a>
+                    {% else %}
+                        <a class="btn btn-secondary" href="{{ record.url }}" role="button">Zum Download &raquo;</a>
+                    {% endif %}
                 {% endif %}
-            {% endif %}
+            </div>
         </div>
         <hr class="visible-xs visible-sm">
     {% else %}
