@@ -9,9 +9,11 @@ ref: privacy
 ## Datenschutzerklärung
 Diese Datenschutzerklärung klärt dich über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten auf dieser Internetseite auf.
 
+Zuletzt Aktualisiert: 09.04.2020
+
 ### Verantwortlicher
 Siehe Impressum.
-Link zum Impressum: https://www.gcmods.de/impressum
+[Link zum Impressum](https://www.gcmods.de/impressum)
 
 ### Arten der verarbeiteten Daten:
 -	Bestandsdaten (Name, sofern dieser im Kontaktformular oder der Kommentarfunktion angegeben wird).
@@ -40,7 +42,7 @@ Bei der Kontaktaufnahme mit mir (z.B. per Kontaktformular, E-Mail oder via sozia
 Ich löschen die Anfragen, sofern diese nicht mehr erforderlich sind. Ich überprüfen die Erforderlichkeit alle 6 Monate.
 
 ### Kommentarfunktion
-Die Kommentarfunktion nutzt Github. zum abgeben eines Kommentars ist ein Nutzerkonto von Github notwendig. [Die entsprechende Datenschutzerklärung von Github findet sich hier](https://help.github.com/en/articles/github-privacy-statement).
+Die Kommentarfunktion nutzt Github. Zum Abgeben eines Kommentars ist ein Nutzerkonto von Github notwendig. [Die entsprechende Datenschutzerklärung von Github findet sich hier](https://help.github.com/en/articles/github-privacy-statement).
 
 ### Google ReCaptcha
 Ich binden die Funktion zur Erkennung von Bots, z.B. bei Eingaben in Onlineformularen ("ReCaptcha") des Anbieters Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA, ein.  
