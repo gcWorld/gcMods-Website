@@ -19,7 +19,7 @@ layout: main
 
   <div class="post-content" itemprop="articleBody">
     {% if page.image %}
-      <img class="img-responsive" src="{{"/assets/images/blog/"}}{{page.image}}" alt="{{ page.title | escape }}" />
+      <img class="img-fluid" src="{{"/assets/images/blog/"}}{{page.image}}" alt="{{ page.title | escape }}" />
     {% endif %}
     {{ content }}
   </div>

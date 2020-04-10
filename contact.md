@@ -12,7 +12,7 @@ menu_en: /contact.html
 <h2>Get in touch</h2>
 
 <form name="contact" action="/thanks" netlify-honeypot="bot-name" netlify>
-    <p class="hidden">
+    <p hidden>
     <label>Don’t fill this out if you're human: <input name="bot-name" /></label>
     </p>
     <div class="form-group">
@@ -24,7 +24,7 @@ menu_en: /contact.html
     <div class="form-group">
         <label for="message">Message:</label><textarea rows="8" class="form-control" name="message"></textarea>
     </div>
-    <button class="btn btn-primary" type="submit">Send</button>
+    <button class="btn btn-success" type="submit">Send</button>
 </form>
 
 </div>

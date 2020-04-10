@@ -48,14 +48,9 @@ menu_en: '/en'
                 {% endif %}
             </div>
         </div>
-        <hr class="visible-xs visible-sm">
-    {% else %}
-        <div class="col-md-4">
-            Keine Downloads
-        </div>
     {% endfor %}
     </div>
-    <a class="btn btn-default pull-right" href="/downloads" role="button">Weitere Downloads &raquo;</a><br>
+    <a class="btn btn-light" href="/downloads" role="button">Weitere Downloads &raquo;</a>
     <hr class="featurette-divider">
     <div class="row">
     <div class="col-md-8">
@@ -66,10 +61,10 @@ menu_en: '/en'
   {% assign date_format = site.minima.date_format | default: "%e. %B %Y" %}
             <p class="blog-post-meta">Geschrieben von {{ record.author }} am {{ record.date | date: date_format }}</p>
             {% if record.image %}
-                <a href="{{ record.url }}"><img class="img-responsive" src="{{"assets/images/blog/"}}{{ record.image }}" alt="{{ record.title }}"></a>
+                <a href="{{ record.url }}"><img class="img-fluid" src="{{"assets/images/blog/"}}{{ record.image }}" alt="{{ record.title }}"></a>
             {% endif %}
             <p>{{ record.excerpt }}</p>
-            <a class="btn btn-default" href="{{ record.url }}" role="button">Mehr lesen &raquo;</a>
+            <a class="btn btn-secondary" href="{{ record.url }}" role="button">Mehr lesen &raquo;</a>
         </div>
     {% endfor %}
     </div>

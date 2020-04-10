@@ -1,48 +1,48 @@
 ---
 layout: main
 ---
-<div class="row">
+<div class="row row-cols-1 row-cols-md-3">
 
-<div class="col-md-8" role="content" id="download-listing">
+  <div class="col-md-9" role="content" id="download-listing">
     <h1 class="page-heading">Downloads</h1>
 
     {{ content }}
 
+  </div>
+</div>
     {% assign downloads = site.downloads | where:"layout","download" | where:"category","lotus" | where:"lang",page.lang | sort: 'updated','last' %}
       {% if downloads %}
-	  <h2 id="lotus">LOTUS Downloads</h2>
-		  {% for post in downloads reversed %}
-		  {% if post.website %}
-			  <a href="{{ post.link }}" class="dl_a">
-		  {% else %}
-			  <a href="{{ post.url }}" class="dl_a">
-		  {% endif %}
-              <article class="dl_view">
-                  {% if post.exe %}
-                      <span class="pull-right"><i class="fa fa-file"></i> .exe</span>
-                  {% endif %}
-                  {% if post.ams %}
-                      <img class="pull-right am" src="{{ "/assets/images/"}}am.png" alt="Addon Manager Icon" height="35">
-                  {% endif %}
-                  {% if post.android %}
-                      <i class="fab fa-android android-c fa-2x pull-right"></i>
-                  {% endif %}
+      <div class="row row-cols-1 row-cols-md-3">
+    <h2 id="lotus">LOTUS Downloads</h2>
 
-
-                  <h2>{{post.title}} <small>{{post.version}}</small></h2>
-
-                  {% if post.image_list.first %}
-                    <div class="pull-left">
-                      <img src="{{ "/assets/images/downloads/thumbs/"}}{{post.image_list.first.filename}}" alt="{{post.title}}" />
-                    </div>
-                  {% endif %}
-
-                  {{ post.introduction }}
-
-              </article>
+      {% for post in downloads reversed %}
+      <div class="col mb-4">
+        <div class="card">
+          {% if post.website %}
+            <a href="{{ post.link }}" class="">
+          {% else %}
+            <a href="{{ post.url }}" class="">
+          {% endif %}
+            {% if post.image_list.first %}
+              <img class="card-img-top" src="{{ "/assets/images/downloads/thumbs/"}}{{post.image_list.first.filename}}" alt="{{post.title}}" />
+            {% endif %}
           </a>
-          <hr />
-		  {% endfor %}
+            
+                    <div class="card-body">
+                      <h2 class="card-title">{{post.title}} <small>{{post.version}}</small>{% if post.exe %}
+                        <span class=""><i class="fa fa-file"></i> .exe</span>
+                        {% endif %}{% if post.ams %}
+                        <img class="am" src="{{ "/assets/images/"}}am.png" alt="Addon Manager Icon" height="35">
+                        {% endif %}{% if post.android %}
+                        <i class="fab fa-android android-c fa-2x"></i>
+                        {% endif %}</h2>
+
+                    <p class="card-text">{{ post.introduction }}</p>
+                  </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
 	  {% else %}
 	  {% endif %}
 
@@ -50,43 +50,37 @@ layout: main
       {% if downloads %}
 	  <h2 id="omsi">OMSI Downloads</h2>
 		  {% for post in downloads reversed %}
-		  {% if post.website %}
-			  <a href="{{ post.link }}" class="dl_a">
-		  {% else %}
-			  <a href="{{ post.url }}" class="dl_a">
-		  {% endif %}
-              <article class="dl_view">
-                  {% if post.exe %}
-                      <span class="pull-right"><i class="fa fa-file"></i> .exe</span>
-                  {% endif %}
-                  {% if post.ams %}
-                      <img class="pull-right am" src="{{ "/assets/images/"}}am.png" alt="Addon Manager Icon" height="35">
-                  {% endif %}
-                  {% if post.android %}
-                      <i class="fab fa-android android-c fa-2x pull-right"></i>
-                  {% endif %}
-
-
-                  <h2>{{post.title}} <small>{{post.version}}</small></h2>
-
-                  {% if post.image_list.first %}
-                    <div class="pull-left">
-                      <img src="{{ "/assets/images/downloads/thumbs/"}}{{post.image_list.first.filename}}" alt="{{post.title}}" />
-                    </div>
-                  {% endif %}
-
-                  {{ post.introduction }}
-
-              </article>
+		  <div class="col mb-4">
+        <div class="card">
+          {% if post.website %}
+            <a href="{{ post.link }}" class="">
+          {% else %}
+            <a href="{{ post.url }}" class="">
+          {% endif %}
+            {% if post.image_list.first %}
+              <img class="card-img-top" src="{{ "/assets/images/downloads/thumbs/"}}{{post.image_list.first.filename}}" alt="{{post.title}}" />
+            {% endif %}
           </a>
-          <hr />
+            
+                    <div class="card-body">
+                      <h2 class="card-title">{{post.title}} <small>{{post.version}}</small>{% if post.exe %}
+                        <span class=""><i class="fa fa-file"></i> .exe</span>
+                        {% endif %}{% if post.ams %}
+                        <img class="am" src="{{ "/assets/images/"}}am.png" alt="Addon Manager Icon" height="35">
+                        {% endif %}{% if post.android %}
+                        <i class="fab fa-android android-c fa-2x"></i>
+                        {% endif %}</h2>
+
+                    <p class="card-text">{{ post.introduction }}</p>
+                  </div>
+        </div></div>
 		  {% endfor %}
 	  {% else %}
 	  {% endif %}
 </div>
 <!-- Sidebar -->
 
-<aside class="col-md-4">
+<aside class="col-md-3">
   <div class="panel">
     <h4><i class="fa fa-file"></i> .exe {{ site.data[page.lang].string.installer }}</h4>
 
