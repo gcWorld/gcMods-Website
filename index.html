@@ -66,6 +66,9 @@ menu_en: '/en'
             {% if record.image %}
                 <a href="{{ record.url }}"><img class="img-responsive" src="{{"assets/images/blog/"}}{{ record.image }}" alt="{{ record.title }}"></a>
             {% endif %}
+            {% if post.image_extern %}
+            <a href="{{post.url}}"><img class="img-responsive" src="{{post.image_extern}}" alt="{{post.title | escape}}" /></a>
+            {% endif %}
             <p>{{ record.excerpt }}</p>
             <a class="btn btn-default" href="{{ record.url }}" role="button">Mehr lesen &raquo;</a>
         </div>

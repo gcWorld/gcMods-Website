@@ -21,6 +21,9 @@ layout: main
     {% if page.image %}
       <img class="img-responsive" src="{{"/assets/images/blog/"}}{{page.image}}" alt="{{ page.title | escape }}" />
     {% endif %}
+    {% if post.image_extern %}
+      <img class="img-responsive" src="{{post.image_extern}}" alt="{{post.title | escape}}" />
+    {% endif %}
     {{ content }}
   </div>
 </article>
