@@ -1,6 +1,6 @@
 ---
 title: Straßenobjekte Vorschau - Absturzsicherung
-date: 2020-04-17 16:00
+date: 2020-04-17 00:00
 categories:
 - LOTUS
 layout: post
