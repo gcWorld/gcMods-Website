@@ -10,7 +10,7 @@ author: seeadler
 comments: true
 lang: de
 ref: short-url
-image-list-extern:
+image_list_extern:
 - small: https://img.gcmods.de/media/small/Strassenobjekte/20200416232851_1.jpg
   large: https://img.gcmods.de/media/large/Strassenobjekte/20200416232851_1.jpg
 - small: https://img.gcmods.de/media/small/Strassenobjekte/20200416232934_1.jpg
