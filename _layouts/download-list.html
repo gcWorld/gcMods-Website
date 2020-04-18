@@ -25,7 +25,7 @@ layout: main
               <img class="card-img-top" src="{{ "/assets/images/downloads/"}}{{post.image_list.first.filename}}" alt="{{post.title}}" />
             {% endif %}
             {% if post.image_list_extern.first %}
-              <img class="card-img-top" src="{{post.image_list_extern.first.filename}}" alt="{{post.title}}" />
+              <img class="card-img-top" src="{{post.image_list_extern.first.list}}" alt="{{post.title}}" />
             {% endif %}
           </a>
             

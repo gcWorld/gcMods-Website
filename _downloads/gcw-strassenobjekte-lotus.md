@@ -34,6 +34,7 @@ introduction: Dieses Set bietet diverse Objekte zum Erstellen von Baustellen in 
 image_list_extern:
 - small: https://img.gcmods.de/media/thumbs/Strassenobjekte/20190406145402_1.jpg
   large: https://img.gcmods.de/media/large/Strassenobjekte/20190406145402_1.jpg
+  list: https://img.gcmods.de/media/small/Strassenobjekte/20190406145402_1.jpg
 - small: https://img.gcmods.de/media/thumbs/Strassenobjekte/20190406145425_1.jpg
   large: https://img.gcmods.de/media/large/Strassenobjekte/20190406145425_1.jpg
 - small: https://img.gcmods.de/media/thumbs/Strassenobjekte/20200416232851_1.jpg
