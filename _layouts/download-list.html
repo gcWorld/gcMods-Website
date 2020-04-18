@@ -15,14 +15,14 @@ layout: main
     <div class="row row-cols-1 row-cols-md-3">
       {% for post in downloads reversed %}
       <div class="col mb-4">
-        <div class="card">
+        <div class="card h-100">
           {% if post.website %}
             <a href="{{ post.link }}" class="">
           {% else %}
             <a href="{{ post.url }}" class="">
           {% endif %}
             {% if post.image_list.first %}
-              <img class="card-img-top" src="{{ "/assets/images/downloads/thumbs/"}}{{post.image_list.first.filename}}" alt="{{post.title}}" />
+              <img class="card-img-top" src="{{ "/assets/images/downloads/"}}{{post.image_list.first.filename}}" alt="{{post.title}}" />
             {% endif %}
           </a>
             
@@ -51,14 +51,14 @@ layout: main
     <div class="row row-cols-1 row-cols-md-3">
 		  {% for post in downloads reversed %}
       <div class="col mb-4">
-        <div class="card">
+        <div class="card h-100">
           {% if post.website %}
             <a href="{{ post.link }}" class="">
           {% else %}
             <a href="{{ post.url }}" class="">
           {% endif %}
             {% if post.image_list.first %}
-              <img class="card-img-top" src="{{ "/assets/images/downloads/thumbs/"}}{{post.image_list.first.filename}}" alt="{{post.title}}" />
+              <img class="card-img-top" src="{{ "/assets/images/downloads/"}}{{post.image_list.first.filename}}" alt="{{post.title}}" />
             {% endif %}
           </a>
             
