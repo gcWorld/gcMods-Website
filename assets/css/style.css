@@ -11,11 +11,16 @@ body {
         margin-bottom:780px;
     }
 }
+a, a:hover {
+    color: #75bf34;
+}
+
+.btn-success {
+    background-color: #75bf34;
+}
+
 article h2 a:hover {
     text-decoration: none!important;
-}
-#twitter-widget-0 {
-height: 300px !important;
 }
 .bg {
            margin-left:-20px;
@@ -31,15 +36,30 @@ small {
     color:#A4C639;
 	padding-right:15px;
 }
-.navbar {
-    margin-bottom:0;
-    padding-top:10px;
-}
-.navbar-brand img {
-    margin-top:-15px;
+.navbar-brand {
+    padding-bottom:0;
     padding-top:0;
 }
-.navbar-inverse .navbar-nav>.active>a, ul.nav li.active>a {
+.bg-dark {
+    background-color: #222!important;
+}
+
+pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #333;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: text;
+}
+
+ul.nav li.active>a {
 	background: rgb(117,191,52); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(117,191,52,1) 0%, rgba(95,160,30,1) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(117,191,52,1)), color-stop(100%,rgba(95,160,30,1))); /* Chrome,Safari4+ */
@@ -51,6 +71,11 @@ small {
     border-bottom: 3px solid white;
     margin-bottom:-1px;
 }
+footer ul.nav li.active>a:hover {
+	background: #eee;
+    border-bottom: 3px solid white;
+    margin-bottom:-1px;
+}
 .slider {
     padding-top:10px;
     margin-bottom:20px;
@@ -59,15 +84,13 @@ small {
     /*background-image:url(../images/bg.png);*/
 }
 .toptitle {
-    margin-top:-20px;
-    padding-top:5px;
-    height:60px;
+    padding-bottom:0.01rem;
     background: #75bf34;
     /*background-image:url(../images/bg.png);*/
 }
 .toptitle h1 {
     /*text-shadow: 0 0 2px white;*/
-    font-size: 30px;
+    
 }
 @media (max-width: 750px) {
     .slider {
@@ -85,7 +108,7 @@ small {
     }
 }
 
-#carousel-example-generic {
+#carouselExampleControls {
   border: 5px white solid;
 }
 
@@ -107,7 +130,6 @@ h2>a {
 footer {
 	background:#222;
 	position: absolute;
-	bottom: -20px;
 	width: 100%;
 	/* Set the fixed height of the footer here */
 	min-height: 280px;
@@ -120,7 +142,8 @@ footer hr {
     border-color:#424242;
 }
 footer h4 {
-	color:#75bf34;
+    color:#75bf34;
+    padding-top: 1rem;
 }
 footer a {
     color:#ccc;
@@ -129,8 +152,19 @@ footer a {
     border-bottom: 1px solid #424242;
     border-radius: 0;
 }
-#footer-nav a:hover {
-    border-radius: 4px;
+#footer-nav .active a {
+    border-radius: 0.25rem;
+    color: #000;
+}
+#footer-nav .active a:hover {
+    border-radius: 0.25rem;
+    color:#000;
+    background-color: #eee;
+}
+#footer-nav .nav-item a:hover {
+    border-radius: 0.25rem;
+    color:#000;
+    background-color: #eee;
 }
 footer a.green {
     color:#75bf34;
@@ -138,9 +172,6 @@ footer a.green {
 footer a.green:hover {
     color:#75bf34;
     text-decoration:underline;
-}
-footer a:hover {
-    color:#000;
 }
 #searchbox-footer a {
     margin-right: 5px;
@@ -161,7 +192,7 @@ footer a:hover {
   overflow: hidden;
   position: absolute;
   top: -3px;
-  right: 22px;
+  right: 0px;
 }
 .ribbon-green {
   font: bold 15px Sans-Serif;
@@ -258,34 +289,6 @@ aside a>small {
 
 #comments {
   padding-bottom: 15px;	
-}
-
-.comment {
-  border: 1px dashed #ccc;
-  padding: 15px;
-  min-height: 75px;
-  margin-bottom: 10px;
-  color: #ccc;
-}
-.comment .avatar {
-  width: 48px;
-  height: 48px;
-  float: left;
-}
-.comment strong, .comment .body p {
-  color: #000;
-}
-.comment .body {
-  margin-left: 55px;
-}
-.comment .body hr {
-  margin: 0;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.comment .g-recaptcha {
-  margin-top: 10px;
 }
 
 .ui-group-buttons .or{position:relative;float:left;width:.3em;height:1.3em;z-index:3;font-size:12px}

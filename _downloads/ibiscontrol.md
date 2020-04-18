@@ -87,7 +87,7 @@ Unterstützte Währungen:
 - DM
 - Euro
 
-<div class="bg bg-success" markdown="block" id="changelog">
+<div class="bg-secondary text-white p-3 mb-2" markdown="block" id="changelog">
 
 ### Änderungen in 1.2.4
 - Absturz während des Spielens behoben.

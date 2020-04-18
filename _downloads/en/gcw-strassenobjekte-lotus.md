@@ -1,6 +1,6 @@
 ---
-title: gcW Straßenobjekte LOTUS
-lang: de
+title: gcW Streetobjects LOTUS
+lang: en
 ref: strassenobjekte-lotus
 section: Downloads
 category: lotus
@@ -21,7 +21,7 @@ lotus_version: Early Access
 author: seeadler
 link_forum: https://www.lotus-simulator.de/forum/index.php?thread/3208-gcw-stra%C3%9Fenobjekte/
 wip: false
-documentation: https://doc.gcmods.de/gcw%20strassenobjekte/inhalt/
+documentation: https://doc.gcmods.de/gcw%20streetobjects/inhalt/
 
 comments: true
 
@@ -29,7 +29,7 @@ beta:
 beta-format: zip
 beta-version: 1.3.2
 
-introduction: Dieses Set bietet diverse Objekte zum Erstellen von Baustellen in LOTUS.
+introduction: This set contains a collection of objects for creating construction zones.
 
 image_list_extern:
 - small: https://img.gcmods.de/media/thumbs/Strassenobjekte/20190406145402_1.jpg
@@ -61,23 +61,24 @@ image_list_extern:
 
 ---
 
-Das Set enthält die folgenden Objekte:
-
-- Bagger
-- 2 Steinhaufen
+The set currently contains the following objects:
+- Excavator
+- 2 piles of stones
+- 2 piles of sand
 - Container
-- Leitbake (links-rechts, rechts-rechts, einseitig rechts, einseitig links)
-- Leuchte Gelb (aus, an, blinkend, blinkend an<->dimm)
-- Leuchte Rot einseitig (aus, an)
-- Leitpfosten (weiß, gelb)
-- Absperrung (1 Fuß, 2 Füße)
-- Schuttcontainer (rot, orange, grün, jeweils voll und leer)
-- Betonrohre
-- Baustellenampel
-- Sandhaufen
+- rubble containers in red, orange, and green. Both full and empty.
+- safety beacon
+- safety beacon lamp yellow (off, on, flashing)
+- safety beacon lamp  red (on, off)
+- delineator post (white, yellow)
+- Concrete pipe
+- Construction traffic light
+- barrier
+
+All objects are based on German road objects.
 
 <div class="bg-secondary text-white p-3 mb-2" markdown="block">
 
-Eine Auflistung der Änderungen und Neuerungen in der aktuellen Version gibt es hier: [Änderungen](https://doc.gcmods.de/gcw%20strassenobjekte/changelog/)
+A list of changes can be found here: [Änderungen](https://doc.gcmods.de/gcw%20streetobjects/changelog/)
 
 </div>

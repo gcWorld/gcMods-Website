@@ -1,107 +1,117 @@
 ---
 layout: main
 ---
-<div class="row">
 
-<div class="col-md-8" role="content" id="download-listing">
+  <div class="" role="content" id="download-listing">
     <h1 class="page-heading">Downloads</h1>
 
     {{ content }}
 
+  </div>
     {% assign downloads = site.downloads | where:"layout","download" | where:"category","lotus" | where:"lang",page.lang | sort: 'updated','last' %}
       {% if downloads %}
-	  <h2 id="lotus">LOTUS Downloads</h2>
-		  {% for post in downloads reversed %}
-		  {% if post.website %}
-			  <a href="{{ post.link }}" class="dl_a">
-		  {% else %}
-			  <a href="{{ post.url }}" class="dl_a">
-		  {% endif %}
-              <article class="dl_view">
-                  {% if post.exe %}
-                      <span class="pull-right"><i class="fa fa-file"></i> .exe</span>
-                  {% endif %}
-                  {% if post.ams %}
-                      <img class="pull-right am" src="{{ "/assets/images/"}}am.png" alt="Addon Manager Icon" height="35">
-                  {% endif %}
-                  {% if post.android %}
-                      <i class="fab fa-android android-c fa-2x pull-right"></i>
-                  {% endif %}
-
-
-                  <h2>{{post.title}} <small>{{post.version}}</small></h2>
-
-                  {% if post.image_list.first %}
-                    <div class="pull-left">
-                      <img src="{{ "/assets/images/downloads/thumbs/"}}{{post.image_list.first.filename}}" alt="{{post.title}}" />
-                    </div>
-                  {% endif %}
-
-                  {{ post.introduction }}
-
-              </article>
+      
+    <h2 id="lotus">LOTUS Downloads</h2>
+    <div class="row row-cols-1 row-cols-md-3">
+      {% for post in downloads reversed %}
+      <div class="col mb-4">
+        <div class="card h-100">
+          {% if post.website %}
+            <a href="{{ post.link }}" class="">
+          {% else %}
+            <a href="{{ post.url }}" class="">
+          {% endif %}
+            {% if post.image_list.first %}
+              <img class="card-img-top" src="{{ "/assets/images/downloads/"}}{{post.image_list.first.filename}}" alt="{{post.title}}" />
+            {% endif %}
           </a>
-          <hr />
-		  {% endfor %}
+            
+                    <div class="card-body">
+                      <h3 class="card-title">{{post.title}} <small>{{post.version}}</small>{% if post.exe %}
+                        <span class=""><i class="fa fa-file"></i> .exe</span>
+                        {% endif %}{% if post.ams %}
+                        <img class="am" src="{{ "/assets/images/"}}am.png" alt="Addon Manager Icon" height="35">
+                        {% endif %}{% if post.android %}
+                        <i class="fab fa-android android-c fa-2x"></i>
+                        {% endif %}</h3>
+
+                    <p class="card-text">{{ post.introduction }}</p>
+                    {% if record.wip %}
+                    <a class="btn btn-secondary" href="{{ post.link }}" role="button">Mehr Informationen &raquo;</a>
+                {% else %}
+                    {% if record.website %}
+                        <a class="btn btn-secondary" href="{{ post.url }}" role="button">Zur Website &raquo;</a>
+                    {% else %}
+                        <a class="btn btn-secondary" href="{{ post.url }}" role="button">Zum Download &raquo;</a>
+                    {% endif %}
+                {% endif %}
+                  </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
 	  {% else %}
 	  {% endif %}
 
     {% assign downloads = site.downloads | where:"layout","download" | where:"category","omsi" | where:"lang",page.lang | sort: 'updated','last' %}
       {% if downloads %}
-	  <h2 id="omsi">OMSI Downloads</h2>
+      
+    <h2 id="omsi">OMSI Downloads</h2>
+    <div class="row row-cols-1 row-cols-md-3">
 		  {% for post in downloads reversed %}
-		  {% if post.website %}
-			  <a href="{{ post.link }}" class="dl_a">
-		  {% else %}
-			  <a href="{{ post.url }}" class="dl_a">
-		  {% endif %}
-              <article class="dl_view">
-                  {% if post.exe %}
-                      <span class="pull-right"><i class="fa fa-file"></i> .exe</span>
-                  {% endif %}
-                  {% if post.ams %}
-                      <img class="pull-right am" src="{{ "/assets/images/"}}am.png" alt="Addon Manager Icon" height="35">
-                  {% endif %}
-                  {% if post.android %}
-                      <i class="fab fa-android android-c fa-2x pull-right"></i>
-                  {% endif %}
-
-
-                  <h2>{{post.title}} <small>{{post.version}}</small></h2>
-
-                  {% if post.image_list.first %}
-                    <div class="pull-left">
-                      <img src="{{ "/assets/images/downloads/thumbs/"}}{{post.image_list.first.filename}}" alt="{{post.title}}" />
-                    </div>
-                  {% endif %}
-
-                  {{ post.introduction }}
-
-              </article>
+      <div class="col mb-4">
+        <div class="card h-100">
+          {% if post.website %}
+            <a href="{{ post.link }}" class="">
+          {% else %}
+            <a href="{{ post.url }}" class="">
+          {% endif %}
+            {% if post.image_list.first %}
+              <img class="card-img-top" src="{{ "/assets/images/downloads/"}}{{post.image_list.first.filename}}" alt="{{post.title}}" />
+            {% endif %}
           </a>
-          <hr />
-		  {% endfor %}
+            
+                    <div class="card-body">
+                      <h3 class="card-title">{{post.title}} <small>{{post.version}}</small></h3>
+
+                    <p class="card-text">{{ post.introduction }}</p>
+                    {% if record.wip %}
+                    <a class="btn btn-secondary" href="{{ post.link }}" role="button">Mehr Informationen &raquo;</a>
+                {% else %}
+                    {% if record.website %}
+                        <a class="btn btn-secondary" href="{{ post.url }}" role="button">Zur Website &raquo;</a>
+                    {% else %}
+                        <a class="btn btn-secondary" href="{{ post.url }}" role="button">Zum Download &raquo;</a>
+                    {% endif %}
+                {% endif %}
+                  </div>
+                  {% if post.exe or post.ams or post.android %}
+                  <div class="card-footer">
+                    <small class="text-muted">{% if post.exe %}
+                      <i class="fa fa-file"></i> .exe
+                      {% endif %}{% if post.ams %}
+                      <img class="am" src="{{ "/assets/images/"}}am.png" alt="Addon Manager Icon" height="35">
+                      {% endif %}{% if post.android %}
+                      <i class="fab fa-android android-c fa-2x"></i>
+                      {% endif %}</small>
+                  </div>
+                  {% endif %}
+        </div></div>
+      {% endfor %}
+    </div>
 	  {% else %}
-	  {% endif %}
+    {% endif %}
+    <div class="panel">
+      <h4><i class="fa fa-file"></i> .exe {{ site.data[page.lang].string.installer }}</h4>
+  
+      <p>
+          {{ site.data[page.lang].string.installer_desc }}
+      </p>
+    </div>
 </div>
 <!-- Sidebar -->
 
-<aside class="col-md-4">
-  <div class="panel">
-    <h4><i class="fa fa-file"></i> .exe {{ site.data[page.lang].string.installer }}</h4>
-
-    <p>
-        {{ site.data[page.lang].string.installer_desc }}
-    </p>
-  </div>
-
-    <div class="panel">
-      <h4>OMSI Addon Manager</h4>
-
-      <p>
-        {{ site.data[page.lang].string.oam_desc }}
-      </p>
-    </div>
+<aside class="col-md-3">
     {% if jekyll.environment == 'production' and site.google_ads %}
     <div class="panel">
       <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>

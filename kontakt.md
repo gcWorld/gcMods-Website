@@ -12,7 +12,7 @@ menu: /kontakt.html
 <h2>Kontaktformular</h2>
 
 <form name="contact" action="/thanks" netlify-honeypot="bot-name" netlify>
-    <p class="hidden">
+    <p hidden>
     <label>Bitte nicht ausfüllen: <input name="bot-name" /></label>
     </p>
     <div class="form-group">
@@ -24,7 +24,7 @@ menu: /kontakt.html
     <div class="form-group">
     <label for="message">Nachricht:</label><textarea rows="8" class="form-control" name="message"></textarea>
     </div>
-    <button class="btn btn-primary" type="submit">Senden</button>
+    <button class="mb-2 btn btn-success" type="submit">Senden</button>
 </form>
 
 </div>
