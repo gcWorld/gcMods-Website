@@ -15,9 +15,6 @@ layout: main
     {% if page.image %}
       <img class="img-fluid img-thumbnail" src="{{"/assets/images/blog/"}}{{page.image}}" alt="{{ page.title | escape }}" />
     {% endif %}
-    {% if page.image_extern %}
-      <img class="img-fluid img-thumbnail" src="{{page.image_extern}}" alt="{{post.title | escape}}" />
-    {% endif %}
     {{ content }}
     {% if page.image_list_extern %}
       <h3>{{site.data[page.lang].string.pictures}}</h3>
