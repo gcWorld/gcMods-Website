@@ -48,7 +48,7 @@ Enthalten sind:
 - Neue 5€, 10€ Scheine
 - Chrono-Funktion für OMSI 2
 
-<div class="bg bg-success" markdown="block">
+<div class="bg-secondary text-white" markdown="block">
 
 ### Änderungen in 1.5
 
