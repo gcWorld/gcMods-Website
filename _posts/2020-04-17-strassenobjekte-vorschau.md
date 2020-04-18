@@ -5,7 +5,7 @@ categories:
 - LOTUS
 layout: post
 section: Blog
-image_extern: https://img.gcmods.de/media/small/Strassenobjekte/20200416232934_1.jpg
+image_extern: https://img.gcmods.de/media/large/Strassenobjekte/20200416232934_1.jpg
 author: seeadler
 comments: true
 lang: de
