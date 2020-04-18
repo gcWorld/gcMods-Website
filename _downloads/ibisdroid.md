@@ -170,15 +170,15 @@ Tickets können auf Knopfdruck in OMSI ausgedruckt werden. Sollte mal ein falsch
 
 <p>Neue Karten.</p>
 <ul class="updates">
-<li><span class="misc">Karte</span>Unterstützung für die folgende Karte hinzugefügt: Dobel (iajer), Lemmental (Sev99LC), Tannenberg Gothen (Tomdresden), Ahlheim (davidm2412). Vielen Dank an iajer für die Umsetzung.</li>
+<li><span class="badge badge-success">Karte</span>Unterstützung für die folgende Karte hinzugefügt: Dobel (iajer), Lemmental (Sev99LC), Tannenberg Gothen (Tomdresden), Ahlheim (davidm2412). Vielen Dank an iajer für die Umsetzung.</li>
 </ul>
 
 <h3>1.3.3 <small>02. Dezember 2013</small></h3>
 
 <p>Neue Karten und Fehlerbehebung.</p>
 <ul class="updates">
-					<li><span class="misc">Karte</span>Unterstützung für die folgende Karte hinzugefügt: Rhodenau (NahverkehrFan), SSB Linie 74 (doho), Gothenberg (Roland15) Danke an MarvinK</li>
-					<li><span class="fixed">Behoben</span>Fehler in Weyershausen behoben.</li>
+					<li><span class="badge badge-success">Karte</span>Unterstützung für die folgende Karte hinzugefügt: Rhodenau (NahverkehrFan), SSB Linie 74 (doho), Gothenberg (Roland15) Danke an MarvinK</li>
+					<li><span class="badge badge-primary">Behoben</span>Fehler in Weyershausen behoben.</li>
 				</ul>
 
 <h3>1.3.2 <small>12. September 2013</small></h3>
@@ -186,9 +186,9 @@ Tickets können auf Knopfdruck in OMSI ausgedruckt werden. Sollte mal ein falsch
 <p>Neue Karte und 7".</p>
 
 <ul class="updates">
-					<li><span class="misc">Karte</span> Unterstützung für die folgende Karte hinzugefügt: Velbert (karsten-velbert) Danke an MarvinK.</li>
+					<li><span class="badge badge-success">Karte</span> Unterstützung für die folgende Karte hinzugefügt: Velbert (karsten-velbert) Danke an MarvinK.</li>
 
-					<li><span class="new">Neu</span> Unterstützung für 7"</li>
+					<li><span class="badge badge-info">Neu</span> Unterstützung für 7"</li>
 				</ul>
 
 <h3>1.3.1 <small>17. August 2013</small></h3>
@@ -196,9 +196,9 @@ Tickets können auf Knopfdruck in OMSI ausgedruckt werden. Sollte mal ein falsch
 <p>Neue Karten und Fehlerbehebung.</p>
 
 <ul class="updates">
-					<li><span class="misc">Karte</span> Unterst&uuml;tzung für die folgenden Karten hinzugef&uuml;gt: Weyershausen (CCLC) -> Danke an OMSI-Report, Szczecin (mpaw82).</li>
+					<li><span class="badge badge-success">Karte</span> Unterst&uuml;tzung für die folgenden Karten hinzugef&uuml;gt: Weyershausen (CCLC) -> Danke an OMSI-Report, Szczecin (mpaw82).</li>
 
-					<li><span class="fixed">Behoben</span> Fehlende Haltestellen in Spandau (M+R) hinzugefügt.</li>
+					<li><span class="badge badge-primary">Behoben</span> Fehlende Haltestellen in Spandau (M+R) hinzugefügt.</li>
 				</ul>
 
 
@@ -208,10 +208,10 @@ Tickets können auf Knopfdruck in OMSI ausgedruckt werden. Sollte mal ein falsch
 <p>Neue Karten, neue Sprache und Fehlerbehebung.</p>
 
 <ul class="updates">
-					<li><span class="misc">Karte</span> Unterst&uuml;tzung für Teltow (Maerkertram), Landkreis Wehlen (Driver3737), Langbach (JoeE) -> Eingereicht von Steiner.</li>
-					<li><span class="new">Neu</span> Neue Sprache: Polnisch (Polish). Vielen Dank an PrzemekPL für die Übersetzung.</li>
-					<li><span class="fixed">Behoben</span> Und noch einen Fehler behoben, bei dem die App unter bestimmten Umständen nach dem Verbinden abstürzt.</li>
-					<li><span class="fixed">Behoben</span> Kleinere Fehler behoben.</li>
+					<li><span class="badge badge-success">Karte</span> Unterst&uuml;tzung für Teltow (Maerkertram), Landkreis Wehlen (Driver3737), Langbach (JoeE) -> Eingereicht von Steiner.</li>
+					<li><span class="badge badge-info">Neu</span> Neue Sprache: Polnisch (Polish). Vielen Dank an PrzemekPL für die Übersetzung.</li>
+					<li><span class="badge badge-primary">Behoben</span> Und noch einen Fehler behoben, bei dem die App unter bestimmten Umständen nach dem Verbinden abstürzt.</li>
+					<li><span class="badge badge-primary">Behoben</span> Kleinere Fehler behoben.</li>
 				</ul>
 
 <h3>1.2 (Pangolin) <small>06. Mai 2013</small></h3>
@@ -219,10 +219,10 @@ Tickets können auf Knopfdruck in OMSI ausgedruckt werden. Sollte mal ein falsch
 <p>Neue Karte und Fehlerbehebung.</p>
 
 <ul class="updates">
-					<li><span class="misc">Karte</span> Unterst&uuml;tzung für Bad Kinzau (Janniboy) hinzugef&uuml;gt.</li>
-					<li><span class="fixed">Behoben</span> Fehler in der Umsetzung für Spandau behoben.</li>
-					<li><span class="fixed">Behoben</span> Noch einen Fehler behoben, bei dem die App unter bestimmten Umständen nach dem Verbinden abstürzt.</li>
-					<li><span class="fixed">Behoben</span> Kleinere Fehler behoben.</li>
+					<li><span class="badge badge-success">Karte</span> Unterst&uuml;tzung für Bad Kinzau (Janniboy) hinzugef&uuml;gt.</li>
+					<li><span class="badge badge-primary">Behoben</span> Fehler in der Umsetzung für Spandau behoben.</li>
+					<li><span class="badge badge-primary">Behoben</span> Noch einen Fehler behoben, bei dem die App unter bestimmten Umständen nach dem Verbinden abstürzt.</li>
+					<li><span class="badge badge-primary">Behoben</span> Kleinere Fehler behoben.</li>
 				</ul>
 
 
@@ -231,7 +231,7 @@ Tickets können auf Knopfdruck in OMSI ausgedruckt werden. Sollte mal ein falsch
 <p>Fehlerbehebung</p>
 
 <ul class="updates">
-					<li><span class="fixed">Behoben</span> Fehler behoben, bei dem die App unter bestimmten Umständen nach dem Verbinden abstürzt.</li>
+					<li><span class="badge badge-primary">Behoben</span> Fehler behoben, bei dem die App unter bestimmten Umständen nach dem Verbinden abstürzt.</li>
 				</ul>
 
 <h3>1.1 (Gelada) <small>22. M&auml;rz 2013</small></h3>
@@ -239,9 +239,9 @@ Tickets können auf Knopfdruck in OMSI ausgedruckt werden. Sollte mal ein falsch
 <p>Kleines Funktionsupdate.</p>
 
 <ul class="updates">
-				<li><span class="new">Neu</span> Aktive WLAN Verbindung nicht mehr notwendig.</li>
-				<li><span class="misc">Karte</span> Unterst&uuml;tzung für R&ouml;merberg (nightcab) hinzugef&uuml;gt. (Danke an Lukas)</li>
-					<li><span class="fixed">Behoben</span> Diverse Fehler in Kartenunterstützung behoben</li>
+				<li><span class="badge badge-info">Neu</span> Aktive WLAN Verbindung nicht mehr notwendig.</li>
+				<li><span class="badge badge-success">Karte</span> Unterst&uuml;tzung für R&ouml;merberg (nightcab) hinzugef&uuml;gt. (Danke an Lukas)</li>
+					<li><span class="badge badge-primary">Behoben</span> Diverse Fehler in Kartenunterstützung behoben</li>
 				</ul>
 
 <h3>1.0 (Grison) <small>16. Dezember 2012</small></h3>
@@ -249,9 +249,9 @@ Tickets können auf Knopfdruck in OMSI ausgedruckt werden. Sollte mal ein falsch
 <p>Erste öffentliche Version. Verfügbar im Google Play Store.</p>
 
 <ul class="updates">
-				<li><span class="new">Neu</span> Ausgedruckte Tickets können abgerissen werden.</li>
-				<li><span class="misc">Karte</span> Rheinhausen (Roland15) integriert</li>
-				<li><span class="fixed">Behoben</span> Diverse Fehler behoben</li>
+				<li><span class="badge badge-info">Neu</span> Ausgedruckte Tickets können abgerissen werden.</li>
+				<li><span class="badge badge-sucess">Karte</span> Rheinhausen (Roland15) integriert</li>
+				<li><span class="badge badge-primary">Behoben</span> Diverse Fehler behoben</li>
 
 				</ul>
 
@@ -260,11 +260,11 @@ Tickets können auf Knopfdruck in OMSI ausgedruckt werden. Sollte mal ein falsch
 <p>Beta</p>
 
 <ul class="updates">
-					<li><span class="new">Neu</span> Updatebenachrichtigung integriert.</li>
-					<li><span class="new">Neu</span> Kartenauswahl vor dem Verbinden.</li>
-					<li><span class="new">Neu</span> Standardwerte für Währung und Ticketpacks je nach gewählter Map.</li>
-					<li><span class="new">Neu</span> IBIS nur angeschaltet wenn Elektrik in OMSI aktiviert wurde.</li>
-					<li><span class="fixed">Behoben</span> Diverse Fehler behoben</li>
+					<li><span class="badge badge-info">Neu</span> Updatebenachrichtigung integriert.</li>
+					<li><span class="badge badge-info">Neu</span> Kartenauswahl vor dem Verbinden.</li>
+					<li><span class="badge badge-info">Neu</span> Standardwerte für Währung und Ticketpacks je nach gewählter Map.</li>
+					<li><span class="badge badge-info">Neu</span> IBIS nur angeschaltet wenn Elektrik in OMSI aktiviert wurde.</li>
+					<li><span class="badge badge-primary">Behoben</span> Diverse Fehler behoben</li>
 				</ul>
 
 <h3>0.8b2 (Bandicoot) <small>05. Oktober 2012</small></h3>
@@ -272,8 +272,8 @@ Tickets können auf Knopfdruck in OMSI ausgedruckt werden. Sollte mal ein falsch
 <p>Diverse Fehler wurden mithilfe der Betatester behoben. Die Anwendung läuft nun erheblich stabiler.</p>
 
 <ul class="updates">
-					<li><span class="fixed">Behoben</span> Verspätungsanzeige korrigiert</li>
-					<li><span class="fixed">Behoben</span> Diverse Bugs</li>
+					<li><span class="badge badge-primary">Behoben</span> Verspätungsanzeige korrigiert</li>
+					<li><span class="badge badge-primary">Behoben</span> Diverse Bugs</li>
 				</ul>
 
 <h3>0.8b1 <small>23. September 2012</small></h3>
@@ -281,28 +281,27 @@ Tickets können auf Knopfdruck in OMSI ausgedruckt werden. Sollte mal ein falsch
 <p></p>
 
 <ul class="updates">
-					<li><span class="new">Neu</span> Erste Betaversion</li>
+					<li><span class="badge badge-info">Neu</span> Erste Betaversion</li>
 				</ul>
 
 <h2>Betatester</h2>
 
 <p>Ein besonderer Dank geht an die Betatester, welche die Entwicklung der Anwendung unterstützt haben:</p>
 <ul>
-<li>BastiDE</li>
-
-				<li>Flo2012</li>
-				<li>GermanNavy04</li>
-				<li>Yufa</li>
-				<li></li>
-				<li>AkatiTheFox</li>
-				<li>BahnFan2014</li>
-				<li>Desrupter</li>
-				<li>Eric2405</li>
-					<li>fLoU</li>
-					<li>irizarcentury_oms</li>
-					<li>louis121</li>
-					<li>Solaris Urbino</li>
-					<li>zavage</li>
+	<li>BastiDE</li>
+	<li>Flo2012</li>
+	<li>GermanNavy04</li>
+	<li>Yufa</li>
+	<li></li>
+	<li>AkatiTheFox</li>
+	<li>BahnFan2014</li>
+	<li>Desrupter</li>
+	<li>Eric2405</li>
+	<li>fLoU</li>
+	<li>irizarcentury_oms</li>
+	<li>louis121</li>
+	<li>Solaris Urbino</li>
+	<li>zavage</li>
 </ul>
 </div>
 
