@@ -16,8 +16,8 @@ menu_en: '/en'
         {% include jumbotron.md %}
     </div>
     <div class="card-deck">
-    {% assign downloads = site.downloads | where:"layout","download" | where:"homepage","true" | where:"lang", page.lang | sort: 'updated','first' %}
-    {% for record in downloads reversed limit:3 %}
+    {% assign downloads = site.downloads | where:"layout","download" | where:"homepage","true" | where:"lang", page.lang | sort: 'updated' | reverse %}
+    {% for record in downloads limit:3 %}
         <div class="card">
             {% if record.image_big %}
                 {% if record.website %}
@@ -31,11 +31,11 @@ menu_en: '/en'
                   <img class="card-img-top" data-src="holder.js/350x150/text:Kein Bild" alt="{{ record.title }}">
               </a>
             {% endif %}
-            {% if record.wip %}
-                <div class="ribbon-wrapper-green"><div class="ribbon-green">WIP</div></div>
+            {% if record.category == "lotus" %}
+                <div class="ribbon-wrapper-green"><div class="ribbon-green">LOTUS</div></div>
             {% endif %}
             <div class="card-body">
-                <h5 class="card-title">{{ record.title }} <small>{{ record.version}}</small></h5>
+                <h4 class="card-title">{{ record.title }} <small>{{ record.version}}</small></h4>
                 <p class="card-text">{{ record.introduction }}</p>
                 {% if record.wip %}
                     <a class="btn btn-secondary" href="{{ record.link }}" role="button">Mehr Informationen &raquo;</a>
@@ -50,7 +50,7 @@ menu_en: '/en'
         </div>
     {% endfor %}
     </div>
-    <a class="btn btn-light" href="/downloads" role="button">Weitere Downloads &raquo;</a>
+    <a class="mt-2 btn btn-light" href="/downloads" role="button">Weitere Downloads &raquo;</a>
     <hr class="featurette-divider">
     <div class="row">
     <div class="col-md-8">
@@ -64,7 +64,7 @@ menu_en: '/en'
                 <a href="{{ record.url }}"><img class="img-fluid" src="{{"assets/images/blog/"}}{{ record.image }}" alt="{{ record.title }}"></a>
             {% endif %}
             {% if record.image_extern %}
-            <a href="{{record.url}}"><img class="img-fluid" src="{{record.image_extern}}" alt="{{post.title | escape}}" /></a>
+            <a href="{{record.url}}"><img class="img-fluid" src="{{record.image_extern}}" alt="{{record.title | escape}}" /></a>
             {% endif %}
             <p>{{ record.excerpt }}</p>
             <a class="btn btn-secondary" href="{{ record.url }}" role="button">Mehr lesen &raquo;</a>

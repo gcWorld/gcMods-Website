@@ -27,15 +27,24 @@ layout: main
           </a>
             
                     <div class="card-body">
-                      <h2 class="card-title">{{post.title}} <small>{{post.version}}</small>{% if post.exe %}
+                      <h3 class="card-title">{{post.title}} <small>{{post.version}}</small>{% if post.exe %}
                         <span class=""><i class="fa fa-file"></i> .exe</span>
                         {% endif %}{% if post.ams %}
                         <img class="am" src="{{ "/assets/images/"}}am.png" alt="Addon Manager Icon" height="35">
                         {% endif %}{% if post.android %}
                         <i class="fab fa-android android-c fa-2x"></i>
-                        {% endif %}</h2>
+                        {% endif %}</h3>
 
                     <p class="card-text">{{ post.introduction }}</p>
+                    {% if record.wip %}
+                    <a class="btn btn-secondary" href="{{ post.link }}" role="button">Mehr Informationen &raquo;</a>
+                {% else %}
+                    {% if record.website %}
+                        <a class="btn btn-secondary" href="{{ post.url }}" role="button">Zur Website &raquo;</a>
+                    {% else %}
+                        <a class="btn btn-secondary" href="{{ post.url }}" role="button">Zum Download &raquo;</a>
+                    {% endif %}
+                {% endif %}
                   </div>
         </div>
       </div>
@@ -63,40 +72,46 @@ layout: main
           </a>
             
                     <div class="card-body">
-                      <h2 class="card-title">{{post.title}} <small>{{post.version}}</small>{% if post.exe %}
-                        <span class=""><i class="fa fa-file"></i> .exe</span>
-                        {% endif %}{% if post.ams %}
-                        <img class="am" src="{{ "/assets/images/"}}am.png" alt="Addon Manager Icon" height="35">
-                        {% endif %}{% if post.android %}
-                        <i class="fab fa-android android-c fa-2x"></i>
-                        {% endif %}</h2>
+                      <h3 class="card-title">{{post.title}} <small>{{post.version}}</small></h3>
 
                     <p class="card-text">{{ post.introduction }}</p>
+                    {% if record.wip %}
+                    <a class="btn btn-secondary" href="{{ post.link }}" role="button">Mehr Informationen &raquo;</a>
+                {% else %}
+                    {% if record.website %}
+                        <a class="btn btn-secondary" href="{{ post.url }}" role="button">Zur Website &raquo;</a>
+                    {% else %}
+                        <a class="btn btn-secondary" href="{{ post.url }}" role="button">Zum Download &raquo;</a>
+                    {% endif %}
+                {% endif %}
                   </div>
+                  {% if post.exe or post.ams or post.android %}
+                  <div class="card-footer">
+                    <small class="text-muted">{% if post.exe %}
+                      <i class="fa fa-file"></i> .exe
+                      {% endif %}{% if post.ams %}
+                      <img class="am" src="{{ "/assets/images/"}}am.png" alt="Addon Manager Icon" height="35">
+                      {% endif %}{% if post.android %}
+                      <i class="fab fa-android android-c fa-2x"></i>
+                      {% endif %}</small>
+                  </div>
+                  {% endif %}
         </div></div>
       {% endfor %}
     </div>
 	  {% else %}
-	  {% endif %}
+    {% endif %}
+    <div class="panel">
+      <h4><i class="fa fa-file"></i> .exe {{ site.data[page.lang].string.installer }}</h4>
+  
+      <p>
+          {{ site.data[page.lang].string.installer_desc }}
+      </p>
+    </div>
 </div>
 <!-- Sidebar -->
 
 <aside class="col-md-3">
-  <div class="panel">
-    <h4><i class="fa fa-file"></i> .exe {{ site.data[page.lang].string.installer }}</h4>
-
-    <p>
-        {{ site.data[page.lang].string.installer_desc }}
-    </p>
-  </div>
-
-    <div class="panel">
-      <h4>OMSI Addon Manager</h4>
-
-      <p>
-        {{ site.data[page.lang].string.oam_desc }}
-      </p>
-    </div>
     {% if jekyll.environment == 'production' and site.google_ads %}
     <div class="panel">
       <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>

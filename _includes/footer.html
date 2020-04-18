@@ -15,7 +15,7 @@
                 <ul class="nav flex-column nav-pills">
                         {% assign posts = site.posts | where:"lang",page.lang %}
                     {% if posts %}
-                        {% for post in posts %}
+                        {% for post in posts limit:5 %}
                                     <li class="nav-item"><a class="nav-link" href="{{ post.url }}">&raquo; {{ post.title }}</a></li>
                         {% endfor %}
                     {% else %}
@@ -28,8 +28,8 @@
                 <h4>Downloads</h4>
                 <ul class="nav flex-column nav-pills">
                     {% if site.downloads %}
-                        {% assign downloads = site.downloads | where:"layout","download" | where:"lang",page.lang | sort: 'updated','first' %}
-                        {% for post in downloads reversed limit:4 %}
+                        {% assign downloads = site.downloads | where:"layout","download" | where:"lang",page.lang | sort: 'updated' | reverse %}
+                        {% for post in downloads limit:5 %}
                             {% if post.website!="true" %}
                                 <li class="nav-item"><a class="nav-link" href="{{ post.url }}">&raquo; {{ post.title }}</a></li>
                             {% else %}

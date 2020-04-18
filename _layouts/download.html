@@ -28,6 +28,15 @@ layout: main
         {% endfor %}
       {% endif %}
 
+      {% if page.image_list_extern %}
+      <h3>{{site.data[page.lang].string.pictures}}</h3>
+        {% for image in page.image_list_extern %}
+            <a href="{{ image.large }}" data-fancybox="group" data-caption="{{ image.title }}">
+                <img src="{{ image.small }}" alt="Screenshot" class="img-thumbnail">
+            </a>
+        {% endfor %}
+      {% endif %}
+
       {% if page.video_list %}
       <h3>{{site.data[page.lang].string.videos}}</h3>
         {% for video in page.video_list %}
