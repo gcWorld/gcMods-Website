@@ -96,7 +96,7 @@ Tickets können auf Knopfdruck in OMSI ausgedruckt werden. Sollte mal ein falsch
 
 <br>
 
-<div class="bg bg-danger" markdown="block">
+<div class="bg-warning p-3 mb-2" markdown="block">
 <h2>Systemanforderungen</h2>
 <h3>Android</h3>
 <table>
@@ -162,7 +162,7 @@ Tickets können auf Knopfdruck in OMSI ausgedruckt werden. Sollte mal ein falsch
 
 </div>
 <br>
-<div class="bg bg-success" markdown="block">
+<div class="bg-secondary text-white p-3 mb-2" markdown="block">
 
 <h2>Changelog</h2>
 
