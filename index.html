@@ -64,7 +64,7 @@ menu_en: '/en'
                 <a href="{{ record.url }}"><img class="img-fluid" src="{{"assets/images/blog/"}}{{ record.image }}" alt="{{ record.title }}"></a>
             {% endif %}
             {% if record.image_extern %}
-            <a href="{{record.url}}"><img class="img-responsive" src="{{record.image_extern}}" alt="{{post.title | escape}}" /></a>
+            <a href="{{record.url}}"><img class="img-fluid" src="{{record.image_extern}}" alt="{{post.title | escape}}" /></a>
             {% endif %}
             <p>{{ record.excerpt }}</p>
             <a class="btn btn-secondary" href="{{ record.url }}" role="button">Mehr lesen &raquo;</a>
