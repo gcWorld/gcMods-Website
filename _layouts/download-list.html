@@ -1,20 +1,18 @@
 ---
 layout: main
 ---
-<div class="row row-cols-1 row-cols-md-3">
 
-  <div class="col-md-9" role="content" id="download-listing">
+  <div class="" role="content" id="download-listing">
     <h1 class="page-heading">Downloads</h1>
 
     {{ content }}
 
   </div>
-</div>
     {% assign downloads = site.downloads | where:"layout","download" | where:"category","lotus" | where:"lang",page.lang | sort: 'updated','last' %}
       {% if downloads %}
-      <div class="row row-cols-1 row-cols-md-3">
+      
     <h2 id="lotus">LOTUS Downloads</h2>
-
+    <div class="row row-cols-1 row-cols-md-3">
       {% for post in downloads reversed %}
       <div class="col mb-4">
         <div class="card">
@@ -48,9 +46,11 @@ layout: main
 
     {% assign downloads = site.downloads | where:"layout","download" | where:"category","omsi" | where:"lang",page.lang | sort: 'updated','last' %}
       {% if downloads %}
-	  <h2 id="omsi">OMSI Downloads</h2>
+      
+    <h2 id="omsi">OMSI Downloads</h2>
+    <div class="row row-cols-1 row-cols-md-3">
 		  {% for post in downloads reversed %}
-		  <div class="col mb-4">
+      <div class="col mb-4">
         <div class="card">
           {% if post.website %}
             <a href="{{ post.link }}" class="">
@@ -74,7 +74,8 @@ layout: main
                     <p class="card-text">{{ post.introduction }}</p>
                   </div>
         </div></div>
-		  {% endfor %}
+      {% endfor %}
+    </div>
 	  {% else %}
 	  {% endif %}
 </div>

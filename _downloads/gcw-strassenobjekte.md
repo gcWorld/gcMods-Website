@@ -68,7 +68,7 @@ Das Set enthält die folgenden Objekte:
 - gespiegelte Schranke
 - Container
 
-<div class="bg bg-success" markdown="block">
+<div class="bg-secondary text-white p-3 mb-2" markdown="block">
 
 ### Änderungen in 1.3
 

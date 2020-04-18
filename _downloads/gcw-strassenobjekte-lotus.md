@@ -40,9 +40,6 @@ image_list:
   title:
 - filename: 20190406145326_1.jpg
   title:
-video_list:
-- yt: 
-
 
 ---
 
@@ -61,7 +58,7 @@ Das Set enthält die folgenden Objekte:
 - Baustellenampel
 - Sandhaufen
 
-<div class="bg bg-success" markdown="block">
+<div class="bg-secondary text-white p-3 mb-2" markdown="block">
 
 [Änderungen](https://doc.gcmods.de/documentation/gcw-streetobjects/#anderungen)
 

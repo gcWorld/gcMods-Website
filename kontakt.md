@@ -24,7 +24,7 @@ menu: /kontakt.html
     <div class="form-group">
     <label for="message">Nachricht:</label><textarea rows="8" class="form-control" name="message"></textarea>
     </div>
-    <button class="btn btn-success" type="submit">Senden</button>
+    <button class="mb-2 btn btn-success" type="submit">Senden</button>
 </form>
 
 </div>

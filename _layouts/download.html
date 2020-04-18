@@ -46,7 +46,7 @@ layout: main
                 {{site.data[page.lang].string.not_yet_available}}!
             {% else %}
                 {% if page.workshop %}
-                    <a class="btn btn-default btn-lg btn-primary btn-block" role="button" href="{{ page.workshop }}">{{site.data[page.lang].string.download}}<br><small>Workshop {{page.version}}</small></a>
+                    <a class="btn btn-default btn-lg btn-primary btn-block" role="button" href="{{ page.workshop }}">{{site.data[page.lang].string.download}}<br><small>Steam Workshop - {{page.version}}</small></a>
                 {% endif %}
                 {% if page.exe %}
                     <a class="btn btn-default btn-lg btn-primary btn-block" role="button" href="{{ page.exe }}">{{site.data[page.lang].string.download}}<br><small>.exe {{page.version}}</small></a>
@@ -70,10 +70,10 @@ layout: main
                 {% endif %}
             {% endif %}
         </div>
-        <h4><i class="fa fa-info-circle"></i> {{site.data[page.lang].string.information}}</h4>
+        <h4 class="mt-1"><i class="fa fa-info-circle"></i> {{site.data[page.lang].string.information}}</h4>
         <table class="table table-condensed">
         <tr>
-            <td>Version</td>
+            <td>Version <small>(Update)</small></td>
             <td>{{ page.version }}
                 {% if page.updated %}
                     <small>({{ page.updated | date: "%e. %B %Y" }})</small>
@@ -84,6 +84,8 @@ layout: main
             <td>{{site.data[page.lang].string.licence}}</td>
             {% if page.copyright == '2019' %}
                 <td>&copy; 2019</td>
+            {% elsif page.copyright == '2020' %}
+                <td>&copy; 2020</td>
             {% elsif page.copyright == '2017' %}
                 <td>&copy; 2017</td>
             {% elsif page.copyright == '2013' %}
@@ -120,8 +122,7 @@ layout: main
         </tr>
         {% if page.documentation %}
         <tr>
-            <td>{{site.data[page.lang].string.documentation}}</td>
-            <td>{{ page.documentation }}</td>
+            <td colspan="2"><a href="{{ page.documentation }}">{{site.data[page.lang].string.documentation}}</a></td>
         </tr>
         {% endif %}
         {% if page.link_forum %}
