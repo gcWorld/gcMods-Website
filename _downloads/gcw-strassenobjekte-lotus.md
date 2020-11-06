@@ -5,7 +5,7 @@ ref: strassenobjekte-lotus
 section: Downloads
 category: lotus
 released: 2018-09-23 23:14:28 Z
-updated: 2020-04-18 18:30:28 Z
+updated: 2020-11-06 18:30:28 Z
 copyright: '2019'
 ams: false
 zip: false
@@ -15,7 +15,7 @@ workshop: https://steamcommunity.com/sharedfiles/filedetails/?id=1518967033
 android: false
 homepage: true
 image_big: 20190406145402_1.jpg
-version: 1.4
+version: 1.4.1
 omsi_version: 
 lotus_version: Early Access
 author: seeadler
