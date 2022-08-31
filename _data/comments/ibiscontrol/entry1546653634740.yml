@@ -1,5 +1,0 @@
-_id: b0112ea0-108d-11e9-8b9e-49e6dec1932d
-name: Wareing
-email: e6e1d081b2e56b7c718a1fa6e1b38c2d
-usermessage: "Hi,\r\n\r\nI've been trying to run the program and keep running into this error every time my phone connects.... help please\r\n\r\n\r\n\r\nC:\\Program Files (x86)\\Steam\\steamapps\\common\\OMSI 2>start.bat\r\nIBIS droid Plugin running ...\r\n 192.168.0.17: WebSocket connection\r\n 192.168.0.17: Version 13, subprotocol: undefined\r\n 192.168.0.17: got message\r\n 192.168.0.17: got message\r\n\r\nevents.js:72\r\n        throw er; // Unhandled 'error' event\r\n              ^\r\nError: connect ECONNREFUSED\r\n    at errnoException (net.js:901:11)\r\n    at Object.afterConnect [as oncomplete] (net.js:892:19)\r\nServer gestartet\r\n\r\nC:\\Program Files (x86)\\Steam\\steamapps\\common\\OMSI 2>"
-date: 1546653634
