@@ -1,0 +1,52 @@
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+    
+    {{ hugo.Generator }}
+    {{/* NOTE: For Production make sure you add `HUGO_ENV="production"` before your build command */}}
+    {{- if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  -}}
+    <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    {{- else -}}
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    {{ end }}
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=eE5NE4RwMO">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=eE5NE4RwMO">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=eE5NE4RwMO">
+    <link rel="manifest" href="/site.webmanifest?v=eE5NE4RwMO">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=eE5NE4RwMO" color="#6cd55b">
+    <link rel="shortcut icon" href="/favicon.ico?v=eE5NE4RwMO">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#1e1e1e">
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+    {{- $styleMain := resources.Get "css/style.css" | minify -}}
+    {{- $styleBxslider := resources.Get "css/jquery.bxslider.css" | minify -}}
+    {{- $styleFontawesome := resources.Get "css/fontawesome-all.min.css" | minify -}}
+    {{- $styleFancy := resources.Get "css/jquery.fancybox.min.css" | minify -}}
+    {{- $styleCss := slice $styleBxslider $styleFontawesome $styleMain $styleFancy | resources.Concat "css/main.css" -}}
+    <link rel="stylesheet" href="{{ $styleCss.RelPermalink }}">
+  
+    <link rel="canonical" href="{{ .Permalink }}" />
+    {{ if .OutputFormats.Get "RSS" }}
+        {{ with .OutputFormats.Get "RSS" }}
+            <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+            <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
+        {{ end }}
+    {{ end }}
+    {{ if .IsTranslated }}
+	{{ range .Translations }}
+	<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+	{{ end }}
+{{ end }}
+  
+    {{ if .Site.Params.google_ads }}
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-1971845371325330",
+          enable_page_level_ads: true
+        });
+      </script>
+    {{ end }}

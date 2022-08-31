@@ -1,0 +1,15 @@
+defaultContentLanguage = 'de'
+defaultContentLanguageInSubdir = false
+baseURL = 'https://www.gcmods.de/'
+title = 'gcWorld Modifications'
+theme = ['gcmods']
+sectionPagesMenu = "main"
+[languages]
+  [languages.de]
+    contentDir = 'content/de'
+    languageName = 'Deutsch'
+    weight = 1
+  [languages.en]
+    contentDir = 'content/en'
+    languageName = 'English'
+    weight = 2
