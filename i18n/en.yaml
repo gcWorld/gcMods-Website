@@ -15,3 +15,38 @@ no_posts:
 
 back_to_top:
   other: Back to Top
+
+readMore:
+  other: Read more
+
+writtenon:
+  other: "on"
+
+writtenby:
+  other: Written by
+
+minuteRead:
+  other: "{{ .ReadingTime }} minute read"
+
+publishDate:
+  other: '{{ .PublishDate.Format "Jan 2, 2006" }}'
+
+publishDateFull:
+  other: '{{ .PublishDate.Format "Jan 2, 2006" }}'
+
+wordCount:
+  one: "{{ .WordCount }} word"
+  other: "{{ .WordCount }} words"
+
+postsNewer:
+  other: Newer posts
+
+postsOlder:
+  other: Older posts
+
+poweredBy:
+  other: >-
+    Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a
+    href='https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
+publishDateShort:
+  other: '{{ .PublishDate.Format "Jan 2" }}'

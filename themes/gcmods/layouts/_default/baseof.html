@@ -10,20 +10,18 @@
   <body>
     {{ partial "header.html" . }}
 
-    <div class="toptitle">
-        <div class="container">
-            <h2>{{.Params.Section}}</h2>
+    <main class="page-content" aria-label="Content">
+        <div class="wrapper">
+            {{ block "main" . }}{{ end }}
+            <div class="container">
+            {{ if .Params.comments }}
+            <hr>
+            <h3>{{ i18n "comments" }}</h3>
+                {{ partial "comment.html" . }}
+            {{ end }}
+            </div>
         </div>
-    </div>
-
-    <div class="container">
-      {{ block "main" . }}{{ end }}
-      {{ if .Params.comments }}
-        <hr>
-        <h3>{{ i18n "comments" }}</h3>
-            {{ partial "comment.html" . }}
-      {{ end }}
-    </div>
+    </main>
     
     {{ partial "footer.html" . }}
   </body>

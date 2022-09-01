@@ -1,12 +1,18 @@
 {{ define "main" }}
 
-<section id="single">
+<div class="toptitle">
+  <div class="container">
+      <h2>{{.Params.Section}}</h2>
+  </div>
+</div>
 
-
-    <div class="content">
-      {{ .Content }}
-    </div>
-
-</section>
+<main class="container" aria-label="Content">
+  {{ .Content }}
+  {{ if .Params.comments }}
+  <hr>
+  <h3>{{ i18n "comments" }}</h3>
+      {{ partial "comment.html" . }}
+  {{ end }}
+</main>
 
 {{ end }}

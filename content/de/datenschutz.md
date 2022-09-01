@@ -45,7 +45,9 @@ Ich löschen die Anfragen, sofern diese nicht mehr erforderlich sind. Ich überp
 Die Kommentarfunktion nutzt Github. Zum Abgeben eines Kommentars ist ein Nutzerkonto von Github notwendig. [Die entsprechende Datenschutzerklärung von Github findet sich hier](https://help.github.com/en/articles/github-privacy-statement).
 
 ### Google ReCaptcha
-Ich binden die Funktion zur Erkennung von Bots, z.B. bei Eingaben in Onlineformularen ("ReCaptcha") des Anbieters Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA, ein.  
+Ich binde die Funktion zur Erkennung von Bots, z.B. bei Eingaben in Onlineformularen ("ReCaptcha") des Anbieters Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA, ein.  
 [Datenschutzerklärung](https://www.google.com/policies/privacy/), [Opt-Out](https://adssettings.google.com/authenticated).
 
+{{< rawhtml >}}
 <a href="https://datenschutz-generator.de" class="dsg1-5" rel="nofollow" target="_blank">Inspiriert vom Datenschutz-Generator.de von RA Dr. Thomas Schwenke</a>
+{{</ rawhtml >}}

@@ -18,3 +18,39 @@ no_posts:
 
 back_to_top:
   other: Nach Oben
+
+readMore:
+  other: Weiterlesen
+
+writtenon:
+  other: am
+
+writtenby:
+  other: Geschrieben von
+
+minuteRead:
+  one: "{{ .ReadingTime }} Minute Lesedauer"
+  other: "{{ .ReadingTime }} Minuten Lesedauer"
+
+publishDate:
+  other: '{{ .PublishDate.Format "02.01.2006" }}'
+
+publishDateFull:
+  other: '{{ .PublishDate.Format "02.01.2006" }}'
+
+wordCount:
+  one: "{{ .WordCount }} Wort"
+  other: "{{ .WordCount }} Wörter"
+
+postsNewer:
+  other: Neuere Posts
+
+postsOlder:
+  other: Ältere Posts
+
+poweredBy:
+  other: >-
+    Publiziert mit <a href='http://www.gohugo.io/'>Hugo</a> Theme von <a
+    href='https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
+publishDateShort:
+  other: '{{ .PublishDate.Format "02.01." }}'

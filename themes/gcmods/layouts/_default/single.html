@@ -1,44 +1,52 @@
 {{ define "main" }}
 
-<section id="single">
-    <h1 class="title">{{ .Title }}</h1>
+<div class="toptitle">
+    <div class="container">
+        <h2>{{.Params.Section}}</h2>
+    </div>
+</div>
 
-    <div class="tip">
-        <time datetime="{{ .PublishDate }}">{{ i18n "publishDateFull" . }}</time>
-        <span class="split">
-          ·
-        </span>
-        <span>
+<main class="container" aria-label="Content">
+<div class="row">
+    <div class="col-md-12" role="content">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">{{ .Title }}</h1>
+        <span class="blog-post-meta tip">{{T "writtenby" }} {{.Page.Params.author}} {{T "writtenon"}} <time datetime="{{ .PublishDate }}">{{ i18n "publishDateFull" . }}</time><span class="split">
+            ·
+          </span>
           {{ i18n "wordCount" . }}
-        </span>
-        <span class="split">
-          ·
-        </span>
-        <span>
+          <span class="split">
+            ·
+          </span>
           {{ i18n "minuteRead" . }}
         </span>
-    </div>
-
+      </header>
     
-    {{ if or .Site.Params.showToc .Params.showToc }}
-        {{ partial "toc.html" . }}
-    {{ end }}
-
-
-    <div class="content">
-      {{ .Content }}
-    </div>
-
-    {{ with .Params.tags }}
+      <div class="post-content" itemprop="articleBody">
+        {{ if .Page.Params.image }}
+          <img class="img-fluid img-thumbnail" src="{{"/assets/images/blog/"}}{{.Page.Params.image}}" alt="{{ .Title }}" />
+        {{ end }}
+        {{ .Content }}
+        {{ with .Params.tags }}
         <div class="tags">
             {{ range . }}
                 <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
             {{ end }}
         </div>
     {{ end}}
-    
-    {{ partial "comment.html" . }}
-
-</section>
-
+        {{ if .Page.Params.image_list_extern }}
+          <h3>{{T "pictures"}}</h3>
+            {{ range .Page.Params.image_list_extern }}
+                <a href="{{ .large }}" data-fancybox="group" data-caption="{{ .title }}">
+                    <img src="{{ .small }}" alt="Screenshot" class="img-thumbnail">
+                </a>
+            {{ end }}
+          {{ end }}
+      </div>
+    </article>
+    </div>
+</div>
+</main>
 {{ end }}
