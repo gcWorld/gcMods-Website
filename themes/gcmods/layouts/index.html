@@ -9,7 +9,7 @@
         {{ partial "jumbotron.md" . }}
     </div>
     <div class="card-deck">
-    {{ range (  (where .Pages "Type" "download" )  | first 3 ) }}
+    {{ range (  (where .Pages "Type" "downloads" )  | first 3 ) }}
         <div class="card">
             {{ if .Page.Params.image_big }}
                 {{ if .Page.Params.website }}
@@ -17,7 +17,7 @@
                 {{ else }}
                     <a href="{{ .Page.Params.url }}">
                 {{ end }}
-                <img class="card-img-top" src="{{"/assets/images/downloads/thumbs/home/"}}{{ .Page.Params.image_big }}" alt="{{ .Page.Params.title }}"></a>
+                <img class="card-img-top" src="{{"/images/downloads/thumbs/home/"}}{{ .Page.Params.image_big }}" alt="{{ .Page.Params.title }}"></a>
             {{ else }}
               <a href="{{ .Page.Params.link }}">
                   <img class="card-img-top" data-src="holder.js/350x150/text:Kein Bild" alt="{{ .Page.Params.title }}">

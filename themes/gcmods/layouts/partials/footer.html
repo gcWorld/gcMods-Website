@@ -27,8 +27,8 @@
             <div class="col-sm-3">
                 <h4>Downloads</h4>
                 <ul class="nav flex-column nav-pills">
-                    {{ if gt (len (where .Site.RegularPages "Type" "download" )) 0 }}
-                        {{ range ( where .Site.RegularPages "Type" "download" | first 5 ) }}
+                    {{ if gt (len (where .Site.RegularPages "Type" "downloads" )) 0 }}
+                        {{ range ( where .Site.RegularPages "Type" "downloads" | first 5 ) }}
                                     <li class="nav-item"><a class="nav-link" href="{{ .Permalink }}">&raquo; {{ substr .Title 0 25 }}{{ if gt (len .Title) 25 }}...{{ end }}</a></li>
                         {{ end }}
                     {{ else }}
