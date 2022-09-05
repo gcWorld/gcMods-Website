@@ -1,0 +1,23 @@
+{
+  "name": "gcmods-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@netlify/plugin-a11y": "^1.0.0-beta.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gcWorld/gcMods-Website.git"
+  },
+  "author": "Jonas Elbers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gcWorld/gcMods-Website/issues"
+  },
+  "homepage": "https://github.com/gcWorld/gcMods-Website#readme"
+}
