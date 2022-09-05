@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Downloads on gcWorld Modifications</title>
+    <link>https://www.gcmods.de/downloads/</link>
+    <description>Recent content in Downloads on gcWorld Modifications</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://www.gcmods.de/downloads/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Euro Mod</title>
+      <link>https://www.gcmods.de/downloads/euro-mod/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gcmods.de/downloads/euro-mod/</guid>
+      <description>Enthalten sind:
+die Scheine 10€ und 5€, sowie die Münzen 2€, 1€, 50, 20, 10 und 5 Cents. Europreise der Tickets angepasste Textur für den SD202 und weitere Busse Neue 5€, 10€ Scheine Chrono-Funktion für OMSI 2 Änderungen in 1.5 OMSI 1
+Neuer 5€-Schein OMSI 2
+Zahltisch-Texturen für den NL202 und NG272 Währung und Ticketpreise werden automatisch nach dem 01.01.2002 in Spandau verwendet (optional) Neuer 5€-Schein ab dem 01.01.2013 in Spandau (optional) Neu in Version 1.</description>
+    </item>
+    
+    <item>
+      <title>Frankfurter Haltestellen Set</title>
+      <link>https://www.gcmods.de/downloads/frankfurter-haltestellen-set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gcmods.de/downloads/frankfurter-haltestellen-set/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gcW Straßenobjekte</title>
+      <link>https://www.gcmods.de/downloads/gcw-strassenobjekte/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gcmods.de/downloads/gcw-strassenobjekte/</guid>
+      <description>Das Set enthält die folgenden Objekte:
+Ortsschild Wegweiser Autobahn Wegweiser Umleitung Wegweiser Ausfahrt Wegweiser innerörtliche Ziele Wegweiser Orte Leitpfosten (weiß und orange) Leitbake (mit Blink- und Dauerlicht) Schranke &amp;amp; Ampel (rot/grün) Absperrung (mit roten Lichtern) Fahrbare Absperrtafel Verkehrsleitkegel Schildhalter Bagger Vorwarnleuchte Einseitige Bake Einseitige Leuchten gedimmte Leuchte (hell &amp;lt;-&amp;gt; gedimmt) Steinhaufen gelbe Schranke gespiegelte Schranke Container Änderungen in 1.3 Kategorien sortiert Schneetextur für Bake Diverse weitere Änderungen Änderungen in 1.3.1 Kompatibel mit OMSI 2 Änderungen in 1.</description>
+    </item>
+    
+    <item>
+      <title>gcW Straßenobjekte LOTUS</title>
+      <link>https://www.gcmods.de/downloads/gcw-strassenobjekte-lotus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gcmods.de/downloads/gcw-strassenobjekte-lotus/</guid>
+      <description>Das Set enthält die folgenden Objekte:
+Bagger 2 Steinhaufen Container Leitbake (links-rechts, rechts-rechts, einseitig rechts, einseitig links) Leuchte Gelb (aus, an, blinkend, blinkend an&amp;lt;-&amp;gt;dimm) Leuchte Rot einseitig (aus, an) Leitpfosten (weiß, gelb) Absperrung (1 Fuß, 2 Füße) Schuttcontainer (rot, orange, grün, jeweils voll und leer) Betonrohre Baustellenampel Sandhaufen Eine Auflistung der Änderungen und Neuerungen in der aktuellen Version gibt es hier: Änderungen</description>
+    </item>
+    
+    <item>
+      <title>Haltebucht</title>
+      <link>https://www.gcmods.de/downloads/haltebucht/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gcmods.de/downloads/haltebucht/</guid>
+      <description>Dieses Addon sollte auch mit OMSI 2 funktionieren, wurde jedoch nicht mit dieser Version getestet.</description>
+    </item>
+    
+    <item>
+      <title>IBIScontrol</title>
+      <link>https://www.gcmods.de/downloads/ibiscontrol/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gcmods.de/downloads/ibiscontrol/</guid>
+      <description>Neue Installationsdatei Das Plugin kommt in der aktuellen Version mit einem neuen Installationsprogramm. Bitte vor Installation alle alten IBIScontrol Dateien und Ordner aus dem OMSI2/plugins Ordner entfernen!
+Funktionen:
+IBIS Kasse Ticketdrucker Dashboard mit Geschwindigkeit, Türsteuerung, Lichtsteuerung, Temperatur, Haltestelle, Haltewunsch usw. Rollbandsteuerung Unterstützte Karten:
+Alle Unterstützte Busse:
+Alle Standard OMSI 2 Busse O520 (alterr) O530 (alterr) O530 G (alterr) Solaris Urbino 12/18 (alterr) (Weitere sollten funktionieren, werden aber (noch) nicht offiziell unterstützt.</description>
+    </item>
+    
+    <item>
+      <title>IBISdroid</title>
+      <link>https://www.gcmods.de/downloads/ibisdroid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gcmods.de/downloads/ibisdroid/</guid>
+      <description>IBIS Mit dem IBIS können alle IBIS-Funktionen direkt mit dem Smartphone gesteuert werden. Hierzu zählen unter anderem: Linie und Route einstellen, Haltestelle weiterschalten, etc.
+Zahltisch Der Zahltisch ermöglicht es, Wechselgeld bequem über den Touchscreen auszugeben. Es werden ausserdem derzeit die Währungen DM und Euro unterstützt.
+Ticketdrucker Tickets können auf Knopfdruck in OMSI ausgedruckt werden. Sollte mal ein falsches Ticket ausgewählt oder gedruckt worden sein, so kann dies mit der Abbrechen-Taste schnell wieder entfernt werden.</description>
+    </item>
+    
+  </channel>
+</rss>

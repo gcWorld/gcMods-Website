@@ -9,13 +9,13 @@
         {{ partial "jumbotron.md" . }}
     </div>
     <div class="card-deck">
-    {{ range (  (where .Pages "Type" "downloads" )  | first 3 ) }}
+    {{ range ( where .Site.RegularPages "Type" "downloads" | first 3 ) }}
         <div class="card">
             {{ if .Page.Params.image_big }}
                 {{ if .Page.Params.website }}
                     <a href="{{ .Page.Params.link }}">
                 {{ else }}
-                    <a href="{{ .Page.Params.url }}">
+                    <a href="{{ .Page.RelPermalink }}">
                 {{ end }}
                 <img class="card-img-top" src="{{"/images/downloads/thumbs/home/"}}{{ .Page.Params.image_big }}" alt="{{ .Page.Params.title }}"></a>
             {{ else }}
@@ -33,9 +33,9 @@
                     <a class="btn btn-secondary" href="{{ .Page.Params.link }}" role="button">Mehr Informationen &raquo;</a>
                 {{ else }}
                     {{ if .Page.Params.website }}
-                        <a class="btn btn-secondary" href="{{ .Page.Params.url }}" role="button">Zur Website &raquo;</a>
+                        <a class="btn btn-secondary" href="{{ .Page.Params.link }}" role="button">Zur Website &raquo;</a>
                     {{ else }}
-                        <a class="btn btn-secondary" href="{{ .Page.Params.url }}" role="button">Zum Download &raquo;</a>
+                        <a class="btn btn-secondary" href="{{ .Page.RelPermalink }}" role="button">Zum Download &raquo;</a>
                     {{ end }}
                 {{ end }}
             </div>

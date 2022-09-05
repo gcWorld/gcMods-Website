@@ -4,8 +4,8 @@ lang: de
 ref: ibisdroid
 section: Downloads
 category: omsi
-released: 2013-12-03 22:30:28 Z
-updated: 2013-12-03 22:30:28 Z
+released: "2013-12-03T22:30:28Z"
+date: "2013-12-03T22:30:28Z"
 copyright: '2013'
 website: false
 link: http://ibis-droid.gcmods.de/

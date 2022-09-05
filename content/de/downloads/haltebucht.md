@@ -4,8 +4,8 @@ lang: de
 ref: haltebucht
 section: Downloads
 category: omsi
-released: 2011-12-03 22:30:28 Z
-updated: 2011-12-03 22:30:28 Z
+released: "2011-12-03T22:30:28Z"
+date: "2011-12-03T22:30:28Z"
 copyright: 'cc-by-nc'
 ams: false
 zip: https://github.com/gcWorld/Haltebucht/releases/download/v1.1/haltebucht_1.1.zip

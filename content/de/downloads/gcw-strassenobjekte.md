@@ -4,8 +4,8 @@ lang: de
 ref: strassenobjekte
 section: Downloads
 category: omsi
-released: 2012-01-02 22:30:28 Z
-updated: 2017-09-22 22:30:28 Z
+released: "2012-01-02T22:30:28Z"
+date: "2017-09-22T22:30:28Z"
 copyright: 'cc-by-nc'
 ams: false
 zip: false

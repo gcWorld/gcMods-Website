@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>update on gcWorld Modifications</title>
+    <link>https://www.gcmods.de/categories/update/</link>
+    <description>Recent content in update on gcWorld Modifications</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 08 Oct 2017 20:00:00 +0000</lastBuildDate><atom:link href="https://www.gcmods.de/categories/update/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Neue Seite und aktualisierte Downloads</title>
+      <link>https://www.gcmods.de/blog/2017-10-08-neue-seite-und-aktualisierte-downloads/</link>
+      <pubDate>Sun, 08 Oct 2017 20:00:00 +0000</pubDate>
+      
+      <guid>https://www.gcmods.de/blog/2017-10-08-neue-seite-und-aktualisierte-downloads/</guid>
+      <description>Die Seite wurde mal wieder aktualisiert und sollte nun vor allem sehr performant sein. Nebenher wurde die Downloadseite für die IBIS droid App für OMSI 1 nun auch integriert.
+Da es den OMSI Addon Manager schon seit einiger Zeit nicht mehr gibt, werden nun nach und nach die bestehenden Downloads welche bisher den Addon Manager nutzten, auf eigenständige Installationsprogramme umgestellt. Dies erlaubt weiterhin eine unkomplizierte Installation sowie Deinstallation. Automatische Updates fallen hier leider weg, es dürfte auf absehbare Zeit aber eh kaum Aktualisierungen der bestehenden Addons geben.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -26,7 +26,7 @@
     
       <div class="post-content" itemprop="articleBody">
         {{ if .Page.Params.image }}
-          <img class="img-fluid img-thumbnail" src="{{"/assets/images/blog/"}}{{.Page.Params.image}}" alt="{{ .Title }}" />
+          <img class="img-fluid img-thumbnail" src="{{"/images/blog/"}}{{.Page.Params.image}}" alt="{{ .Title }}" />
         {{ end }}
         {{ .Content }}
         {{ with .Params.tags }}

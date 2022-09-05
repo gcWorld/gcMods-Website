@@ -4,6 +4,79 @@
     <title>Categories on gcWorld Modifications</title>
     <link>https://www.gcmods.de/categories/</link>
     <description>Recent content in Categories on gcWorld Modifications</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://www.gcmods.de/categories/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 17 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.gcmods.de/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LOTUS</title>
+      <link>https://www.gcmods.de/categories/lotus/</link>
+      <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gcmods.de/categories/lotus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Editor</title>
+      <link>https://www.gcmods.de/categories/editor/</link>
+      <pubDate>Thu, 04 Oct 2018 15:00:00 +0000</pubDate>
+      
+      <guid>https://www.gcmods.de/categories/editor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Luftbilder</title>
+      <link>https://www.gcmods.de/categories/luftbilder/</link>
+      <pubDate>Thu, 04 Oct 2018 15:00:00 +0000</pubDate>
+      
+      <guid>https://www.gcmods.de/categories/luftbilder/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IBIScontrol</title>
+      <link>https://www.gcmods.de/categories/ibiscontrol/</link>
+      <pubDate>Sun, 16 Sep 2018 17:00:00 +0000</pubDate>
+      
+      <guid>https://www.gcmods.de/categories/ibiscontrol/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Website</title>
+      <link>https://www.gcmods.de/categories/website/</link>
+      <pubDate>Sun, 16 Sep 2018 17:00:00 +0000</pubDate>
+      
+      <guid>https://www.gcmods.de/categories/website/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>downloads</title>
+      <link>https://www.gcmods.de/categories/downloads/</link>
+      <pubDate>Sun, 08 Oct 2017 20:00:00 +0000</pubDate>
+      
+      <guid>https://www.gcmods.de/categories/downloads/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>update</title>
+      <link>https://www.gcmods.de/categories/update/</link>
+      <pubDate>Sun, 08 Oct 2017 20:00:00 +0000</pubDate>
+      
+      <guid>https://www.gcmods.de/categories/update/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OMSI</title>
+      <link>https://www.gcmods.de/categories/omsi/</link>
+      <pubDate>Sun, 01 Oct 2017 15:00:00 +0000</pubDate>
+      
+      <guid>https://www.gcmods.de/categories/omsi/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

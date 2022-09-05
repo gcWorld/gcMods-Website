@@ -127,6 +127,9 @@ footer ul.nav li.active>a:hover {
 h2>a {
 	color:#333;
 }
+.nav-item .active {
+    border-radius: .25rem;
+}
 footer {
 	background:#222;
 	position: absolute;

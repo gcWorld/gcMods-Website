@@ -13,3 +13,6 @@ sectionPagesMenu = "main"
     contentDir = 'content/en'
     languageName = 'English'
     weight = 2
+
+[Params]
+  google_ads = true

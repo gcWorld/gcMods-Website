@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OMSI on gcWorld Modifications</title>
+    <link>https://www.gcmods.de/categories/omsi/</link>
+    <description>Recent content in OMSI on gcWorld Modifications</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 01 Oct 2017 15:00:00 +0000</lastBuildDate><atom:link href="https://www.gcmods.de/categories/omsi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Luftbilder in OMSI 2</title>
+      <link>https://www.gcmods.de/blog/2017-10-01-luftbilder-in-omsi-2/</link>
+      <pubDate>Sun, 01 Oct 2017 15:00:00 +0000</pubDate>
+      
+      <guid>https://www.gcmods.de/blog/2017-10-01-luftbilder-in-omsi-2/</guid>
+      <description>OMSI 2 bietet die Möglichkeit Luftbilder direkt im Editor anzeigen zu lassen. Um dies zu nutzen ist es jedoch erforderlich einige Dinge vorab einzustellen. Im Folgenden wird der notwendige Prozess beschrieben.
+Ordnerstruktur Im Maps Ordner muss die folgende Ordnerstruktur erstellt werden
+aerials/MAPNAME MAPNAME muss dabei durch den Namen der jeweiligen Map ersetzt werden.
+Options.cfg Die im Hauptordner liegende options.cfg muss am Ende um den folgenden Eintrag ergänzt werden
+[Editor_LinkAerial] Unterhalb des Editor_LinkAerial Eintrags muss dann einer der unten stehenden Links eingetragen werden.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -2,7 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.gcmods.de/en/blog/</loc>
+    <lastmod>2018-09-16T17:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://www.gcmods.de/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.gcmods.de/en/blog/"
+                />
+  </url><url>
     <loc>https://www.gcmods.de/en/categories/</loc>
+    <lastmod>2018-09-16T17:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
@@ -15,6 +29,7 @@
                 />
   </url><url>
     <loc>https://www.gcmods.de/en/</loc>
+    <lastmod>2018-09-16T17:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
@@ -25,6 +40,38 @@
                 hreflang="en"
                 href="https://www.gcmods.de/en/"
                 />
+  </url><url>
+    <loc>https://www.gcmods.de/en/blog/2018-09-16-i-broke-it/</loc>
+    <lastmod>2018-09-16T17:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.gcmods.de/en/categories/ibiscontrol/</loc>
+    <lastmod>2018-09-16T17:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://www.gcmods.de/categories/ibiscontrol/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.gcmods.de/en/categories/ibiscontrol/"
+                />
+  </url><url>
+    <loc>https://www.gcmods.de/en/categories/website/</loc>
+    <lastmod>2018-09-16T17:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://www.gcmods.de/categories/website/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.gcmods.de/en/categories/website/"
+                />
+  </url><url>
+    <loc>https://www.gcmods.de/en/blog/2017-10-13-website-in-english/</loc>
+    <lastmod>2017-10-13T15:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.gcmods.de/en/tags/</loc>
     <xhtml:link

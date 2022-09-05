@@ -2,7 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.gcmods.de/blog/</loc>
+    <lastmod>2020-04-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.gcmods.de/en/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://www.gcmods.de/blog/"
+                />
+  </url><url>
     <loc>https://www.gcmods.de/categories/</loc>
+    <lastmod>2020-04-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,6 +29,7 @@
                 />
   </url><url>
     <loc>https://www.gcmods.de/</loc>
+    <lastmod>2020-04-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -25,6 +40,85 @@
                 hreflang="de"
                 href="https://www.gcmods.de/"
                 />
+  </url><url>
+    <loc>https://www.gcmods.de/categories/lotus/</loc>
+    <lastmod>2020-04-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.gcmods.de/blog/2020-04-17-strassenobjekte-vorschau/</loc>
+    <lastmod>2020-04-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.gcmods.de/categories/editor/</loc>
+    <lastmod>2018-10-04T15:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.gcmods.de/categories/luftbilder/</loc>
+    <lastmod>2018-10-04T15:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.gcmods.de/blog/2018-10-04-luftbilder-in-lotus/</loc>
+    <lastmod>2018-10-04T15:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.gcmods.de/categories/ibiscontrol/</loc>
+    <lastmod>2018-09-16T17:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.gcmods.de/en/categories/ibiscontrol/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://www.gcmods.de/categories/ibiscontrol/"
+                />
+  </url><url>
+    <loc>https://www.gcmods.de/blog/2018-09-16-ibiscontrol-updater-funktioniert-nicht/</loc>
+    <lastmod>2018-09-16T17:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.gcmods.de/categories/website/</loc>
+    <lastmod>2018-09-16T17:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.gcmods.de/en/categories/website/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://www.gcmods.de/categories/website/"
+                />
+  </url><url>
+    <loc>https://www.gcmods.de/categories/downloads/</loc>
+    <lastmod>2017-10-08T20:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.gcmods.de/blog/2017-10-08-neue-seite-und-aktualisierte-downloads/</loc>
+    <lastmod>2017-10-08T20:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.gcmods.de/categories/update/</loc>
+    <lastmod>2017-10-08T20:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.gcmods.de/blog/2017-10-01-luftbilder-in-omsi-2/</loc>
+    <lastmod>2017-10-01T15:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.gcmods.de/categories/omsi/</loc>
+    <lastmod>2017-10-01T15:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.gcmods.de/datenschutz/</loc>
+  </url><url>
+    <loc>https://www.gcmods.de/downloads/</loc>
+  </url><url>
+    <loc>https://www.gcmods.de/downloads/euro-mod/</loc>
+  </url><url>
+    <loc>https://www.gcmods.de/downloads/frankfurter-haltestellen-set/</loc>
+  </url><url>
+    <loc>https://www.gcmods.de/downloads/gcw-strassenobjekte/</loc>
+  </url><url>
+    <loc>https://www.gcmods.de/downloads/gcw-strassenobjekte-lotus/</loc>
+  </url><url>
+    <loc>https://www.gcmods.de/downloads/haltebucht/</loc>
+  </url><url>
+    <loc>https://www.gcmods.de/downloads/ibiscontrol/</loc>
+  </url><url>
+    <loc>https://www.gcmods.de/downloads/ibisdroid/</loc>
+  </url><url>
+    <loc>https://www.gcmods.de/impressum/</loc>
   </url><url>
     <loc>https://www.gcmods.de/tags/</loc>
     <xhtml:link
@@ -37,5 +131,7 @@
                 hreflang="de"
                 href="https://www.gcmods.de/tags/"
                 />
+  </url><url>
+    <loc>https://www.gcmods.de/about/</loc>
   </url>
 </urlset>

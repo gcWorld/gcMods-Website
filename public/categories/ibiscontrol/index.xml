@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IBIScontrol on gcWorld Modifications</title>
+    <link>https://www.gcmods.de/categories/ibiscontrol/</link>
+    <description>Recent content in IBIScontrol on gcWorld Modifications</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 16 Sep 2018 17:00:00 +0000</lastBuildDate><atom:link href="https://www.gcmods.de/categories/ibiscontrol/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IBIScontrol Updater funktioniert nicht</title>
+      <link>https://www.gcmods.de/blog/2018-09-16-ibiscontrol-updater-funktioniert-nicht/</link>
+      <pubDate>Sun, 16 Sep 2018 17:00:00 +0000</pubDate>
+      
+      <guid>https://www.gcmods.de/blog/2018-09-16-ibiscontrol-updater-funktioniert-nicht/</guid>
+      <description>Der IBIScontrol Updater funktioniert aufgrund eines Serverumzugs nicht mehr. Das Problem lässt sich leider nicht beheben. Meine Empfehlung ist daher den Updater zu deinstallieren. Das Plugin funktioniert auch problemlos ohne den Updater.
+Solange die Plugin Dateien im OMSI 2 plugins Ordner sind reicht es OMSI 2 normal zu starten, um IBIScontrol zu verwenden. Die IBIScontrol Downloadseite wurde entsprechend aktualisiert.</description>
+    </item>
+    
+  </channel>
+</rss>

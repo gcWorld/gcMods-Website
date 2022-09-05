@@ -4,8 +4,8 @@ lang: de
 ref: strassenobjekte-lotus
 section: Downloads
 category: lotus
-released: 2018-09-23 23:14:28 Z
-updated: 2020-11-06 18:30:28 Z
+released: "2018-09-23T23:14:28Z"
+date: "2020-11-06T18:30:28Z"
 copyright: '2019'
 ams: false
 zip: false

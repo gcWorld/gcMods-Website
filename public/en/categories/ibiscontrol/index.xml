@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IBIScontrol on gcWorld Modifications</title>
+    <link>https://www.gcmods.de/en/categories/ibiscontrol/</link>
+    <description>Recent content in IBIScontrol on gcWorld Modifications</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 16 Sep 2018 17:00:00 +0000</lastBuildDate><atom:link href="https://www.gcmods.de/en/categories/ibiscontrol/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I broke it</title>
+      <link>https://www.gcmods.de/en/blog/2018-09-16-i-broke-it/</link>
+      <pubDate>Sun, 16 Sep 2018 17:00:00 +0000</pubDate>
+      
+      <guid>https://www.gcmods.de/en/blog/2018-09-16-i-broke-it/</guid>
+      <description>As some of you have probably noticed by now is that the IBIScontrol updater no longer works. The reason behind this is that I recently moved the installation files from the old server to a new location without realising that the installer does a check of the installation files which now fails with the new location. Sadly, I do not have the source files of the installer any more and thus am unable to quickly fix this issue.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -4,6 +4,7 @@
             <div class="col-sm-3">
                 <h4>Navigation</h4>
                 <ul class="nav flex-column nav-pills">
+                    <li class="nav-item {{ if .IsHome }}active{{ end }}"><a class="nav-link" href="{{ .Site.Home.RelPermalink }}">{{ with .Site.Params.home }}{{ . }}{{ else }}{{ i18n "home" }}{{ end }}</a></li>
                     {{ $currentPage := . }}
                     {{ range .Site.Menus.main }}
                     <li class="nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}"><a class="nav-link" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a></li>

@@ -5,8 +5,8 @@ ref: ibiscontrol
 section: Downloads
 category:
 - omsi
-released: 2015-04-01 22:30:28 Z
-updated: 2019-02-02 15:30:28 Z
+released: "2015-04-01T22:30:28Z"
+date: "2019-02-02T15:30:28Z"
 copyright: '2019'
 ams: false
 zip: 

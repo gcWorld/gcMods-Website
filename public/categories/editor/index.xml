@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Editor on gcWorld Modifications</title>
+    <link>https://www.gcmods.de/categories/editor/</link>
+    <description>Recent content in Editor on gcWorld Modifications</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 04 Oct 2018 15:00:00 +0000</lastBuildDate><atom:link href="https://www.gcmods.de/categories/editor/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Luftbilder in LOTUS</title>
+      <link>https://www.gcmods.de/blog/2018-10-04-luftbilder-in-lotus/</link>
+      <pubDate>Thu, 04 Oct 2018 15:00:00 +0000</pubDate>
+      
+      <guid>https://www.gcmods.de/blog/2018-10-04-luftbilder-in-lotus/</guid>
+      <description>LOTUS bietet zusätzlich zu den eingebauten OSM Karten die Möglichkeit Luftbilder direkt im Editor anzeigen zu lassen. Um dies zu nutzen ist es jedoch erforderlich einige Dinge vorab einzustellen. Im Folgenden wird der notwendige Prozess beschrieben.
+Schritt 1 Das Optionsmenü über den gekennzeichneten Button (1.) öffnen.
+Schritt 2a In das Feld &amp;ldquo;Luftbilder-Link&amp;rdquo; einen der unter &amp;ldquo;Mögliche Quellen&amp;rdquo; aufgeführten Links eintragen.
+Schritt 2b Bei &amp;ldquo;Luftbilder-Format&amp;rdquo; &amp;ldquo;JPEG&amp;rdquo; auswählen und mit &amp;ldquo;OK&amp;rdquo; bestätigen.</description>
+    </item>
+    
+    <item>
+      <title>Luftbilder in OMSI 2</title>
+      <link>https://www.gcmods.de/blog/2017-10-01-luftbilder-in-omsi-2/</link>
+      <pubDate>Sun, 01 Oct 2017 15:00:00 +0000</pubDate>
+      
+      <guid>https://www.gcmods.de/blog/2017-10-01-luftbilder-in-omsi-2/</guid>
+      <description>OMSI 2 bietet die Möglichkeit Luftbilder direkt im Editor anzeigen zu lassen. Um dies zu nutzen ist es jedoch erforderlich einige Dinge vorab einzustellen. Im Folgenden wird der notwendige Prozess beschrieben.
+Ordnerstruktur Im Maps Ordner muss die folgende Ordnerstruktur erstellt werden
+aerials/MAPNAME MAPNAME muss dabei durch den Namen der jeweiligen Map ersetzt werden.
+Options.cfg Die im Hauptordner liegende options.cfg muss am Ende um den folgenden Eintrag ergänzt werden
+[Editor_LinkAerial] Unterhalb des Editor_LinkAerial Eintrags muss dann einer der unten stehenden Links eingetragen werden.</description>
+    </item>
+    
+  </channel>
+</rss>

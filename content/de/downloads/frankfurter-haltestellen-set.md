@@ -4,8 +4,8 @@ lang: de
 ref: frankfurt
 section: Downloads
 category: omsi
-released: 2012-12-08 22:30:28 Z
-updated: 2012-12-08 22:30:28 Z
+released: "2012-12-08T22:30:28Z"
+date: "2012-12-08T22:30:28Z"
 copyright: '2013'
 ams: false
 zip: https://github.com/gcWorld/Frankfurter-Haltestellen-Set/releases/download/v1.0/frankfurter-haltestellen-set_1.0.zip
