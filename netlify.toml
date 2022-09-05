@@ -4,3 +4,9 @@
 
 [build.environment]
   HUGO_VERSION = "0.102.1"
+
+[[plugins]]
+  package = "@netlify/plugin-a11y"
+  [plugins.inputs]
+    # Do not fail the build if a11y issues are found
+    failWithIssues = false
