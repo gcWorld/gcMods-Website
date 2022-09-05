@@ -46,6 +46,7 @@ google_analytics: false
 google_ads: false
 tracking_pixel: false
 fathom: false
+umami: true
 cookies: false
 markdown: kramdown
 plugins:
