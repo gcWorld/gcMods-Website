@@ -1,6 +1,6 @@
 defaultContentLanguage = 'de'
 defaultContentLanguageInSubdir = false
-baseURL = 'https://www.gcmods.de/'
+baseURL = 'https://hugo.gcmods.de/'
 title = 'gcWorld Modifications'
 theme = ['gcmods']
 sectionPagesMenu = "main"
