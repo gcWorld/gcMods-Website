@@ -37,6 +37,9 @@ Es gibt eine Reihe von Quellen welche für die Luftbilder verwendet werden könn
 Dies sind die gleichen Kartenbilder wie bereits im Editor unter "Map" integriert sind.
 
 ### Bing
+> [!WARNING]  
+> Die Bing API kann seit Ende Juni 2025 nicht mehr kostenfrei genutzt werden. Die bezahlten Keys funktionieren auch weiterhin bis 2028. Eine Alternative wird derzeit geprüft.
+
 Um die Bilder von Bing verwenden zu können, wird ein API Code benötigt. Dieser kann kostenlos [hier](https://www.bingmapsportal.com/) erworben werden. [API-Code] muss in den untenstehenden Links durch den eigenen API Code ersetzt werden.
 
 Satelliten
